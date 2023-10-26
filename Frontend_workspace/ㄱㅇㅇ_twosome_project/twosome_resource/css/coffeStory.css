@@ -1,0 +1,265 @@
+@font-face {
+    font-family: 'Noto Sans KR 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Thin.woff2") format("woff2"),url("../fonts/NotoSansKR-Thin.woff") format("woff"),url("../fonts/NotoSansKR-Thin.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Light.woff2") format("woff2"),url("../fonts/NotoSansKR-Light.woff") format("woff"),url("../fonts/NotoSansKR-Light.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),url("../fonts/NotoSansKR-Regular.woff") format("woff"),url("../fonts/NotoSansKR-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 500';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),url("../fonts/NotoSansKR-Medium.woff") format("woff"),url("../fonts/NotoSansKR-Medium.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),url("../fonts/NotoSansKR-Bold.woff") format("woff"),url("../fonts/NotoSansKR-Bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Black.woff2") format("woff2"),url("../fonts/NotoSansKR-Black.woff") format("woff"),url("../fonts/NotoSansKR-Black.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Mark Pro 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/MARKPROEXTRALIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/MARKPROLIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOOK.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 600';
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOLD.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/MARKPROHEAVY.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/MARKPROBLACK.woff") format("woff")
+}
+
+p{
+    /* font-weight: 900; */
+    font-size: 40px;
+    font-family: 'Noto Sans KR 700';
+}
+
+.tag{
+    font-weight: 900;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans KR 500';
+}
+
+.tag>li{
+    list-style-type: square;
+    padding-left: 8px;
+}
+
+#tag1{
+    list-style-type: none;
+    color: #707070;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+#tag2{
+    color: #D50037;
+    text-decoration: none;
+}
+
+#mainmenu{
+    font-weight: 900;
+    font-size: 72px;
+}
+
+#body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#bodyside{
+    width: 20%;
+    height: 100%;
+}
+
+#bodymain{
+    width: 60%;
+    height: 100%;
+}
+/* ------------------------------------------------------------------ */
+#coffeStory{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+#coffeStory_content{
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+
+#coffeStory_content div{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+    vertical-align: middle;
+}
+
+#coffeStory_1{
+    width: 100%;
+    height: 30%;
+    font-weight: 900;
+    font-family: 'Mark Pro 900';
+    font-size: 56px;
+
+}
+
+#coffeStory_2{
+    width: 100%;
+    height: 20%;
+    font-weight: 600;
+    font-family: 'Noto Sans KR 500';
+    font-size: 32px;
+
+}
+
+#coffeStory_3{
+    width: 100%;
+    height: 20%;
+    font-family: 'Noto Sans KR 500';
+    font-size: 18px;
+}
+
+#coffeStory_between{
+    width: 10%;
+    height: 100%;
+}
+
+#coffeStory_picture{
+    width: 40%;
+    height: 100%;
+}
+/* ---------------------------------------------------------------- */
+
+#special{
+    width: 100%;
+    height: 25%;
+}
+/* ---------------------------------------------------------------- */
+
+#signiture{
+    width: 100%;
+    height: 35%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+#signiture_lists{
+    width: 20%;
+    height: 100%;
+    margin-top: 0;
+    margin-right: 6.66%;
+}
+
+#signiture_listEnd{
+    width: 20%;
+    height: 100%;
+    margin-top: 0;
+
+}
+
+#signiture_pic{
+    width: 100%;
+    height: 30%;
+}
+
+#signiture_name{
+    width: 100%;
+    height: 15%;
+    font-weight: 900;
+    font-size: 24px;
+    padding-top: 5%;
+    font-family: 'Noto Sans KR 100';
+}
+
+#signiture_engname{
+    width: 100%;
+    height: 10%;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #707070;
+    padding-top: 5%;
+    font-family: 'Mark Pro 500';
+}
+
+#signiture_explain{
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 18px;
+   padding-top: 10%;
+   font-family: 'Noto Sans KR 200';
+}
+
+#signiture_explain2{
+    width: 100%;
+    height: 20%;
+    text-align: left;
+    font-size: 14px;
+   padding-top: 10%;
+   font-family: 'Noto Sans KR 200';
+   color: #707070;
+}

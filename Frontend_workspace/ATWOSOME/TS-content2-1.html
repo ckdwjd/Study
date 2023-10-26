@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content2 {
+            border: 1px solid transparent;
+            width: 100%;
+            height: 722px;
+            display: flex;
+        }
+
+        /* ===== 문자 영역  ===== */
+
+        #txt-area {
+            /* border: 1px solid red; */
+            height: 100%;
+            width: 43%;
+        }
+
+        #menu-story {
+            border: 1px solid transparent;
+            width: 100%;
+            height: 37%;
+            font-size: 80px;
+            line-height: 400px;
+        }
+
+        #menu-story>a {
+            margin-left: 100px;
+            font-weight: 900;
+        }
+
+        #story-box {
+            border: 1px solid transparent;
+            font-weight: 900;
+            width: 100%;
+            height: 63%;
+            font-size: 24px;
+        }
+
+        #story-box>ul>li>a {
+            color: gray
+        }
+
+        #txt-area * {
+            list-style-type: none;
+            text-decoration: none;
+            padding: 0;
+        }
+
+        #coffee,
+        #dessert,
+        #deli {
+            margin-left: 150px;
+        }
+
+        #coffee,
+        #dessert,
+        #deli a {
+            line-height: 50px;
+            display: block;
+        }
+
+        #cof,
+        #des,
+        #del {
+            display: block;
+        }
+
+        .story-txt {
+            color: gray;
+            font-size: 14px;
+        }
+
+        /* ===== 문자 기능 영역 ===== */
+
+        #coffee>a:hover * {
+            display: block;
+            color: black;
+        }
+
+        #coffee a:hover {
+            display: block;
+            color: black;
+        }
+
+        #dessert>a:hover * {
+            display: block;
+            color: black;
+        }
+
+        #dessert a:hover {
+            display: block;
+            color: black;
+        }
+
+        #deli>a:hover * {
+            display: block;
+            color: black;
+        }
+
+        #deli a:hover {
+            display: block;
+            color: black;
+        }
+
+        /* ===== 이미지 영역  ===== */
+        #img-area {
+            border: 1px solid transparent;
+            height: 100%;
+            width: 57%;
+        }
+
+        #img-top {
+            border: 0px solid transparent;
+            width: 100%;
+            height: 20%;
+        }
+
+        #img-mid {
+            border: 1px solid transparent;
+            width: 70%;
+            height: 65%;
+            background-image: url("투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/menu_coffee1.jpg");
+            background-size: contain;
+            background-position: center;
+        }
+
+        #img-bot {
+            border: 0px solid transparent;
+            width: 100%;
+            height: 15%;
+        }
+
+        #btn-wrap {
+            width: 450px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.833);
+            display: flex;
+            color: white;
+            line-height: 50px;
+            margin: auto;
+            margin-top: 75%;
+        }
+
+        .btn {
+            border: 1px solid black;
+            color: white;
+            background-color: transparent;
+        }
+
+        #btnl {
+            width: 25px;
+            border: 0px;
+            background-image: url("투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/ico_arrow_left.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            margin: 0px 130px 0px 10px;
+        }
+
+        #btnr {
+            width: 25px;
+            border: 0px;
+            background-image: url("투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/ico_arrow_right.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            margin: 0px 10px 0px 130px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <div id="content2">
+        <div id="txt-area">
+            <div id="menu-story">
+                <a>MENU STORY.</a>
+            </div>
+            <div id="story-box">
+                <ul>
+                    <li id="coffee">
+                        <a href="">
+                            <ul id="cof">
+                                <li class="story-txt">
+                                    전문가의 섬세함으로 완성한 최상의 커피
+                                </li>
+                            </ul>
+                            COFFEE STORY
+                        </a>
+                    </li>
+                    <li id="dessert">
+                        <a href="">
+                            <ul id="des">
+                                <li class="story-txt">
+                                    다양한 프리미엄 케이크 & 디저트
+                                </li>
+                            </ul>
+                            DESSERT STORY
+                        </a>
+                    </li>
+                    <li id="deli">
+                        <a href="">
+                            <ul id="del">
+                                <li class="story-txt">
+                                    가볍게 즐기는 맛있는 식사, 델리
+                                </li>
+                            </ul>
+                            DELI STORY
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="img-area">
+            <div id="img-top"></div>
+            <div id="img-mid">
+                <div id="btn-wrap">
+                    <button class="btn" id="btnl"></button>
+                    스페니쉬 연유 라떼
+                    <button class="btn" id="btnr"></button>
+                </div>
+            </div>
+            <div id="img-bot"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="/resources/css/Dot_Main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="/resources/css/slick.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/resources/js/Dot_Main.js"></script>
+
+
+    <title>Dot.</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a>
+                    <img src="resources/img/DotLogo.png" />
+                </a>
+            </div>
+            <div class="header-tools">
+                <div class="search-tool">
+                    <input type="checkbox" id="search" />
+                    <label for="search">
+                        <form>
+                            <input type="search" class="search-input" placeholder="검색할 항목을 입력하세요" />
+                        </form>
+                    </label>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+                <div class="alert-tool">
+                    <span class="material-symbols-outlined" data-bs-toggle="modal" data-bs-target="#alertModal">
+                        notifications
+                    </span>
+                    <p></p>
+                    <!-- Modal -->
+                    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body modal-backgound" style="height: 30%;">
+                                    <div class="modal-box">
+                                        <div class="alarm-all-btn">
+                                            <a>
+                                                모두보기
+                                            </a>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/karina2.jpeg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    im_Zzang_gu_da
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    im_Zzang_gu_da님이 회원님을 팔로우하기 시작했습니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/karina2.jpeg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    i_want_to_be_a_Gamani
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    i_want_to_be_a_Gamani님이 댓글을 남겼습니다 : "나는야 진정한 가마니가 될꺼야>_0!!"
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/profile3.jpg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    im_Danbi
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    im_Danbi님이 회원님의 사진을 좋아요💗 눌렀습니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/profile4.jpg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    im_so_Sad
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    im_so_Sad님이 댓글을 남겼습니다 : "희미한 과거만 바라보다 선명한 현재를 놓치지 말자"
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/profile5.jpg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    im_so_famous_spongeBob
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    im_so_famous_spongeBob님이 댓글을 남겼습니다 : "사실 집게리아 패티는 중국산이야 ㅠ.ㅠ"
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/profile6.jpg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    im_so_4rory_ya
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    im_so_4rory_ya님이 회원님을 팔로우하기 시작했습니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-profile-icon">
+                                            <label>
+                                                <a>
+                                                    <img src="resources/img/profile7.jpg" />
+                                                </a>
+                                            </label>
+                                            <div class="modal-alarm-contents">
+                                                <div class="modal-alarm-user">
+                                                    Cute_cat
+                                                </div>
+                                                <div class="modal-alarm-content">
+                                                    Cute_cat님이 회원님의 사진을 좋아요💗 눌렀습니다.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 모달 끝 -->
+                </div>
+                <div class="dm-tool">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <p></p>
+                </div>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                    </div>
+                    <div class="profile-name">
+                        <p>dasdfsdffsdfsasda</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="sidebar-wrap">
+                <input type="checkbox" id="menuicon">
+                <label for="menuicon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <div class="side-content">
+                        <div class="tools br-bottom">
+                            <dl>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        home
+                                        <span>홈</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        search
+                                        <span>탐색</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        notifications
+                                        <span>알림</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        mail
+                                        <span>메세지</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        add_box
+                                        <span>스토어</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        group
+                                        <span>팔로워</span>
+                                    </a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="friends br-bottom">
+                            <span>팔로우</span>
+                            <div class="friends-list">
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <a class="friend-profile">
+                                    <div class="profile-img">
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                    </div>
+                                    <div class="profile-name">
+                                        <span>dasdasda</span>
+                                    </div>
+                                    <label></label>
+                                </a>
+                                <div class="friend-profile more-friends">
+                                    <span>더보기</span>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tools br-bottom">
+                            <dl>
+                                <dt>
+                                    <a class="material-symbols-outlined" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        password
+                                        <span>비밀번호변경</span>
+                                    </a>
+                                </dt>
+                                <dt>
+                                    <a class="material-symbols-outlined openPopup">
+                                        person_remove
+                                        <span>회원탈퇴</span>
+                                    </a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="tools br-bottom">
+                            <dl>
+                                <dt>
+                                    <a class="material-symbols-outlined">
+                                        logout
+                                        <span>로그아웃</span>
+                                    </a>
+                                </dt>
+                            </dl>
+                        </div>
+                        <div class="footer">
+                            <span>
+                                회사소개 | 이용약관 | 개인정보처리방침 | 운영정책 | 청소년보호정책 | 권리침해신고안내 | 공지사항
+                            </span>
+                            <div>
+                                <p>&copy; 2023 Dot. All rights reserved.</p>
+                                <p>Connect with friends and share your moments with our SNS platform. Join us today!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-shortcuts">
+                    <div class="shortcuts-wrap">
+                        <dl>
+                            <dt>
+                                <a class="material-symbols-outlined">
+                                    home
+                                </a>
+                                <h5>홈</h5>
+                            </dt>
+                            <dt>
+                                <a class="material-symbols-outlined">
+                                    search
+                                </a>
+                                <h5>탐색하기</h5>
+                            </dt>
+                            <dt>
+                                <a class="material-symbols-outlined">
+                                    add_box
+                                </a>
+                                <h5>스토어</h5>
+                            </dt>
+                            <dt>
+                                <a class="material-symbols-outlined">
+                                    group
+                                </a>
+                                <h5>친구</h5>
+                            </dt>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a class="material-symbols-outlined">
+                                    logout
+                                </a>
+                                <h5>로그아웃</h5>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="main-wrap">
+                    <div class="feed-list">
+                        <dl>
+                            <dt>
+                                <div class="feed-wrap">
+                                    <div class="feed-header">
+                                        <div class="user-profile">
+                                            <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                            <span>dasdasda</span>
+                                            <span class="material-symbols-outlined toggle-button"
+                                                id="more-options-icon">
+                                                more_horiz
+                                            </span>
+                                            <div class="more-options">
+                                                <div>
+                                                    <dl>
+                                                        <dt>
+                                                            <span class="material-symbols-outlined">
+                                                                edit
+                                                            </span>
+                                                            <a>수정하기</a>
+                                                        </dt>
+                                                        <dt>
+                                                            <span class="material-symbols-outlined">
+                                                                add_box
+                                                            </span>
+                                                            <a>저장하기</a>
+                                                        </dt>
+                                                        <dt>
+                                                            <span class="material-symbols-outlined">
+                                                                person_add
+                                                            </span>
+                                                            <a>팔로우 하기</a>
+                                                        </dt>
+                                                        <dt>
+                                                            <span class="material-symbols-outlined">
+                                                                person_remove
+                                                            </span>
+                                                            <a>팔로우 취소</a>
+                                                        </dt>
+                                                        <dt>
+                                                            <span class="material-symbols-outlined">
+                                                                report
+                                                            </span>
+                                                            <a>신고하기</a>
+                                                        </dt>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-body">
+                                        <div class="feed-img">
+                                            <div>
+                                                <img src="resources/img/karina2.jpeg" />
+                                            </div>
+                                            <div>
+                                                <img src="resources/img/karina3.jpeg" />
+                                            </div>
+                                            <div>
+                                                <img src="resources/img/karina1.jpeg" />
+                                            </div>
+                                            <div>
+                                                <img src="resources/img/—Pngtree—user icon_5097430.png" />
+                                            </div>
+                                        </div>
+                                        <div class="body-bottom">
+                                            <div class="feed-tools">
+                                                <div class="clickable-svg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="clickable-svg" data-bs-toggle="modal"
+                                                    data-bs-target="#shareTool">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="clickable-svg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                        fill="currentColor" class="bi bi-plus-square"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                                        <path
+                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="feed-text">
+                                                <span>
+                                                    회원님의 게시글을 1,024명이 좋아합니다.
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    <b>dasdas</b>
+                                                    다 여러분들 덕분에 제가 이렇게 되었습니다 ㅎㅎ 여러분 만나서 반갑숩니다 ㅎㅎ껄껄
+                                                </span>
+                                                <br>
+                                                <span>
+                                                    <a>#카리나</a> <a>#안녕하세요</a> <a>#맞팔</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="feed-footer">
+                                        <div class="reply-wrap">
+                                            <div class="reply-top">
+                                                <button data-bs-toggle="modal" data-bs-target="#feedDetail">댓글
+                                                    더보기</button>
+                                            </div>
+                                            <div class="reply-middle">
+                                                <dl>
+                                                    <dt>
+                                                        <img
+                                                            src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                                        <div class="reply-list">
+                                                            <span>dasdasda</span>
+                                                            <span>와 오창정 폼 미쳐따이</span>
+                                                        </div>
+                                                    </dt>
+                                                </dl>
+                                            </div>
+                                            <div class="reply-bottom">
+                                                <input type="text" placeholder="댓글을 입력하세요." />
+                                                <button>답글</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-content">
+                <div class="sub-wrap">
+                    <div class="sub-container">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FeedDetail Modal -->
+    <div class="modal fade" id="feedDetail" tabindex="-1" aria-bs-labelledby="feedDetailLabel" aria-bs-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header modal-backgound">
+                    <div class="modal-title" id="feedDetail">
+                        <div class="feed-header modal-feed-header">
+                            <div class="modal-user-profile">
+                                <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                <span>dasdasda</span>
+                                <span class="material-symbols-outlined modal-toggle-button">
+                                    more_horiz
+                                </span>
+                                <div class="modal-more-options">
+                                    <div>
+                                        <dl>
+                                            <dt>
+                                                <span class="material-symbols-outlined">
+                                                    edit
+                                                </span>
+                                                <a>수정하기</a>
+                                            </dt>
+                                            <dt>
+                                                <span class="material-symbols-outlined">
+                                                    add_box
+                                                </span>
+                                                <a>저장하기</a>
+                                            </dt>
+                                            <dt>
+                                                <span class="material-symbols-outlined">
+                                                    person_add
+                                                </span>
+                                                <a>팔로우 하기
+
+                                                </a>
+                                            </dt>
+                                            <dt>
+                                                <span class="material-symbols-outlined">
+                                                    person_remove
+                                                </span>
+                                                <a>팔로우 취소</a>
+                                            </dt>
+                                            <dt>
+                                                <span class="material-symbols-outlined">
+                                                    report
+                                                </span>
+                                                <a>신고하기</a>
+                                            </dt>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">Ⅹ</button>
+                </div>
+                <div class="modal-body modal-backgound">
+                    <div class="modal-feed-body">
+                        <div class="feed-img">
+                            <div>
+                                <img src="resources/img/karina2.jpeg" />
+                            </div>
+                            <div>
+                                <img src="resources/img/karina3.jpeg" />
+                            </div>
+                            <div>
+                                <img src="resources/img/karina1.jpeg" />
+                            </div>
+                            <div>
+                                <img src="resources/img/—Pngtree—user icon_5097430.png" />
+                            </div>
+                        </div>
+                        <div class="body-bottom">
+                            <div class="feed-tools">
+                                <div class="clickable-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path
+                                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                    </svg>
+                                </div>
+                                <div class="clickable-svg" data-bs-toggle="modal" data-bs-target="#shareTool">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-share" viewBox="0 0 16 16">
+                                        <path
+                                            d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                                    </svg>
+                                </div>
+                                <div class="clickable-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                                        class="bi bi-plus-square" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                        <path
+                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="feed-text">
+                                <span>
+                                    회원님의 게시글을 1,024명이 좋아합니다.
+                                </span>
+                                <br>
+                                <span>
+                                    <b>dasdas</b>
+                                    다 여러분들 덕분에 제가 이렇게 되었습니다 ㅎㅎ 여러분 만나서 반갑숩니다 ㅎㅎ껄껄
+                                </span>
+                                <br>
+                                <span>
+                                    <a>#카리나</a> <a>#안녕하세요</a> <a>#맞팔</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-feed-footer">
+                        <div class="reply-wrap">
+                            <div class="reply-middle">
+                                <dl>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                    <dt>
+                                        <img src="resources/img/KakaoTalk_Photo_2020-12-19-23-39-15.jpg" />
+                                        <div class="reply-list">
+                                            <span>dasdasda</span>
+                                            <span>와 오창정 폼 미쳐따이</span>
+                                        </div>
+                                    </dt>
+                                </dl>
+                            </div>
+                            <div class="reply-bottom">
+                                <input type="text" placeholder="댓글을 입력하세요." />
+                                <button>답글</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal fade" id="shareTool" tabindex="-1" aria-labelledby="shareToolLabe" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="shareToolLabe">공유하기</h5>
+                        <form>
+                            <input type="search" class="friends-search" id="friends-search"
+                                placeholder="검색할 팔로워를 입력하세요." />
+                        </form>
+                    </div>
+                    <div class="modal-body">
+                        <div class="list-btn">
+                            <span class="followBtn focus-btn">팔로워</span>
+                            <span class="chatBtn">채팅방</span>
+                        </div>
+                        <div class="lists">
+                            <div class="follower-list">
+                                <div>
+                                    <dl>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="chatting-list">
+                                <div>
+                                    <dl>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                        <dt>
+                                            <img src="resources/img/karina2.jpeg" />
+                                            <span>karina_1211</span>
+                                            <input type="checkbox" />
+                                        </dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="share-close" data-bs-dismiss="modal">나가기</button>
+                        <button type="submit" class="share-add">공유하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>

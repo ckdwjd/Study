@@ -1,0 +1,22 @@
+package com.kh.model.vo;
+
+/*
+ * 
+ * VO(Value Object)
+ * DB 테이블의 한 행에 대한 데이터를 기록할 수 있는 저장용 객체
+ * 
+ */
+
+public class Member {
+	private int userNo;						//	USERNO
+	private String userId;					//	USERID
+	private String userPwd;					//	USERPWD
+	private String userName;//	USERNAME
+	private String gender;					//	GENDER
+	private int age;					//	AGE
+	private String email;					//	EMAIL
+	private String phone;					//	PHONE
+	private String address;					//	ADDRESS
+	private String hobby; //	HOBBY
+	private Date enrollDate;//	ENROLLDATE
+}

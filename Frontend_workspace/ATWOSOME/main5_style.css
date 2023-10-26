@@ -1,0 +1,204 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:'MARKPROBLACK';
+    src :url('fonts/MARKPROBLACK.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROHEAVY';
+    src :url('fonts/MARKPROHEAVY.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOLD';
+    src :url('fonts/MARKPROBOLD.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOOK';
+    src :url('fonts/MARKPROBOOK.woff')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Black';
+    src :url('fonts/NotoSansKR-Black.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+h1{
+    font-family:'MARKPROBLACK';
+    font-size: 96px;
+    font-weight: 900;
+}
+h2{
+    font-family:'NotoSansKR-Bold';
+    font-size: 24px;
+    font-weight: 700;
+}
+h3{
+    font-family:'NotoSansKR-Regular';
+    font-size: 18px;
+    font-weight: 400;
+}
+h4{
+    font-size: 20px;
+}
+div{
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 722px;
+    margin: auto;
+}
+#header{
+    width: 100%;
+    height: 100px;
+}
+#content5{
+    width: 100%;
+    height: 522px;
+    position: absolute;
+    z-index: 30;
+}
+#content5_1{
+    height: 30%;
+    text-align: center;
+    padding : 40px 0;
+}
+#content5_2{
+    height: 28%;
+    text-align: center;
+    padding: 40px 0;
+}
+#content5_3{
+    height: 20%;
+    text-align: center;
+}
+#content5_4{
+    height: 33%;
+    padding:22px 0;
+    text-align: center;
+}
+#btn1{
+    width: 15%;
+    height: 60%;
+    background-color: white;
+    border: 3px solid black;
+    transition: all;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}   
+#btn2{
+    width: 15%;
+    height: 60%;
+    background-color: white;
+    border: 3px solid black;
+    font-size: medium;
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+#content5 #btn1:hover {
+    background-color: black;
+    color: white;
+}
+#content5 #btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.image1{
+    width: 150px;
+    left:1550px;
+    animation-delay: 1s;
+    animation-name: ani1;
+    animation-duration: 40s;
+    animation-direction: normal;
+    transition: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image2{
+    width: 150px;
+    left: 1550px;
+    top: 200px;
+    animation-delay: 7s;
+    animation-name: ani2;
+    animation-duration: 40s;
+    animation-direction: normal;
+    transition: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image3{
+    width: 150px;
+    left: 1550px;
+    top: 100px;
+    animation-delay: 13s;
+    animation-name: ani3;
+    animation-duration: 40s;
+    animation-direction: normal;
+    transition: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image4{
+    width: 150px;
+    left: 1550px;
+    top: 400px;
+    animation-delay: 17s;
+    animation-name: ani4;
+    animation-duration: 40s;
+    animation-direction: normal;
+    transition: ease-in;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes ani1{
+    from{
+        left:1550px;
+    }
+    to{
+        left:-500px;
+    }
+}
+@keyframes ani2{
+    from{
+        display: block;
+        left:1550px;
+    }
+    to{
+        left:-500px;
+    }
+}
+@keyframes ani3{
+    from{
+        display: block;
+        left:1550px;
+    }
+    to{
+        left:-500px;
+    }
+}
+@keyframes ani4{
+    from{
+        display: block;
+        left:1550px;
+    }
+    to{
+        left:-500px;
+    }
+}

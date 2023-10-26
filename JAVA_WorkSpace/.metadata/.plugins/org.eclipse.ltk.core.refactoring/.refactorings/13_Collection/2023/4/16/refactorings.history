@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;13_Collection/src/com/kh/chap03_map&apos; to &apos;chap03_hashmap&apos;" description="Rename resource &apos;chap03_map&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/chap03_map" name="chap03_hashmap" stamp="1681803189025" updateReferences="true"/>
+</session>

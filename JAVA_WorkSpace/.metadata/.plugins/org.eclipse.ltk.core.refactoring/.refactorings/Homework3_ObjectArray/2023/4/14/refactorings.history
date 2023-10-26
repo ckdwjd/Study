@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Homework3_ObjectArray/src/com/kh/hw/member/view/MemberMEnu.java&apos; to &apos;MemberMenu.java&apos;" description="Rename resource &apos;MemberMEnu.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/hw/member/view/MemberMEnu.java" name="MemberMenu.java" stamp="1680611264829" updateReferences="true"/>
+</session>

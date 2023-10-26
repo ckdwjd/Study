@@ -1,0 +1,12 @@
+package com.kh.controller;
+
+/*
+ * Controller : View를 통해서 요청(request)한 기능을 처리 담당
+ * 				해당 메서드로 전달된 데이터들을 가공처리한 후 Dao메서드 호출 시 전달
+ * 				Dao로 부터 반환받은 결과에 따라 사용자가 보개돨 화면을 지정 => 응담(response)
+ */
+
+public class MemberController {
+
+	
+}

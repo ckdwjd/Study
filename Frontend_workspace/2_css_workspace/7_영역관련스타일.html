@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>영역관련스타일</title>
+    <style>
+        * {
+            /* 무조건 설정함 */
+            box-sizing: border-box;
+            /* 가로, 세로길이를 border까지 포함해서 지정한다는 의미. 기본값은(content-box) */
+        }
+
+        .test {
+            background-color: yellow;
+            border: 10px solid black;
+            /* div요소는 border영역까지를 의미 */
+            width: 100px;
+            height: 100px;
+            /* width와 height는 content영역의 크기를 의미 */
+        }
+
+        #test1 {
+            padding: 100px;
+        }
+
+        #test2 {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+
+        #test3 {
+            padding: 50px 20px 10px 0px;
+            /* 시계 방향(위, 오른쪽, 아래, 왼쪽) */
+        }
+
+        #test4 {
+            margin: 50px;
+        }
+
+        #test5 {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        #test6 {
+            margin: 50px 20px 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 요소 영역 : content + padding + border -->
+
+    <h1>여백 및 간격 관련 스타일</h1>
+
+    <h4>기준 div</h4>
+    <div class="test">기준 div</div>
+
+    <hr>
+
+    <h3>padding(여백)</h3>
+    <p>
+        내용 영역(content)과 테두리 영역(border)사이의 거리(여백)을 조정하는 스타일 속성
+    </p>
+
+    <div class="test" id="test1">컨텐츠 영역</div>
+    <p>padding : 100px;</p>
+
+    <div class="test" id="test2">컨텐츠 영역</div>
+    <p>padding-top:50px; : padding-left 50px;</p>
+
+    <div class="test" id="test3">컨텐츠 영역</div>
+    <p>padding: 50px 20px 10px 0px;</p>
+
+    <hr>
+
+    <h3>margin</h3>
+    <p>
+        타 요소들 간의 간격을 조정할 떄 사용(요소의 크기는 그대로)
+    </p>
+
+    <div id="test4" class="test">컨텐츠 영역</div>
+    <p>margin : 50px;</p>
+
+    <div id="test5" class="test">컨텐츠 영역</div>
+    <p>margin-top : 50px; margin-left: 50px;</p>
+
+    <div id="test6" class="test">컨텐츠 영역</div>
+    <p>margin : 50px 20px 10px 0px;</p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Noto Sans KR 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Thin.woff2") format("woff2"),url("../fonts/NotoSansKR-Thin.woff") format("woff"),url("../fonts/NotoSansKR-Thin.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Light.woff2") format("woff2"),url("../fonts/NotoSansKR-Light.woff") format("woff"),url("../fonts/NotoSansKR-Light.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),url("../fonts/NotoSansKR-Regular.woff") format("woff"),url("../fonts/NotoSansKR-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 500';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),url("../fonts/NotoSansKR-Medium.woff") format("woff"),url("../fonts/NotoSansKR-Medium.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),url("../fonts/NotoSansKR-Bold.woff") format("woff"),url("../fonts/NotoSansKR-Bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Black.woff2") format("woff2"),url("../fonts/NotoSansKR-Black.woff") format("woff"),url("../fonts/NotoSansKR-Black.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Mark Pro 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/MARKPROEXTRALIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/MARKPROLIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOOK.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 600';
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOLD.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/MARKPROHEAVY.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/MARKPROBLACK.woff") format("woff")
+}
+
+p {
+    font-weight: 900;
+    font-size: x-large;
+    font-family: 'Noto Sans KR 700';
+}
+
+.tag{
+    font-weight: 900;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans KR 500';
+}
+
+.tag>li{
+    list-style-type: square;
+    padding-left: 8px;
+}
+
+#tag1{
+    list-style-type: none;
+    color: #707070;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+#tag2{
+    color: #D50037;
+    text-decoration: none;
+}
+
+#mainmenu {
+    font-weight: 900;
+    font-size: 72px;
+}
+
+#body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#bodyside {
+    width: 20%;
+    height: 100%;
+}
+
+#bodymain {
+    width: 60%;
+    height: 100%;
+}
+
+#sepname {
+    width: 100%;
+    height: 10%;
+    font-size: 56px;
+    font-weight: 900;
+    margin-top: -4%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Mark Pro 900';
+}
+
+#sepnamelow{
+    font-weight: 900;
+    margin-top: 3%;
+    font-variant: small-caps;
+    font-size: 24px;
+    font-family: 'Mark Pro 700';
+}
+
+#sepcontent_1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    text-align: left;
+}
+
+/* ------------------------------------------------ */
+#sepcontent_2 {
+    width: 100%;
+    height: 15%;
+    padding-top: 5%;
+    text-align: left;
+}
+
+/* ------------------------------------------------ */
+#sepcontent_title {
+    width: 100%;
+    height: 10%;
+    font-weight: 900;
+    font-size: 32px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: left;
+    font-family: 'Noto Sans KR 700';
+}
+
+#sepcontent_content {
+    width: 100%;
+    height: 90%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Noto Sans KR 400';
+}
+
+#sepcontent_3{
+    width: 100%;
+    height: 25%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#sepcontent_3_list{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+
+#sepcontent_3_pic{
+    width: 50%;
+    height: 100%;
+}
+
+#sepcontent_3 ul{
+    font-size: 24px;
+    padding-left: 0;
+    font-weight: 900;
+    font-family: 'Noto Sans KR 400';
+}
+
+#sepcontent_3 li{
+    font-size: 18px;
+    padding-left: 0;
+    margin-top: 16px;
+    color: #707070;
+    font-family: 'Noto Sans KR 400';
+}
+
+#sepcontent_3_list>h2{
+    margin-bottom: 32px;
+}

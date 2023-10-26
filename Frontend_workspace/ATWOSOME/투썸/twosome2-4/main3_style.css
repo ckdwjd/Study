@@ -1,0 +1,113 @@
+@font-face{
+    font-family:'MARKPROBLACK';
+    src :url('fonts/MARKPROBLACK.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROHEAVY';
+    src :url('fonts/MARKPROHEAVY.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOLD';
+    src :url('fonts/MARKPROBOLD.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOOK';
+    src :url('fonts/MARKPROBOOK.woff')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Black';
+    src :url('fonts/NotoSansKR-Black.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+.wrap3 h1{
+    font-family:'NotoSansKR-Black';
+    font-size: 96px;
+    font-weight: 900;
+}
+.wrap3 h2{
+    font-family:'NotoSansKR-Black';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.wrap3 h3{
+    font-family:'NotoSansKR-Bold';
+    font-size: 24px;
+    font-weight: 600;
+}
+.wrap3 h4{
+    font-family: 'NotoSansKR-Regular';
+    font-size: 18px;
+    font-weight: 400;
+}
+.wrap3 #background{
+    background-image: url(resources/main3.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+}
+.wrap3 div{
+    box-sizing: border-box;
+}
+.wrap3{
+    width: 100%;
+    height: 722px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 100px;
+}
+#content3{
+    width: 100%;
+    height: 522px;
+    position: absolute;
+}
+#content3>div{
+    float: left;
+}
+#content3_1{
+    width: 18%;
+    height: 100%;
+}
+#content3_2{
+    width: 35%;
+    height: 100%;
+}
+#content3_2_1{
+    vertical-align: bottom;
+    position: absolute;
+    top: 60px;
+}
+#content3_2_2{
+    position: absolute;
+    top : 290px;
+ }
+#content3_2_3{
+    position: absolute;
+    top : 415px;
+}
+#content3_2_4{
+    width: 26%;
+    position: absolute;
+    top : 470px;
+}
+ 

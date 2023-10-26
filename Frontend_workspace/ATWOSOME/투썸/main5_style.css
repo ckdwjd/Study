@@ -1,0 +1,203 @@
+.wrap5 {
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding-top: 300px;
+    width: 100%;
+    height: 989px;
+    position: relative;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+
+@font-face{
+    font-family:'MARKPROBLACK';
+    src :url('fonts/MARKPROBLACK.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROHEAVY';
+    src :url('fonts/MARKPROHEAVY.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOLD';
+    src :url('fonts/MARKPROBOLD.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOOK';
+    src :url('fonts/MARKPROBOOK.woff')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Black';
+    src :url('fonts/NotoSansKR-Black.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+h1{
+    font-family:'MARKPROBLACK';
+    font-size: 96px;
+    font-weight: 900;
+}
+h2{
+    font-family:'NotoSansKR-Bold';
+    font-size: 24px;
+    font-weight: 700;
+}
+h3{
+    font-family:'NotoSansKR-Regular';
+    font-size: 18px;
+    font-weight: 400;
+}
+h4{
+    font-size: 20px;
+}
+div{
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height: 100px;
+}
+#content5{
+    width: 100%;
+    height: 522px;
+    position: absolute;
+    z-index: 30;
+}
+#content5_1{
+    height: 30%;
+    text-align: center;
+    padding : 110px 0;
+}
+#content5_2{
+    height: 28%;
+    text-align: center;
+    padding: 70px 0;
+}
+#content5_3{
+    height: 20%;
+    text-align: center;
+    padding: 30px 0;
+}
+#content5_4{
+    height: 33%;
+    padding-top: 65px;
+    text-align: center;
+}
+#btn1{
+    width: 12%;
+    height: 60%;
+    background-color: white;
+    border: 3px solid black;
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}   
+#btn2{
+    width: 12%;
+    height: 60%;
+    background-color: white;
+    border: 3px solid black;
+    font-size: medium;
+    transition: all;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+#content5 #btn1:hover {
+    background-color: black;
+    color: white;
+}
+#content5 #btn2:hover {
+    background-color: black;
+    color: white;
+}
+
+.image1{
+    width: 200px;
+    left:2020px;
+    top: 15%;
+    animation-name: ani1;
+    animation-duration: 60s;
+    animation-direction: normal;
+    transition: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image2{
+    width: 200px;
+    left: 2020px;
+    top: 72%;
+    animation-delay: 7s;
+    animation-name: ani2;
+    animation-duration: 60s;
+    animation-direction: normal;
+    transition: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image3{
+    width: 200px;
+    left: 2020px;
+    top: 25%;
+    animation-delay: 13s;
+    animation-name: ani3;
+    animation-duration: 60s;
+    animation-direction: normal;
+    transition: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+.image4{
+    width: 200px;
+    left: 2020px;
+    top: 45%;
+    animation-delay: 20s;
+    animation-name: ani4;
+    animation-duration: 60s;
+    animation-direction: normal;
+    transition: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+@keyframes ani1{
+    from{
+        left:2020px;
+    }
+    to{
+        left:-550px;
+    }
+}
+@keyframes ani2{
+    from{
+        left:2020px;
+    }
+    to{
+        left:-550px;
+    }
+}
+@keyframes ani3{
+    from{
+        left:2020px;
+    }
+    to{
+        left:-550px;
+    }
+}
+@keyframes ani4{
+    from{
+        left:2020px;
+    }
+    to{
+        left:-550px;
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;13_Collection/src/com/kh/chap01_list/part01_arrayList/run/Run.java&apos; to &apos;ListRun.java&apos;" description="Rename resource &apos;Run.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/chap01_list/part01_arrayList/run/Run.java" name="ListRun.java" stamp="1681383814592" updateReferences="true"/>
+</session>

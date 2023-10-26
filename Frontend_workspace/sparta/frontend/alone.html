@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    <title>스파르타 피디아</title>
+     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+
+            color: white;
+
+            width: 100%;
+            height: 200px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIEAwgMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBAUG/8QAJRABAQEAAgEEAgIDAQAAAAAAAAERAhIxAyFRYRNBIjJCcZEE/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwUEBv/EAB0RAQEBAQEAAwEBAAAAAAAAAAABERICITFBAxP/2gAMAwEAAhEDEQA/AP3eLjWLj2tfm2VXAVFJFRQFRIsa4pI1ErSqKy00vFmNRmtytxqMxqMukajcZjUjFbjUaiRqMukaipFjNbixSCKACvgYY6YY+7Xk454Y6YWLpjGGN4YmozIsXFwCKYuIaLEjUjLUpG4kjfGJXSLGoSNRh1iyNRI1IxXSLGokWI21FRpmtxYCo0AqNPjdTq78fTt8OnH/AM8vtX1X3jzp/K15OqY9fP0rx88dnzHLr7+yz3rPr+djj1W8LPMdelOp0zw5YY6dfc6rqcsYY31XqmpjEjUjWLiWtyJjUWRZGddJFiyDUZ1uEWDWI6QjUJGozW4RpIrNbUFFQXFRXL8HCyXjbE/F1/e/bU9e+M2fbHPnb/X2+mprNvj8S8svtOv2xys/cl+ws+o1HG+tZ/j+pjF4umHVqVzs1yvE6u0nzJV/HL4h0nG/Th1Orvy9KybjGHRfGOeLjphhpyzIsjWNzh83E1qeWMWRcanFNWRmRqRca6prpIiyLjWM66SMyNY1OKzizrUjMjU4tyLia3jng6YJq8vJ+K6zeNlx6PU7drN9nPq6T1XD15k+HLqvV16p1Xpnlz6nV1nC3xKv4uXwdHFcuMn7jvxzj/inH0r8yF42eeX/ABi3XSSxfUk5cf4vP+O2/P8Ap6J6U89pV9+M/jhLn0nrz181wno3N5WSGSf1y1vrbdp1a1nJ+OWXfHuuX7dOqziacuc4tTi3jU4prU8uc4tTi6TjF674TW54c5GurfS610Z1vhiRZGujU4yJqzyxI3JFX2Z1uRMiNZ9Arly4S+7PR26xcXUvmVw6HHjn613wyHScRx5X4mJtvl36yp+Pj8mpfNcUvDfEdrwkTp91ek4cutnmGO3X7Os+To4cOpkdusTIvSf5uXVet+HaSKnSzw49L8LmeXXFyfCavDlPqNyNL7JrUjItqaKBqUGosxkQ1oTsguqJsJVFCLiAIAqKgAVFAAZ+U/ZtUwMT3TGsUMYxrFU05ZwxoTVxnFxQ1ciSGKBiYKAzs+D2vhnSVcNaGdWAoiiAAAAKICrBFAAAABRDUANRRdNQA0QEZIo0kRqAigCAqAKIAAAoAAAAACACwQFWoAgAD//Z');
+            background-position: center;
+            background-size: cover;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding-top: 20px;
+        }
+
+        .mytitle > h6 {
+            margin-top: 10px;
+        }
+
+        .mytitle > div > p > button {
+            margin-top: 20px;
+
+            border-radius: 10px;
+
+            border: 1px solid black;
+        }
+
+        .mytitle > div > p > button:hover {
+            border : 2px solid black;
+        }
+
+        .mybtn {
+
+            width: 300px;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 5px;
+
+
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+
+        .mypost {
+            max-width: 500px;
+            width: 95%;
+
+            margin: 20px auto 0px auto;
+
+            box-shadow: 0px 0px 3px 0px gray;
+            padding: 20px;
+        }
+        .mypost > button {
+            margin-top: 15px;
+
+        .mybtn2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class = "mytitle">
+        <h1>나만의 홈페이지</h1>
+        <h6>안녕하세요 오창정입니다</h6>
+        <div>
+            <p>
+                <button>방명록</button>
+                <button>응원하기</button>
+            </p>
+        </div>
+    </div>
+        <div class = "mybtn">
+            <div class = "mybtn2">
+                I D : <input type="text"/>
+                PW : <input type="text"/>
+            </div>
+            <button>입력하기</button>
+        </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">닉네임</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                      style="height: 100px"></textarea>
+            <label for="floatingTextarea2">응원댓글</label>
+        </div>
+        <button type="button" class="btn btn-dark">응원 남기기</button>
+        </div>
+    </div>
+    <div class="wrap">
+        <div id="cards-box" class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어가지요.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어가지요.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어가지요.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://movie-phinf.pstatic.net/20210728_221/1627440327667GyoYj_JPEG/movie_image.jpg"
+                         class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">여기에 제목이 들어갑니다.</h5>
+                        <p class="card-text">여기에 내용이 들어가지요.</p>
+                        <p>⭐⭐⭐</p>
+                        <p class="mycomment">여기에 코멘트가 들어갑니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

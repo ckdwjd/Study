@@ -1,0 +1,361 @@
+String.prototype.replaceAll = function(str1, str2)
+{
+  var temp_str = this.trim();
+  temp_str = temp_str.replace(eval("/" + str1 + "/gi"), str2);
+  return temp_str;
+}
+
+/*****************************************************************************
+null or Empty 값 체크 반환.
+*****************************************************************************/
+function checkNull(strVal)	{
+	if(!strVal.trim()){
+		return true;
+	}
+	return false;
+}
+
+/*****************************************************************************
+입력된 값이 space를 포함한 공백인지 검사.(Trim시 null인지 체크와 동일)
+(공백: true)
+*****************************************************************************/
+function isEmpty(data) {
+   if(checkNull(data)) return true;
+
+   for ( var i = 0 ; i < data.length ; i++ ) {
+       if ( data.substring( i, i+1 ) != " " )
+           return false;
+   }
+
+   return true;
+}
+
+
+/** E-Mail 포맷 체크  */
+function chkStrEmail(strVal) {
+   //var format = /^((\w|[\-\.])+)@((\w|[\-\.])+)\.([A-Za-z]+)$/;
+   var pattern = /^[_a-zA-Z0-9-\.]+@[\.a-zA-Z0-9-]+\.[a-zA-Z]+$/;
+   return (pattern.test(strVal)) ? true : false;
+   //if (strVal.search(format) == -1)    {
+   //   return true;   //틀린포맷형식
+   //}
+   //return false;
+}   
+
+
+
+//3자리마다 콤마 찍기
+function add_comma(vStr){
+	
+	var varNum = /^[/,/,0,1,2,3,4,5,6,7,8,9,/]/;
+	var varValue1 = "";
+	var varValue2 = "";
+	for(i=0; i<vStr.value.length;i++){
+		if(vStr.value.charAt(vStr.value.length - i - 1) !=","){
+			varValue2 = vStr.value.charAt(vStr.value.length -i -1) + varValue2;
+		}
+	}
+	
+	for(i=0; i<varValue2.length;i++){
+		if(i > 0 && (i%3) == 0){
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + "," + varValue1;
+		}else{
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + varValue1;
+		}
+	}
+	vStr.value = varValue1;
+	
+}
+
+function add_comma_ext(vStr){
+	console.log(typeof vStr);
+	if(typeof vStr == "number"){
+		vStr += "";
+	}
+	var varNum = /^[/,/,0,1,2,3,4,5,6,7,8,9,/]/;
+	var varValue1 = "";
+	var varValue2 = "";
+	for(i=0; i<vStr.length;i++){
+		if(vStr.charAt(vStr.length - i - 1) !=","){
+			varValue2 = vStr.charAt(vStr.length -i -1) + varValue2;
+		}
+	}
+	
+	for(i=0; i<varValue2.length;i++){
+		if(i > 0 && (i%3) == 0){
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + "," + varValue1;
+		}else{
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + varValue1;
+		}
+	}
+	
+	return varValue1;
+}
+
+//3자리마다 콤마 찍기
+function add_dot(vStr){
+	
+	var varNum = /^[/,/,0,1,2,3,4,5,6,7,8,9,/]/;
+	var varValue1 = "";
+	var varValue2 = "";
+	for(i=0; i<vStr.length;i++){
+		if(vStr.charAt(vStr.length - i - 1) !=","){
+			varValue2 = vStr.charAt(vStr.length -i -1) + varValue2;
+		}
+	}
+	
+	for(i=0; i<varValue2.length;i++){
+		if(i > 0 && (i%3) == 0){
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + "," + varValue1;
+		}else{
+			varValue1 = varValue2.charAt(varValue2.length -i -1) + varValue1;
+		}
+	}
+	
+
+	return varValue1;
+	
+}
+
+//숫자와 도트(.)만 허용
+function only_dotnum(){
+	var eCode = event.keyCode;
+	var result = true;
+	
+	if( ! (eCode == 44 || (( eCode >= 48 && eCode <= 57)) ) ){
+		result = false;
+	}else{
+		result = true;	
+	}
+
+	
+	
+	return result;
+}
+
+
+//숫자만 허용
+function only_num(){
+	var eCode = event.keyCode;
+	var result = true;
+	
+	if( ! ( ( eCode >= 48 && eCode <= 57) )  ){
+		result = false;
+	}else{
+		result = true;	
+	}
+
+	
+	
+	return result;
+}
+
+
+/*****************************************************************************
+특정문자의 공백전환(예: 2020/11/24  - 20201124)
+sStr : string 값
+sSrc : 공백으로 전환되는 값
+*****************************************************************************/
+function trimNum(sStr) {
+   var sNum    	=	"0123456789";
+   var sResult 	= 	"";
+
+   for (var i = 0; i < sStr.length; i++ ) {
+
+       if( -1 != sNum.indexOf(sStr.charAt(i)) ) {
+           sResult = sResult + sStr.charAt(i);
+       }
+   }
+   return sResult;
+}
+
+
+function randomNum(max){
+	
+	return Math.floor((Math.random()*max)+1); 
+}
+
+
+/*****************************************************************************
+title 지정 및 header 화면 지정 
+str1 : title 
+str2 : header title
+*****************************************************************************/
+function setHeaderTitle(str1, str2) {
+	
+	if(!isEmpty(str1)) {
+		$("head > title").text($("head > title").text() + str1);
+	}
+	
+	if(!isEmpty(str2)) {
+		$("body > div> header > div >  h1").text(str2);
+	}
+}
+
+
+/*****************************************************************************
+(공통) 팝업Cookie값 가져오기
+*****************************************************************************/
+function getPopCookie( popId ) {
+   var popIdOfCookie = popId + "=";
+   var x = 0;
+   while ( x <= document.cookie.length ) {  
+       var y = (x+popIdOfCookie.length);  
+       if ( document.cookie.substring( x, y ) == popIdOfCookie ) {  
+           if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )  
+               endOfCookie = document.cookie.length;  
+           return unescape( document.cookie.substring( y, endOfCookie ) );  
+       }  
+       x = document.cookie.indexOf( " ", x ) + 1;  
+       if ( x == 0 )  
+           break;  
+   }
+   return "";
+}
+
+/*****************************************************************************
+(공통) 팝업Cookie값 Setting하기 (오늘 그만보기)
+ @ params  lPopupId : 레이어팝업 id ("layer_pop" + id)
+           value    : 쿠키값
+           expiredays : 기간   
+*****************************************************************************/
+function lfn_setCookieT( lPopupId, value, expiredays ) {
+	var todayDate = new Date();   
+	todayDate = new Date(parseInt(todayDate.getTime() / 86400000) * 86400000 + 54000000);  
+	
+	if ( todayDate > new Date() ) {  
+		expiredays = expiredays - 1;  
+	}
+	todayDate.setDate( todayDate.getDate() + expiredays );   
+	document.cookie = lPopupId + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+	
+	$("#layer_pop"+lPopupId).removeClass("is-active");
+}
+
+/*****************************************************************************
+(공통) Cookie값 Setting하기
+ @ params  name   : 쿠키명
+           value  : 쿠키값
+           expire : 기간 
+*****************************************************************************/
+function setCookie(name, value, expire) {
+	var expire_date = new Date(expire);
+	document.cookie = name + "=" + escape(value) + "; path=/; expires=" + expire_date.toGMTString();
+}
+
+//20180710@SOJSJ 특수문자 검사 (<, >, \, {, }, ")
+function spStrCheck(obj) {
+	var sp = /<|>|\\|\{|\}|\"/g;
+	var str = obj.val();
+	if (sp.test(str)) {
+		alert("특정 문자를 입력 할 수 없습니다.");
+		obj.val(obj.val().replace(sp, ''));
+	}
+}
+
+/* *********************************************
+ * 체크박스 
+ * 전체체크, 체크해제
+ * @param className    전체선택/해제의 className
+ * @param checkBoxName 전체선택/해제할 체크박스 이름
+ * */
+function setCheckAll(obj, checkBoxName) {
+	if( obj.is(':checked') ){
+        $("input[name="+checkBoxName+"]").prop("checked", true);
+      }else{
+        obj.prop("checked", false);
+      }
+}
+
+
+/**********************************************************
+ * 공백문자없애기
+ * @param str
+ * @returns
+ ***********************************************************/
+function trimAll(str) {
+	return str.replace(/\s/gi, "")
+}
+
+
+
+/*****************************************************************************
+(공통) ajax 통신용 공통 스크립트 (url, postData)
+*****************************************************************************/
+
+function request_transaction_post(url, postData) {
+	var response_data = null;
+	$.ajax({
+		url : url,
+		type : 'post',
+		dataType : 'json',
+		data : postData,
+		async : false, 
+		success : function(data) {
+			response_data = data;
+			console.log("response_data1 : " + response_data);
+		}
+	});
+	console.log("response_data2 : " + response_data);
+	return response_data;
+}
+
+/*****************************************************************************
+(공통) ajax 통신용 공통 스크립트 (url, postData, callbackFnc)
+*****************************************************************************/
+function request_transaction(url, postData, callbackFnc) {
+	$.ajax({
+		url : url,
+		type : 'post',
+		dataType : 'json',		
+		data : postData,
+		async : false, 
+		success : function(data) {
+			callbackFnc(data);
+		}
+	});
+}
+
+/*****************************************************************************
+(공통) ajax 통신용 공통 스크립트 (url, postData, callbackFnc,callbackErrorFnc)
+*****************************************************************************/
+function request_transaction(url, postData, callbackFnc, callbackErrorFnc) {
+	$.ajax({
+		url : url,
+		type : 'post',
+		dataType : 'json',		
+		data : postData,
+		async : false, 
+		success : function(data) {
+			callbackFnc(data);
+		},
+		error : function(e){
+			callbackErrorFnc(e);
+		}
+	});
+}
+
+
+/*****************************************************************************
+(공통) 헤더 뒤로가기 버튼 처리
+*****************************************************************************/
+$(document).ready(function(){
+	$('.btn_history_back').click(function(){
+		window.history.back();
+	});
+});
+
+
+function goSocial(gubun) {
+	var goUrl = "";
+	
+	if("face" == gubun) {
+		goUrl = "https://ko-kr.facebook.com/ATWOSOMEPLACE/";
+	}else if("instar" == gubun) {
+		goUrl = "https://instagram.com/atwosomeplace_official?igshid=1vu3rl2z5ps7n";
+	}else if("youtube" == gubun) {
+		goUrl = "https://www.youtube.com/channel/UCDjdk0ufvcvV08hAm_vF06Q";
+	}
+	
+	window.open(goUrl);
+};

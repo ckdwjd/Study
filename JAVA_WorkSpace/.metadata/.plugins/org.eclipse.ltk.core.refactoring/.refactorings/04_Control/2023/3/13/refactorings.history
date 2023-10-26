@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;04_Control/src/com/kh/chapter03/branch/B_continue.java&apos; to &apos;B_Continue.java&apos;" description="Rename resource &apos;B_continue.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/kh/chapter03/branch/B_continue.java" name="B_Continue.java" stamp="1680003560946" updateReferences="true"/>
+</session>

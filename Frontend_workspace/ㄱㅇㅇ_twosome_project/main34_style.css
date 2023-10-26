@@ -1,0 +1,383 @@
+@font-face{
+    font-family:'MARKPROBLACK';
+    src :url('fonts/MARKPROBLACK.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROHEAVY';
+    src :url('fonts/MARKPROHEAVY.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOLD';
+    src :url('fonts/MARKPROBOLD.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOOK';
+    src :url('fonts/MARKPROBOOK.woff')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Black';
+    src :url('fonts/NotoSansKR-Black.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+.wrap3 h1{
+    font-family:'NotoSansKR-Black';
+    font-size: 96px;
+    font-weight: 900;
+}
+.wrap3 h2{
+    font-family:'NotoSansKR-Black';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+.wrap3 h3{
+    font-family:'NotoSansKR-Bold';
+    font-size: 24px;
+    font-weight: 600;
+}
+.wrap3 h4{
+    font-family: 'NotoSansKR-Regular';
+    font-size: 18px;
+    font-weight: 400;
+}
+.wrap3 #background{
+    background-image: url(resources/main3.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+}
+.wrap3 div{
+    box-sizing: border-box;
+}
+.wrap3{
+    width: 100%;
+    height: 989px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.wrap3 #header{
+    width: 100%;
+    height: 100px;
+}
+#content3{
+    width: 100%;
+    height: 522px;
+    position: absolute;
+}
+#content3>div{
+    float: left;
+}
+#content3_1{
+    width: 18%;
+    height: 100%;
+}
+#content3_2{
+    width: 35%;
+    height: 100%;
+}
+#content3_2_1{
+    vertical-align: bottom;
+    position: absolute;
+    top: 60px;
+}
+#content3_2_2{
+    position: absolute;
+    top : 290px;
+}
+#content3_2_3{
+    position: absolute;
+    top : 415px;
+}
+#content3_2_4{
+    width: 26%;
+    position: absolute;
+    top : 470px;
+}
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+/* ========================================================================================== */
+.wrap4 *{
+    font-family:'MARKPROBLACK ';
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+}
+@font-face{
+    font-family:'MARKPROBLACK';
+    src :url('fonts/MARKPROBLACK.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROHEAVY';
+    src :url('fonts/MARKPROHEAVY.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOLD';
+    src :url('fonts/MARKPROBOLD.woff')format('woff');
+}
+@font-face{
+    font-family:'MARKPROBOOK';
+    src :url('fonts/MARKPROBOOK.woff')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Black';
+    src :url('fonts/NotoSansKR-Black.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+.wrap4 {
+    position: relative;
+    height: 989px;
+    /* border: 1px solid black; */
+}
+.wrap4 h1{
+    font-family:'MARKPROBLACK';
+    font-size: 96px;
+    font-weight: 800px;
+    line-height: 95px;
+}
+.wrap4 h3{
+    font-family: 'NotoSansKR-Bold';
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.wrap4 h4{
+    font-family:'NotoSansKR-Regular';   
+    font-size: 17px;
+    font-weight: 500;
+}
+.wrap4 h5{
+    font-size: 16px;
+    color: white;
+}
+.wrap4 h6{
+    font-size: 16px;
+    color: grey;
+    padding: 0;
+}
+.wrap4 div{
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height: 100px;
+}
+.wrap4 #content4{
+    width: 100%;
+    height: 590px;
+}
+.wrap4 #content4>div{
+    float: left;
+    height: 100%;
+}
+.wrap4 #content4_1{
+    width: 18%;
+}
+.wrap4 #content4_2{
+    width: 19%;
+}
+.wrap4 #content4_2>div{
+    height: 50%;
+}
+.wrap4 #content4_2_1>h1{
+    position: absolute;
+    z-index: 100;
+    top : 200px
+}
+.wrap4 #content4_3{
+    width: 41%;
+}
+.wrap4 #content4_3>img{
+    padding-top: 30px;
+    width: 92%;
+}
+#content4_3 .slidebox {
+    max-width:552px;
+    margin:250px -80px auto;
+    position:relative;
+}
+#content4_3 .slidebox .slidelist4 {
+    position:relative;
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+    padding : 0;
+}
+#content4_3 .slidebox .slidelist4 .slideitem4 {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    background-color:#fff;width:100%;
+    transition:all 1s;
+}
+#content4_3 .slidebox .slidelist4 .slideitem4 > a {
+    display:block;
+    width:auto;
+    position:relative;
+}
+#content4_3 .slidebox .slidelist4 .slideitem4 > a img {
+    max-width:100%;
+}
+#content4_3 .slide-control4{
+    width: 312px;
+    height: 56px;
+    left: 604px;
+    background-color: black;
+    position: absolute;
+    z-index: 40;
+    margin-left:17px;
+    bottom : 0px;
+}
+#content4_3 .slidebox .slide-control4 [class*="control"] label {
+    position:absolute;
+    z-index:5;
+    top:100%;
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+}
+#content4_3 .slidebox .slide-control4 [class*="control"] label.prev {
+    position: absolute;
+    top:5px;
+    background:rgb(0, 0, 0) url('resources/ico_arrow_left.svg') center center / 50% no-repeat;
+}
+#content4_3 .slidebox .slide-control4 [class*="control"] label.next {
+    position: absolute;
+    right:1px;
+    top:4px;
+    background:rgb(0, 0, 0) url('resources/ico_arrow_right.svg') center center / 50% no-repeat;
+}
+#content4_3 .slidebox .slide-control4 .control01>div{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:15px
+}
+#content4_3 .slidebox .slide-control4 .control01>img{
+    position: absolute;
+    bottom: 280px;
+}
+#content4_3 .slidebox .slide-control4 .control01>span{
+    position: absolute;
+    bottom: 130px;
+}
+#content4_3 .slidebox .slide-control4 .control02>div{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:15px
+}
+#content4_3 .slidebox .slide-control4 .control02>img{
+    position: absolute;
+    bottom: 280px;
+}
+#content4_3 .slidebox .slide-control4 .control02>span{
+    position: absolute;
+    bottom: 130px;
+}
+#content4_3 .slidebox .slide-control4 .control03>div{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:15px
+}
+#content4_3 .slidebox .slide-control4 .control03>img{
+    position: absolute;
+    bottom: 280px;
+}
+#content4_3 .slidebox .slide-control4 .control03>span{
+    position: absolute;
+    bottom: 90px;
+}
+#content4_3 .slidebox .slide-control4 .control04>div{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:15px
+}
+#content4_3 .slidebox .slide-control4 .control04>img{
+    position: absolute;
+    bottom: 280px;
+}
+#content4_3 .slidebox .slide-control4 .control04>span{
+    position: absolute;
+    bottom: 130px;
+}
+#content4_3 [name="slide"] {
+    display:none;
+}
+
+#content4_3 #slide01:checked ~ .slidelist4 .slideitem4 {
+    left:0;
+}
+#content4_3 #slide02:checked ~ .slidelist4 .slideitem4 {
+    left:-100%;
+}
+#content4_3 #slide03:checked ~ .slidelist4 .slideitem4 {
+    left:-200%;
+}
+#content4_3 #slide04:checked ~ .slidelist4 .slideitem4 {
+    left:-300%;
+}
+
+#content4_3 .slide-control4 [class*="control"] {
+    display:none;
+}
+#content4_3 #slide01:checked ~ .slide-control4 .control01 {
+    display:block;
+}
+#content4_3 #slide02:checked ~ .slide-control4 .control02 {
+    display:block;
+}
+#content4_3 #slide03:checked ~ .slide-control4 .control03 {
+    display:block;
+}
+#content4_3 #slide04:checked ~ .slide-control4 .control04 {
+    display:block;
+}

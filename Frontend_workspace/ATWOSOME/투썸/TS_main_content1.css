@@ -1,0 +1,101 @@
+.content1 {
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 70px; */
+    /* border: 1px solid black; */
+}
+
+.section input[id*="slide"] {
+    display: none;
+}
+
+.ctn1-wrap1{
+    height: 989px;
+    background-image: url("resources/Main_ctn1_img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ctn1-wrap2{
+    height: 968px;
+    background-image: url("resources/Main_ctn1_img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section .ctn1-slidewrap {
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+}
+
+.section .ctn1-slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    padding: 0;
+}
+
+.section .ctn1-slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+    position: relative;
+}
+
+.section .ctn1-slidelist > li > a{
+    display: block;
+}
+
+.section .ctn1-slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 91.2%;
+    transform: translateY(-50%);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.section .ctn1-slidelist .ctn1-left {
+    z-index: 20;
+    left: 41%;
+    background: url('resources/ico_arrow_left.svg') center center / 100% no-repeat;
+    
+}
+
+.section .ctn1-slidelist .ctn1-right {
+    z-index: 20;
+    right: 46%;
+    background: url('resources/ico_arrow_right.svg') center center / 100% no-repeat;
+}
+
+.section .ctn1-slidelist span {
+    position: absolute;
+    z-index: 15;
+    left: 40%;
+    top: 88.5%;
+    width: 290px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.687);
+}
+
+.section .ctn1-slidelist a > p {
+    position: absolute;
+    z-index: 20;
+    top: 88%;
+    left: 46.5%;
+    color: rgb(150, 150, 150);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section [id="ctn1-slide01"]:checked ~ .ctn1-slidewrap .ctn1-slidelist > li {
+    transform: translateX(0%);
+}
+
+.section [id="ctn1-slide02"]:checked ~ .ctn1-slidewrap .ctn1-slidelist > li {
+    transform: translateX(-100%);
+}

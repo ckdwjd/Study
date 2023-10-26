@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'Noto Sans KR 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Thin.woff2") format("woff2"),url("../fonts/NotoSansKR-Thin.woff") format("woff"),url("../fonts/NotoSansKR-Thin.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Light.woff2") format("woff2"),url("../fonts/NotoSansKR-Light.woff") format("woff"),url("../fonts/NotoSansKR-Light.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"),url("../fonts/NotoSansKR-Regular.woff") format("woff"),url("../fonts/NotoSansKR-Regular.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 500';
+    font-weight: 500;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"),url("../fonts/NotoSansKR-Medium.woff") format("woff"),url("../fonts/NotoSansKR-Medium.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"),url("../fonts/NotoSansKR-Bold.woff") format("woff"),url("../fonts/NotoSansKR-Bold.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Noto Sans KR 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/NotoSansKR-Black.woff2") format("woff2"),url("../fonts/NotoSansKR-Black.woff") format("woff"),url("../fonts/NotoSansKR-Black.otf") format("opentype")
+}
+
+@font-face {
+    font-family: 'Mark Pro 100';
+    font-weight: 100;
+    font-style: normal;
+    src: url("../fonts/MARKPROEXTRALIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 300';
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/MARKPROLIGHT.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 400';
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOOK.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 600';
+    font-weight: 600;
+    font-style: normal;
+    src: url("../fonts/MARKPROBOLD.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 700';
+    font-weight: 700;
+    font-style: normal;
+    src: url("../fonts/MARKPROHEAVY.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'Mark Pro 900';
+    font-weight: 900;
+    font-style: normal;
+    src: url("../fonts/MARKPROBLACK.woff") format("woff")
+}
+/* ===== 네비바 전체 ===== */
+*{
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    /* background-color: black; */
+    position: relative;
+}
+
+/* ====== 네비바 컨텐츠 ===== */
+
+#header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    text-align: center;
+    color: white;
+    padding: 10px 0px 0px 15px;
+    /* border: 1px solid black; */
+    background-color: rgba(0, 0, 0, 0.832);
+    transition-property:all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    position: fixed;
+}
+
+/* ===== 투썸 로고 ===== */
+
+#logo {
+    width: 300px;
+    height: 30px;
+    background-image: url("../logo/logo_white.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 22px 0px 0px 20px;
+}
+
+/* ===== 네비 메뉴 ===== */
+
+#menu-wrap {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+#header ul, li {
+    list-style: none;
+}
+
+#menu {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 28px;
+    padding-left: 20px;
+}
+#menu>li{
+    position: relative;
+    font-family: 'Noto Sans KR 500';
+
+}
+
+#menu>li>a {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.semi-list {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    width: 155%;
+    left: 0;
+}
+
+.semi-list li{
+    padding: 0;
+    text-align: left;
+}
+
+.semi-list>li>a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Noto Sans KR 500';
+    color: black;
+}
+
+.semi-list>li ul{
+    padding: 0;
+    color: gray;
+    text-align: left;
+    font-family: 'Noto Sans KR 500';
+}
+
+/* ===== 메뉴 기능구현 ===== */
+
+#header:hover {
+    height: 380px;
+    background-color: white;
+    color: black;
+}
+
+#header:hover #logo{
+    background-image: url("../logo/logo_black.svg");
+}
+
+#header:hover .btn-lang {
+    color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    font-family: 'Noto Sans KR 500';
+}
+
+#header:hover .btn-allmenu {
+    border: 0px solid transparent;
+    background-image: url("../logo/ico_24_allmenu_black.svg");
+}
+
+#header:hover .semi-list {
+    display: inline-block;
+    font-family: 'Noto Sans KR 700';
+    /* color:black; */
+}
+
+/* ===== 네비바 언어 ===== */
+
+.btn-lang{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin: 20px 50px 0px 0px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Noto Sans KR 500';
+}
+
+.btn-allmenu {
+    width: 30px;
+    height: 30px;
+    margin: 20px 40px 0px 10px;
+    border: 0px solid transparent;
+    background-color: transparent;
+    background-image:url("../logo/ico_24_allmenu_white.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+

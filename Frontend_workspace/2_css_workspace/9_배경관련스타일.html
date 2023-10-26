@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>배경관련스타일</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        #div-bg {
+            background-color: white;
+            border: 5px solid black;
+            padding: 20px;
+            width: 50%;
+            /* div의 content의 가로길이는 부모 요소의 50%만큼 지정 */
+            box-sizing: border-box;
+            /* 가로길이를 border까지 포함해서 지정 */
+        }
+
+        .div-test {
+            margin: 30px;
+            border: 10px dashed;
+            padding: 20px;
+            background-color: yellow;
+            /* 배경색이 border까지 확장되어있음을 확인 */
+        }
+
+        #div1 {
+            background-clip: border-box;
+        }
+
+        #div2 {
+            background-clip: padding-box;
+        }
+
+        #div3 {
+            background-clip: content-box;
+        }
+
+        /*
+            background-clip : 배경을 적용시키고자 하는 범위를 지정할 때 사용
+                    기본값 : border-box
+         */
+        #bg-img {
+            border: 1px solid black;
+            width: 70%;
+            height: 800px;
+            background-image: url("resources/image/bono.jpg");
+            background-repeat: no-repeat;
+            /* 이미지들이 세로로만 반복 */
+            background-size: cover;
+            /* 가로세로 상관없이 하나가 가득찰 때까지 크기를 맞춤 */
+            background-position: 100%;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>배경 관련 스타일(background~)</h1>
+
+    <h3>bakcground-color : 배경색을 지정하고자 할 때 사용</h3>
+    <div id="div-bg">
+        찬미를 천자만홍이 공자는 얼음과 가는 관현악이며, 창공에 청춘을 그들의 그리하였는가? 작고 그들의 있는 뿐이다. 거선의 피가 위하여서, 소리다.이것은 가슴이 할지라도 있는 것이다. 청춘의 현저하게
+        속잎나고, 우리의 것은 그들의 뜨고, 있는가? 놀이 있으며, 때까지 것은 따뜻한 착목한는 뜨고, 불러 가는 보라. 황금시대를 되는 찾아다녀도, 구할 싸인 품으며, 황금시대다. 아니한 가지에 굳세게
+        원질이 말이다. 고동을 원대하고, 그들은 청춘의 자신과 현저하게 뿐이다. 피가 기쁘며, 듣기만 싹이 주는 옷을 풀이 부패뿐이다.
+    </div>
+
+    <div id="div1" class="div-test">
+        찬미를 천자만홍이 공자는 얼음과 가는 관현악이며, 창공에 청춘을 그들의 그리하였는가? 작고 그들의 있는 뿐이다. 거선의 피가 위하여서, 소리다.이것은 가슴이 할지라도 있는 것이다. 청춘의 현저하게
+        속잎나고, 우리의 것은 그들의 뜨고, 있는가? 놀이 있으며, 때까지 것은 따뜻한 착목한는 뜨고, 불러 가는 보라. 황금시대를 되는 찾아다녀도, 구할 싸인 품으며, 황금시대다. 아니한 가지에 굳세게
+        원질이 말이다. 고동을 원대하고, 그들은 청춘의 자신과 현저하게 뿐이다. 피가 기쁘며, 듣기만 싹이 주는 옷을 풀이 부패뿐이다.
+    </div>
+    <div id="div2" class="div-test">
+        찬미를 천자만홍이 공자는 얼음과 가는 관현악이며, 창공에 청춘을 그들의 그리하였는가? 작고 그들의 있는 뿐이다. 거선의 피가 위하여서, 소리다.이것은 가슴이 할지라도 있는 것이다. 청춘의 현저하게
+        속잎나고, 우리의 것은 그들의 뜨고, 있는가? 놀이 있으며, 때까지 것은 따뜻한 착목한는 뜨고, 불러 가는 보라. 황금시대를 되는 찾아다녀도, 구할 싸인 품으며, 황금시대다. 아니한 가지에 굳세게
+        원질이 말이다. 고동을 원대하고, 그들은 청춘의 자신과 현저하게 뿐이다. 피가 기쁘며, 듣기만 싹이 주는 옷을 풀이 부패뿐이다.
+    </div>
+    <div id="div3" class="div-test">
+        찬미를 천자만홍이 공자는 얼음과 가는 관현악이며, 창공에 청춘을 그들의 그리하였는가? 작고 그들의 있는 뿐이다. 거선의 피가 위하여서, 소리다.이것은 가슴이 할지라도 있는 것이다. 청춘의 현저하게
+        속잎나고, 우리의 것은 그들의 뜨고, 있는가? 놀이 있으며, 때까지 것은 따뜻한 착목한는 뜨고, 불러 가는 보라. 황금시대를 되는 찾아다녀도, 구할 싸인 품으며, 황금시대다. 아니한 가지에 굳세게
+        원질이 말이다. 고동을 원대하고, 그들은 청춘의 자신과 현저하게 뿐이다. 피가 기쁘며, 듣기만 싹이 주는 옷을 풀이 부패뿐이다.
+    </div>
+
+    <hr>
+
+    <h3>배경 이미지 테스트</h3>
+    <pre>
+        선택자{
+            background-image:url("이미지경로");
+            background-repeat:repeat/repeat-x/repeat-y/no-repeat;
+            background-size: auto/contain/cover/px;
+            background-position: 좌/우/가운데 중1 위/아래/가운데 중1/px px/%;
+            background-attachment: scroll/fixed;
+        }
+    </pre>
+
+    <div id="bg-img">이미지</div>
+</body>
+
+</html>

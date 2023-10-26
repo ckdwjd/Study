@@ -1,0 +1,44 @@
+package com.kh.common;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class JDBCTemplate {
+	
+	/*
+	 * JDBC 과정 중 반복적으로 쓰이는 구문들을 각각의 메서드로 정의해둘 곳
+	 * "재사용" 목적으로 공통 템플릿 작업을 진행
+	 * 
+	 * 클래스에서의 모든 메서드는 STATIC메서드로 만듬
+	 *  
+	 */
+
+	// 공통부분 뽑아내기
+	// 1. DB와 접속된 Connection 객체 생성 후 반환 메서드
+	public static Connection getConnection() {
+		
+		// Connection 객체를 담을 그릇 생성
+		Connection conn = null;
+		
+		try {
+			// 연결시키기 => 1,2번 과정 진행
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe",
+					"JDBC","JDBC");
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// Connection 객체 반환
+		return conn;
+	}
+	
+	
+	
+}

@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'KakaoBigRegular';
+    src: url(fonts/KakaoBigRegular.woff2) format(truetype);
+}
+
+
+* {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    /* border-bottom: 1px solid lightgray; */
+    position: fixed;
+    z-index: 10;
+    font-weight: 800;
+}
+
+/* .header> * {
+    background-color: white;
+} */
+
+
+.header-wrap {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.heaer-wrap * {
+    background-color: white;
+}
+
+.header-container {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 20%;
+    height: 100%;
+}
+
+#header-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.header-menu {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.header-menuList {
+    width: 70%;
+    height: 100%;
+}
+
+.menuList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuList dt {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+.menuList dt a {
+    display: block;
+    color: #666666;
+    padding: 35px;
+    text-decoration: none;
+}
+
+.menuList dt a:hover {
+    color: black !important;
+}
+
+.menuList dt:hover>.sub-menu {
+    display: block;
+    box-shadow: 1px 1px 10px 1px lightgray;
+    border-radius: 10px;
+    width: max-content;
+    margin-top: 20px;
+    padding: 25px;
+}
+
+.menuList dt:hover>.sub-menuBridge {
+    display: block;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+.header-covid {
+    cursor: pointer;
+}
+
+.sub-menuBridge {
+    display: none;
+    position: absolute;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: fit-content;
+}
+
+.sub-menu dd {
+    width: 100%;
+}
+
+.sub-menu dd a {
+    padding: 15px
+}
+
+.sub-menu dd a:hover {
+    color: black !important;
+}
+
+
+.header-covid {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-covid>span {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    font-family: 'KakaoBigRegular';
+    display: flex;
+    align-items: center;
+}

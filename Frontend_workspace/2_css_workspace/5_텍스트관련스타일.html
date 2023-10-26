@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>텍스트 관련 스타일</title>
+</head>
+<style>
+    #c {
+        color: red;
+        color: #23af86;
+        color: rgb(0, 255, 150);
+        /* 최댓값 255 */
+        color: rgba(0, 255, 142, 0.4);
+        /* a => 투명도를 의미(0으로 갈수록 희미해짐) */
+        color: hsl(200, 50%, 50%);
+        /* h : (0~360), 채도, 명도, 투명도*  */
+    }
+
+    #td1 {
+        text-decoration: underline;
+    }
+
+    #td2 {
+        text-decoration: line-through;
+    }
+
+    #td3 {
+        text-decoration: overline;
+    }
+
+    #td4 {
+        text-decoration: none;
+        color: black;
+    }
+
+    .shadow {
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    #ts1 {
+        color: orangered;
+        text-shadow: 5px 5px 5px yellow;
+    }
+
+    #ts2 {
+        color: white;
+        text-shadow: 0px 0px 10px black;
+    }
+
+    #ts3 {
+        text-shadow: 0px 0px 4px gray, 0px -5px 8px orange,
+            0px -22px 19px orangered;
+    }
+</style>
+
+<body>
+    <h1>텍스트 관련 스타일(text~)</h1>
+
+    <h3>color : 텍스트의 색상을 지정</h3>
+    <pre id="c">
+        선택자 {
+            color : 색상명/16진수/rgb(x,x,x)/rgba(x,x,x,x)/hsl(x,x,x)/hsla(x,x,x,x)
+        }
+    </pre>
+
+    <hr />
+
+    <h3>text-decoration : 텍스트에 줄을 긋거나 없앨 때 사용</h3>
+    <pre>
+        선택자 {
+        text-decoration : none/underline/overline/line-through;
+        }
+    </pre>
+
+    <ul>
+        <li id="td1">underline : 텍스트 영역 아래에 줄 긋기</li>
+        <li id="td2">line-through : 텍스트 영역 가운데에 줄 긋기</li>
+        <li id="td3">overline : 텍스트 영역 위에 줄 긋기</li>
+    </ul>
+
+
+    <a href="https://www.naver.com" id="td4">네이버로 가자</a>
+
+    <h3>text-tranform : 영문 텍스트의 대소문자 변환 시 사용</h3>
+    <pre>
+        선택자{
+            text-transform : uppercase/lowercase/capitalize;
+        }
+    </pre>
+    <!-- ul>li#tt$*3 -->
+    <ul>
+        <li id="tt1" style="text-transform: uppercase;">uppercase : 모든 영문자를 대문자로 변경</li>
+        <li id="tt2" style="text-transform: lowercase;">LOWERCASE : 모든 영문자를 소문자로 변경</li>
+        <li id="tt3" style="text-transform: capitalize;">capitalize : 영문자 중 첫 번째 문자만 대문자로 변경</li>
+    </ul>
+
+    <h3>text-align : 텍스트를 정렬시킬 때 사용</h3>
+    <pre>
+        선택자 {
+            text-align : left(기본값)/justify/right/center;
+        }
+    </pre>
+
+    <h4>양쪽정렬</h4>
+    <p style="text-align: justify;">
+        우리는 인생의 그들은 아니더면, 것이다. 때에, 날카로우나 인생을 있는가? 인간은 것이다.보라, 가는 너의 끓는 생명을 예수는 노래하며 봄바람이다.
+
+        인생에 대중을 하는 않는 있는 그것은 사라지지 밝은 길지 때문이다. 생의 하는 옷을 이상 길을 과실이 할지니, 천고에 커다란 힘있다.
+
+        얼음이 인간의 이상의 기관과 칼이다. 살았으며, 속에서 피가 방황하였으며, 하는 쓸쓸하랴?
+    </p>
+
+    <h4>왼쪽정렬</h4>
+    <p style="text-align: left;">
+        우리는 인생의 그들은 아니더면, 것이다. 때에, 날카로우나 인생을 있는가? 인간은 것이다.보라, 가는 너의 끓는 생명을 예수는 노래하며 봄바람이다.
+
+        인생에 대중을 하는 않는 있는 그것은 사라지지 밝은 길지 때문이다. 생의 하는 옷을 이상 길을 과실이 할지니, 천고에 커다란 힘있다.
+
+        얼음이 인간의 이상의 기관과 칼이다. 살았으며, 속에서 피가 방황하였으며, 하는 쓸쓸하랴?
+    </p>
+
+    <h4>오른쪽 정렬</h4>
+    <p style="text-align: right;">
+        우리는 인생의 그들은 아니더면, 것이다. 때에, 날카로우나 인생을 있는가? 인간은 것이다.보라, 가는 너의 끓는 생명을 예수는 노래하며 봄바람이다.
+
+        인생에 대중을 하는 않는 있는 그것은 사라지지 밝은 길지 때문이다. 생의 하는 옷을 이상 길을 과실이 할지니, 천고에 커다란 힘있다.
+
+        얼음이 인간의 이상의 기관과 칼이다. 살았으며, 속에서 피가 방황하였으며, 하는 쓸쓸하랴?
+    </p>
+
+    <h4>가운데정렬</h4>
+    <p style="text-align: center;">
+        우리는 인생의 그들은 아니더면, 것이다. 때에, 날카로우나 인생을 있는가? 인간은 것이다.보라, 가는 너의 끓는 생명을 예수는 노래하며 봄바람이다.
+
+        인생에 대중을 하는 않는 있는 그것은 사라지지 밝은 길지 때문이다. 생의 하는 옷을 이상 길을 과실이 할지니, 천고에 커다란 힘있다.
+
+        얼음이 인간의 이상의 기관과 칼이다. 살았으며, 속에서 피가 방황하였으며, 하는 쓸쓸하랴?
+    </p>
+
+    <hr>
+
+    <h3>text-shadow : 텍스트에 그림자 효과를 줄 때 사용</h3>
+    <pre>
+        선택자 {
+            text-shadow : 가로거리(x) 세로거리(y) 번짐정도 색상;
+        }
+        - 번짐정도와 색상은 생략가능
+        - 가로거리와 세로거리가 양수일 경우 오른쪽 아래에 생성
+        - 가로거리와 세로거리가 음수일 경우 왼쪽 위에 그림자 생성
+        - 번짐정도가 0일경우 그림자의 색이 찐해짐
+        - 색상은 기본값이 글자색을 따라감
+    </pre>
+
+    <!-- div>span.shadow#ts${HTML}*3 -->
+    <div>
+        <span class="shadow" id="ts1">HTML</span> <br><br>
+        <span class="shadow" id="ts2">HTML</span> <br><br>
+        <span class="shadow" id="ts3">HTML</span> <br><br>
+    </div>
+
+</body>
+
+</html>

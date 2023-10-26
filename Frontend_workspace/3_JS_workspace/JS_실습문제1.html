@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+    <style>
+        .area {
+            width: 100%;
+            height: 450px;
+            border: 1px soild black;
+        }
+
+        #container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practice1</h1>
+
+    <fieldset>
+        <legend>취미</legend>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="selectAll" class="check-btn" onclick="selectAll();">
+                    <label for="selectAll">전체 선택</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category1" class="check-btn" value="종합">
+                    <label for="category">종합</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category2" class="check-btn" value="소설">
+                    <label for="category">종합</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category3" class="check-btn" value="시/에세이">
+                    <label for="category3">시/에세이</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category4" class="check-btn" value="경제/경영">
+                    <label for="category4">경제/경영</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category5" class="check-btn" value="자기계발">
+                    <label for="category5">자기계발</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category6" class="check-btn" value="아동">
+                    <label for="category6">아동</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox" name="category" id="category7" class="check-btn" value="여행">
+                    <label for="category7">여행</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category8" class="check-btn" value="과학">
+                    <label for="category8">과학</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category9" class="check-btn" value="역사/문화">
+                    <label for="category9">역사/문화</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category10" class="check-btn" value="외국어">
+                    <label for="category10">외국어</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category11" class="check-btn" value="컴퓨터">
+                    <label for="category11">컴퓨터</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="category" id="category12" class="check-btn" value="만화">
+                    <label for="category12">만화</label>
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+    <br>
+    <button onclick="test();">카테고리 선택</button>
+    <br>
+    <div id="area" class="area area-js" style="border :1px solid red; width:100%; height:300px;"></div>
+
+    <script>
+        // 1번 기능 : test() 내가 선택한 체크박스의 value값을 div태그 중 id가 area인 요소에 컨텐츠 영역에 출력
+        function test() {
+            const area = document.querySelector("#area"); // getElementById("area")와 동일
+            // querySelector : css선택자를 활용하여 html요소를 선택해오는 함수
+
+            // const checkboxes = document.getElementsByName("category"); // [12개의 input요소]
+            const checkboxes = document.querySelectorAll('input[name=category]:checked'); // [12개의 input요소]
+
+            console.log(checkboxes);
+
+            area.innerHTML = "";
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    area.innerHTML += checkboxes[i].value + " ";
+                }
+            }
+        }
+
+        // 2번 기능 : selectAll() 전체선택/전체해제
+        function selectAll() {
+            const checked = document.getElementById("selectAll").checked; // true : 체크 / false : 미선택
+
+            const categoryies = document.getElementsByName("category");
+
+            categoryies.forEach(function (item) {
+                item.checked = checked;
+            });
+        }
+
+        // 3번 기능 : 전체선택 버튼과 각각의 체크박스를 연동
+
+        const categoryies = document.getElementsByName("category");
+        const selectAllBtn = document.querySelector("#selectAll");
+        categoryies.forEach(function (item) {
+            item.onclick = onOff;
+        });
+
+        function onOff() {
+            // 전체선택이 체크되었을 때 '모든' 카테고리 체크박스가 체크상태일 때 가능
+            // 선택된 체크박스의 길이 == 전체 체크박스의 길이 => true일 시 전체선택버튼에 불이 들어오게 작업
+            const checkedLength = document.querySelectorAll("input[name=category]:checked").length;
+
+            if (checkedLength == categoryies.length) {
+                // 전체 선택에 불 들어오게
+                selectAllBtn.checked = true;
+            } else {
+                selectAllBtn.checked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>

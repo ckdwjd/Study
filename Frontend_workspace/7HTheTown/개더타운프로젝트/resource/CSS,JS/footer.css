@@ -1,0 +1,25 @@
+.footerArea{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(160, 140, 140);
+    width: 100%;
+    height: 350px;
+    font-family: 'S-CoreDream-3Light';
+}
+.footerUl{
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+}
+.footerUl>li{
+    margin: 10px;
+    font-weight: bold;
+}
+.footerP{
+    font-weight: lighter;
+    text-align: center;
+    margin: 0px;
+    padding: 3px;
+}

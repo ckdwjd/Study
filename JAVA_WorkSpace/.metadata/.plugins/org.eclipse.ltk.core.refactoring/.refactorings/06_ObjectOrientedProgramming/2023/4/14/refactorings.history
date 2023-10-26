@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;06_ObjectOrientedProgramming/src/om&apos; to &apos;com&apos;" description="Rename resource &apos;om&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/om" name="com" stamp="1680521317044" updateReferences="true"/>
+</session>

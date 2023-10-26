@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            box-sizing: border-box;
+            border: 1px solid blue;
+        }
+
+        .wrap {
+            width: 500px;
+            height: 600px;
+            margin: auto;
+        }
+
+        .wrap>div {
+            width: 100%;
+        }
+
+        #header,
+        #footer {
+            height: 20%;
+        }
+
+        #content {
+            height: 60%;
+        }
+
+        #header>div {
+            height: 100%;
+            float: left;
+        }
+
+        #header1 {
+            width: 30%;
+        }
+
+        #header2 {
+            width: 70%;
+        }
+
+        #content>div {
+            height: 100%;
+            float: left;
+        }
+
+        #content1 {
+            width: 20%;
+        }
+
+        #content2 {
+            width: 60%;
+        }
+
+        #content3 {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="header">
+            <div id="header1"></div>
+            <div id="header2"></div>
+        </div>
+        <div id="content">
+            <div id="content1"></div>
+            <div id="content2"></div>
+            <div id="content3"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+</html>

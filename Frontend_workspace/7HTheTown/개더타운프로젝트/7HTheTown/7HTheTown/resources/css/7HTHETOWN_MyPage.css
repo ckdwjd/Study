@@ -1,0 +1,205 @@
+
+
+.outer {
+    display: block;
+    width: 2000px;
+    height: 1900px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/* ============================================ */
+/*                  컨텐츠                        */
+/* ============================================ */
+
+.container {
+    width: 1300px;
+    height: 100%;
+    padding: 200px 5% 0;
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+    box-shadow: 0 10px 10px 0 rgba(128, 128, 128, 0.523);
+}
+
+/* ============================================ */
+/*                  사이드바                        */
+/* ============================================ */
+
+.sidebar {
+    width: 250px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.user-name {
+    width: 80%;
+    padding: 50px 0 0;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.user-name>.user-txt1 {
+    font-size: 20px;
+    color: gray;
+}
+
+.user-name>.user-txt2 {
+    font-size: 26px;
+}
+
+.side-navi {
+    width: 80%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* ============================================ */
+/*                  사용자 컨텐츠1                       */
+/* ============================================ */
+
+.mypage-content {
+    width: 1000px;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.mypage-title {
+    font-size: 40px;
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+}
+
+.user-info {
+    height: 350px;
+    width: 100%;
+    
+}
+
+.user-info1 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.grade-img {
+    border-right: 1px solid black;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.grade-img>img {
+    margin: auto;
+}
+
+.grade-txt {
+    /* background-color: red; */
+    width: 60%;
+    align-items: center;
+}
+
+.user-info2,
+.user-info3 {
+    margin-top: 60px;
+}
+
+.grade-txt>.txt {
+    padding-left: 50px;
+    font-weight: bold;
+    line-height: 44px;
+}
+
+.grade-txt>.txt1 {
+    font-size: 28px;
+}
+
+.grade-txt>.txt1 * {
+    padding-bottom: 100px;
+}
+
+.grade-txt>.txt2 {
+    margin-top: 20px;
+}
+
+.grade-txt>.txt2>span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ============================================ */
+/*                  시용자 컨텐츠2                        */
+/* ============================================ */
+
+.user-info2 {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.user-count {
+    width: 52%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 12px;
+}
+
+.flex-box {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.top-box {
+    border-top: 1px solid black;
+}
+
+.txt-box {
+    font-size: 17px;
+    padding-left: 10px;
+    line-height: 35px;
+    width:70%;
+}
+
+.txt-box>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-deli {
+    height: 100%;
+    width: 41%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.deli-img {
+    border: 1px solid black;
+}
+
+.deli-txt {
+    border: 1px solid black;
+    position: absolute;
+    
+}
+
+
+/* ============================================ */
+/*                  푸터바                        */
+/* ============================================ */

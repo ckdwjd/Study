@@ -1,0 +1,76 @@
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/1_html_workspace/5_%EC%9E%85%EB%A0%A5%EC%96%91%EC%8B%9D%EB%B0%8F%ED%8F%BC%EA%B4%80%EB%A0%A8%ED%83%9C%EA%B7%B8.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/1_html_workspace/5_%EC%9E%85%EB%A0%A5%EC%96%91%EC%8B%9D%EB%B0%8F%ED%8F%BC%EA%B4%80%EB%A0%A8%ED%83%9C%EA%B7%B8.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/1_html_workspace/7_%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC%EA%B4%80%EB%A0%A8%ED%83%9C%EA%B7%B8.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/1_html_workspace/7_%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC%EA%B4%80%EB%A0%A8%ED%83%9C%EA%B7%B8.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/2_css_workspace/2_기타선택자.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/2_css_workspace/2_기타선택자.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/homepage.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/homepage.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/1_html_workspace/5_입력양식및폼관련태그.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/1_html_workspace/5_입력양식및폼관련태그.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/TS_header.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/TS_header.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/ATWOSOME.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/ATWOSOME.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/TS_NAVI_SIDE.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/TS_NAVI_SIDE.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/main6.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/main6.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/KH_Project/main5.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/KH_Project/main5.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/3_JS_workspace/01_%EA%B0%9C%EC%9A%94.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/3_JS_workspace/01_%EA%B0%9C%EC%9A%94.html"
+    },
+    {
+      "type": "chrome",
+      "name": "http://127.0.0.1:3000/3_JS_workspace/04_%EB%B3%80%EC%88%98%EC%99%80%EC%9E%90%EB%A3%8C%ED%98%95.html",
+      "request": "launch",
+      "url": "http://127.0.0.1:3000/3_JS_workspace/04_%EB%B3%80%EC%88%98%EC%99%80%EC%9E%90%EB%A3%8C%ED%98%95.html"
+    }
+  ]
+}

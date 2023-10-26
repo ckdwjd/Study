@@ -1,0 +1,99 @@
+.content1 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 723px;
+}
+
+.section input[id*="slide"] {
+    display: none;
+}
+
+.ctn1-wrap1{
+    height: 723px;
+    background-image: url("투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/content1_image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ctn1-wrap2{
+    height: 723px;
+    background-image: url("투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/mainimg-2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section .ctn1-slidewrap {
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+}
+
+.section .ctn1-slidelist {
+    white-space: nowrap;
+    font-size: 0;
+    padding: 0;
+}
+
+.section .ctn1-slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+    position: relative;
+}
+
+.section .ctn1-slidelist > li > a{
+    display: block;
+}
+
+.section .ctn1-slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 89%;
+    transform: translateY(-50%);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.section .ctn1-slidelist .ctn1-left {
+    z-index: 20;
+    left: 45%;
+    background: url('투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/ico_arrow_left.svg') center center / 100% no-repeat;
+}
+
+.section .ctn1-slidelist .ctn1-right {
+    z-index: 20;
+    right: 42%;
+    background: url('투썸플레이스 - Premium Dessert Cafe A Twosome Place._files/ico_arrow_right.svg') center center / 100% no-repeat;
+}
+
+.section .ctn1-slidelist span {
+    position: absolute;
+    z-index: 15;
+    left: 43%;
+    top: 85%;
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.687);
+}
+
+.section .ctn1-slidelist a > p {
+    position: absolute;
+    z-index: 20;
+    top: 85.5%;
+    left: 50.5%;
+    color: rgb(150, 150, 150);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section [id="ctn1-slide01"]:checked ~ .ctn1-slidewrap .ctn1-slidelist > li {
+    transform: translateX(0%);
+}
+
+.section [id="ctn1-slide02"]:checked ~ .ctn1-slidewrap .ctn1-slidelist > li {
+    transform: translateX(-100%);
+}

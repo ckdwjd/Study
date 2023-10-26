@@ -1,0 +1,742 @@
+
+!function(e){"object"==typeof module&&"object"==typeof module.exports?e(require("jquery"),window,document):"undefined"!=typeof jQuery&&e(jQuery,window,document)}(function(e,t,i,n){!function(){function t(e,t,i){return new Array(i+1-e.length).join(t)+e}function n(){if(1===arguments.length){var t=arguments[0];return"string"==typeof t&&(t=e.fn.timepicker.parseTime(t)),new Date(0,0,0,t.getHours(),t.getMinutes(),t.getSeconds())}return 3===arguments.length?new Date(0,0,0,arguments[0],arguments[1],arguments[2]):2===arguments.length?new Date(0,0,0,arguments[0],arguments[1],0):new Date(0,0,0)}e.TimePicker=function(){var t=this;t.container=e(".ui-timepicker-container"),t.ui=t.container.find(".ui-timepicker"),0===t.container.length&&(t.container=e("<div></div>").addClass("ui-timepicker-container").addClass("ui-timepicker-hidden ui-helper-hidden").appendTo("body").hide(),t.ui=e("<div></div>").addClass("ui-timepicker").addClass("ui-widget ui-widget-content ui-menu").addClass("ui-corner-all").appendTo(t.container),t.viewport=e("<ul></ul>").addClass("ui-timepicker-viewport").appendTo(t.ui),e.fn.jquery>="1.4.2"&&t.ui.delegate("a","mouseenter.timepicker",function(){t.activate(!1,e(this).parent())}).delegate("a","mouseleave.timepicker",function(){t.deactivate(!1)}).delegate("a","click.timepicker",function(i){i.preventDefault(),t.select(!1,e(this).parent())}))},e.TimePicker.count=0,e.TimePicker.instance=function(){return e.TimePicker._instance||(e.TimePicker._instance=new e.TimePicker),e.TimePicker._instance},e.TimePicker.prototype={keyCode:{ALT:18,BLOQ_MAYUS:20,CTRL:17,DOWN:40,END:35,ENTER:13,HOME:36,LEFT:37,NUMPAD_ENTER:108,PAGE_DOWN:34,PAGE_UP:33,RIGHT:39,SHIFT:16,TAB:9,UP:38},_items:function(t,i){var r,a,o=this,s=e("<ul></ul>"),c=null;for(-1===t.options.timeFormat.indexOf("m")&&t.options.interval%60!==0&&(t.options.interval=60*Math.max(Math.round(t.options.interval/60),1)),r=i?n(i):t.options.startTime?n(t.options.startTime):n(t.options.startHour,t.options.startMinutes),a=new Date(r.getTime()+864e5);a>r;)o._isValidTime(t,r)&&(c=e("<li>").addClass("ui-menu-item").appendTo(s),e("<a>").addClass("ui-corner-all").text(e.fn.timepicker.formatTime(t.options.timeFormat,r)).appendTo(c),c.data("time-value",r)),r=new Date(r.getTime()+60*t.options.interval*1e3);return s.children()},_isValidTime:function(e,t){var i=null,r=null;return t=n(t),null!==e.options.minTime?i=n(e.options.minTime):null===e.options.minHour&&null===e.options.minMinutes||(i=n(e.options.minHour,e.options.minMinutes)),null!==e.options.maxTime?r=n(e.options.maxTime):null===e.options.maxHour&&null===e.options.maxMinutes||(r=n(e.options.maxHour,e.options.maxMinutes)),null!==i&&null!==r?t>=i&&r>=t:null!==i?t>=i:null!==r?r>=t:!0},_hasScroll:function(){var e="undefined"!=typeof this.ui.prop?"prop":"attr";return this.ui.height()<this.ui[e]("scrollHeight")},_move:function(e,t,i){var n=this;if(n.closed()&&n.open(e),!n.active)return void n.activate(e,n.viewport.children(i));var r=n.active[t+"All"](".ui-menu-item").eq(0);r.length?n.activate(e,r):n.activate(e,n.viewport.children(i))},register:function(t,i){var n=this,r={};r.element=e(t),r.element.data("TimePicker")||(r.options=e.metadata?e.extend({},i,r.element.metadata()):e.extend({},i),r.widget=n,e.extend(r,{next:function(){return n.next(r)},previous:function(){return n.previous(r)},first:function(){return n.first(r)},last:function(){return n.last(r)},selected:function(){return n.selected(r)},open:function(){return n.open(r)},close:function(){return n.close(r)},closed:function(){return n.closed(r)},destroy:function(){return n.destroy(r)},parse:function(e){return n.parse(r,e)},format:function(e,t){return n.format(r,e,t)},getTime:function(){return n.getTime(r)},setTime:function(e,t){return n.setTime(r,e,t)},option:function(e,t){return n.option(r,e,t)}}),n._setDefaultTime(r),n._addInputEventsHandlers(r),r.element.data("TimePicker",r))},_setDefaultTime:function(t){"now"===t.options.defaultTime?t.setTime(n(new Date)):t.options.defaultTime&&t.options.defaultTime.getFullYear?t.setTime(n(t.options.defaultTime)):t.options.defaultTime&&t.setTime(e.fn.timepicker.parseTime(t.options.defaultTime))},_addInputEventsHandlers:function(t){var i=this;t.element.bind("keydown.timepicker",function(e){switch(e.which||e.keyCode){case i.keyCode.ENTER:case i.keyCode.NUMPAD_ENTER:e.preventDefault(),i.closed()?t.element.trigger("change.timepicker"):i.select(t,i.active);break;case i.keyCode.UP:t.previous();break;case i.keyCode.DOWN:t.next();break;default:i.closed()||t.close(!0)}}).bind("focus.timepicker",function(){t.open()}).bind("blur.timepicker",function(){setTimeout(function(){t.element.data("timepicker-user-clicked-outside")&&t.close()})}).bind("change.timepicker",function(){t.closed()&&t.setTime(e.fn.timepicker.parseTime(t.element.val()))})},select:function(t,i){var n=this,r=t===!1?n.instance:t;n.setTime(r,e.fn.timepicker.parseTime(i.children("a").text())),n.close(r,!0)},activate:function(e,t){var i=this,n=e===!1?i.instance:e;if(n===i.instance){if(i.deactivate(),i._hasScroll()){var r=t.offset().top-i.ui.offset().top,a=i.ui.scrollTop(),o=i.ui.height();0>r?i.ui.scrollTop(a+r):r>=o&&i.ui.scrollTop(a+r-o+t.height())}i.active=t.eq(0).children("a").addClass("ui-state-hover").attr("id","ui-active-item").end()}},deactivate:function(){var e=this;e.active&&(e.active.children("a").removeClass("ui-state-hover").removeAttr("id"),e.active=null)},next:function(e){return(this.closed()||this.instance===e)&&this._move(e,"next",".ui-menu-item:first"),e.element},previous:function(e){return(this.closed()||this.instance===e)&&this._move(e,"prev",".ui-menu-item:last"),e.element},first:function(e){return this.instance===e?this.active&&0===this.active.prevAll(".ui-menu-item").length:!1},last:function(e){return this.instance===e?this.active&&0===this.active.nextAll(".ui-menu-item").length:!1},selected:function(e){return this.instance===e&&this.active?this.active:null},open:function(t){var n=this,r=t.getTime(),a=t.options.dynamic&&r;if(!t.options.dropdown)return t.element;switch(t.element.data("timepicker-event-namespace",Math.random()),e(i).bind("click.timepicker-"+t.element.data("timepicker-event-namespace"),function(e){t.element.get(0)===e.target?t.element.data("timepicker-user-clicked-outside",!1):t.element.data("timepicker-user-clicked-outside",!0).blur()}),(t.rebuild||!t.items||a)&&(t.items=n._items(t,a?r:null)),(t.rebuild||n.instance!==t||a)&&(e.fn.jquery<"1.4.2"?(n.viewport.children().remove(),n.viewport.append(t.items),n.viewport.find("a").bind("mouseover.timepicker",function(){n.activate(t,e(this).parent())}).bind("mouseout.timepicker",function(){n.deactivate(t)}).bind("click.timepicker",function(i){i.preventDefault(),n.select(t,e(this).parent())})):(n.viewport.children().detach(),n.viewport.append(t.items))),t.rebuild=!1,n.container.removeClass("ui-helper-hidden ui-timepicker-hidden ui-timepicker-standard ui-timepicker-corners").show(),t.options.theme){case"standard":n.container.addClass("ui-timepicker-standard");break;case"standard-rounded-corners":n.container.addClass("ui-timepicker-standard ui-timepicker-corners")}n.container.hasClass("ui-timepicker-no-scrollbar")||t.options.scrollbar||(n.container.addClass("ui-timepicker-no-scrollbar"),n.viewport.css({paddingRight:40}));var o=n.container.outerHeight()-n.container.height(),s=t.options.zindex?t.options.zindex:t.element.offsetParent().css("z-index"),c=t.element.offset();n.container.css({top:c.top+t.element.outerHeight(),left:c.left}),n.container.show(),n.container.css({left:t.element.offset().left,height:n.ui.outerHeight()+o,width:t.element.outerWidth(),zIndex:s,cursor:"default"});var u=n.container.width()-(n.ui.outerWidth()-n.ui.width());return n.ui.css({width:u}),n.viewport.css({width:u}),t.items.css({width:u}),n.instance=t,r?t.items.each(function(){var i,a=e(this);return i=e.fn.jquery<"1.4.2"?e.fn.timepicker.parseTime(a.find("a").text()):a.data("time-value"),i.getTime()===r.getTime()?(n.activate(t,a),!1):!0}):n.deactivate(t),t.element},close:function(t){var n=this;return n.instance===t&&(n.container.addClass("ui-helper-hidden ui-timepicker-hidden").hide(),n.ui.scrollTop(0),n.ui.children().removeClass("ui-state-hover")),e(i).unbind("click.timepicker-"+t.element.data("timepicker-event-namespace")),t.element},closed:function(){return this.ui.is(":hidden")},destroy:function(e){var t=this;return t.close(e,!0),e.element.unbind(".timepicker").data("TimePicker",null)},parse:function(t,i){return e.fn.timepicker.parseTime(i)},format:function(t,i,n){return n=n||t.options.timeFormat,e.fn.timepicker.formatTime(n,i)},getTime:function(t){var i=this,n=e.fn.timepicker.parseTime(t.element.val());return n instanceof Date&&!i._isValidTime(t,n)?null:n instanceof Date&&t.selectedTime?t.format(n)===t.format(t.selectedTime)?t.selectedTime:n:n instanceof Date?n:null},setTime:function(t,i,r){var a=this,o=t.selectedTime;if("string"==typeof i&&(i=t.parse(i)),i&&i.getMinutes&&a._isValidTime(t,i)){if(i=n(i),t.selectedTime=i,t.element.val(t.format(i,t.options.timeFormat)),r)return t}else t.selectedTime=null;return null===o&&null===t.selectedTime||(t.element.trigger("time-change",[i]),e.isFunction(t.options.change)&&t.options.change.apply(t.element,[i])),t.element},option:function(t,i,n){if("undefined"==typeof n)return t.options[i];var r,a,o=t.getTime();"string"==typeof i?(r={},r[i]=n):r=i,a=["minHour","minMinutes","minTime","maxHour","maxMinutes","maxTime","startHour","startMinutes","startTime","timeFormat","interval","dropdown"],e.each(r,function(i){t.options[i]=r[i],t.rebuild=t.rebuild||e.inArray(i,a)>-1}),t.rebuild&&t.setTime(o)}},e.TimePicker.defaults={timeFormat:"hh:mm p",minHour:null,minMinutes:null,minTime:null,maxHour:null,maxMinutes:null,maxTime:null,startHour:null,startMinutes:null,startTime:null,interval:30,dynamic:!0,theme:"standard",zindex:null,dropdown:!0,scrollbar:!1,change:function(){}},e.TimePicker.methods={chainable:["next","previous","open","close","destroy","setTime"]},e.fn.timepicker=function(t){if("string"==typeof t){var i,n,r=Array.prototype.slice.call(arguments,1);return i="option"===t&&arguments.length>2?"each":-1!==e.inArray(t,e.TimePicker.methods.chainable)?"each":"map",n=this[i](function(){var i=e(this),n=i.data("TimePicker");return"object"==typeof n?n[t].apply(n,r):void 0}),"map"===i&&1===this.length?e.makeArray(n).shift():"map"===i?e.makeArray(n):n}if(1===this.length&&this.data("TimePicker"))return this.data("TimePicker");var a=e.extend({},e.TimePicker.defaults,t);return this.each(function(){e.TimePicker.instance().register(this,a)})},e.fn.timepicker.formatTime=function(e,i){var n=i.getHours(),r=n%12,a=i.getMinutes(),o=i.getSeconds(),s={hh:t((0===r?12:r).toString(),"0",2),HH:t(n.toString(),"0",2),mm:t(a.toString(),"0",2),ss:t(o.toString(),"0",2),h:0===r?12:r,H:n,m:a,s:o,p:n>11?"오후":"오전"},c=e,u="";for(u in s)s.hasOwnProperty(u)&&(c=c.replace(new RegExp(u,"g"),s[u]));return c=c.replace(new RegExp("a","g"),n>11?"오후":"오전")},e.fn.timepicker.parseTime=function(){var t=[[/^(\d+)$/,"$1"],[/^:(\d)$/,"$10"],[/^:(\d+)/,"$1"],[/^(\d):([7-9])$/,"0$10$2"],[/^(\d):(\d\d)$/,"$1$2"],[/^(\d):(\d{1,})$/,"0$1$20"],[/^(\d\d):([7-9])$/,"$10$2"],[/^(\d\d):(\d)$/,"$1$20"],[/^(\d\d):(\d*)$/,"$1$2"],[/^(\d{3,}):(\d)$/,"$10$2"],[/^(\d{3,}):(\d{2,})/,"$1$2"],[/^(\d):(\d):(\d)$/,"0$10$20$3"],[/^(\d{1,2}):(\d):(\d\d)/,"$10$2$3"]],i=t.length;return function(r){var a=n(new Date),o=!1,s=!1,c=!1,u=!1,l=!1;if("undefined"==typeof r||!r.toLowerCase)return null;r=r.toLowerCase(),o=/a/.test(r),s=o?!1:/p/.test(r),r=r.replace(/[^0-9:]/g,"").replace(/:+/g,":");for(var m=0;i>m;m+=1)if(t[m][0].test(r)){r=r.replace(t[m][0],t[m][1]);break}return r=r.replace(/:/g,""),1===r.length?c=r:2===r.length?c=r:3===r.length||5===r.length?(c=r.substr(0,1),u=r.substr(1,2),l=r.substr(3,2)):(4===r.length||r.length>5)&&(c=r.substr(0,2),u=r.substr(2,2),l=r.substr(4,2)),r.length>0&&r.length<5&&(r.length<3&&(u=0),l=0),c===!1||u===!1||l===!1?!1:(c=parseInt(c,10),u=parseInt(u,10),l=parseInt(l,10),o&&12===c?c=0:s&&12>c&&(c+=12),c>24?r.length>=6?e.fn.timepicker.parseTime(r.substr(0,5)):e.fn.timepicker.parseTime(r+"0"+(o?"a":"")+(s?"p":"")):(a.setHours(c,u,l),a))}}()}()});
+// //# sourceMappingURL=jquery.timepicker.min.js.map
+
+
+jQuery.browser = {}; 
+jQuery.browser.mozilla = /mozilla/.test(navigator.userAgent.toLowerCase()) && !/webkit/.test(navigator.userAgent.toLowerCase()); 
+jQuery.browser.webkit = /webkit/.test(navigator.userAgent.toLowerCase()); 
+jQuery.browser.opera = /opera/.test(navigator.userAgent.toLowerCase()); 
+jQuery.browser.msie = /msie/.test(navigator.userAgent.toLowerCase()); 
+jQuery.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()); 
+jQuery.browser.safari = /safari/.test(navigator.userAgent.toLowerCase());
+
+// 아이폰 이벤트 제어
+// Pinch Zoom 끄기
+document.documentElement.addEventListener('touchstart', function (event) {
+	if (event.touches.length > 1) {
+		event.preventDefault();
+	}
+}, false);
+// Double tab Zoom 끄기
+var lastTouchEnd = 0;
+document.documentElement.addEventListener('touchend', function (event) {
+	var now = (new Date()).getTime();
+	if (now - lastTouchEnd <= 300) {
+		event.preventDefault();
+	}
+	lastTouchEnd = now;
+}, false);
+
+// swiper 로딩
+function loadSwiperProgress(el) {
+	var swiperList = $(el + ' .swiper-slide');
+	if (swiperList.length > 1) {
+		var swiperObj = new Swiper(el + ' .swiper-container', {
+			loop: true,
+			// simulateTouch: false,
+			pagination: {
+				el: el + ' .swiper-pagination',
+				type: 'progressbar',
+			},
+			navigation: {
+				nextEl: el + ' .swiper-button-next',
+				prevEl: el + ' .swiper-button-prev',
+			},
+			paginationClickable: true,
+			centeredSlides: true,
+			slidesPerView: 1.3,
+			spaceBetween: 16,
+			observer: true,
+			observeParents: true,
+			on: {
+				slideChangeTransitionStart: function () {
+					var swiper = this;
+					var $this = $(el + ' .swiper-container');
+					var duplicateNum = $this.find('.swiper-slide-duplicate').length;
+					var totalNum = swiper.slides.length - duplicateNum;
+					if (swiper.params.loop) {
+						currentNum = $this.find('.swiper-slide-active').data('swiper-slide-index') + 1; // loop : true 일 경우
+					} else {
+						currentNum = this.activeIndex + 1; // loop : false 일 경우
+					}
+					totalNum = '0' + totalNum;
+					currentNum = '0' + currentNum;
+					$this.find('.swiper-pagination-total').text(totalNum.slice(-2));
+					$this.find('.swiper-pagination-current').text(currentNum.slice(-2));
+				},
+			},
+		});
+	} else {
+		swiperList.show();
+	}
+}
+
+function loadGnbMenu() {
+	winW = $(window).width();
+	//alert(winW);
+	if (winW < 897) {
+		// 모바일 전체메뉴 클릭시
+		$(document).stop().on('click', '.is-mobile #allmenu-gnb > li > a', function(e){
+			e.stopPropagation();
+			// $('.is-mobile #allmenu-gnb > li > a').removeClass('is-active').siblings('.depth-02').hide();
+			$(this).parent('li').siblings('li').children('a').removeClass('is-active').siblings('.depth-02').removeClass('is-show');
+			$(this).addClass('is-active').closest('li').find('.depth-02').addClass('is-show');
+		});
+	} else {
+		$(document).stop().on('mouseenter', '#allmenu-gnb > li > a', function(e){
+			e.stopPropagation();
+			$('#allmenu-gnb > li a').removeClass('is-active');
+			$(this).addClass('is-active');
+		});
+	}
+}
+
+$(function(){
+	// 브라우저 체크
+	initBody();
+	// 브라우저 width 체크 후 is-mobile 클래스 부여
+	sizeCheck();
+	// Common variable
+	var $window = $(window),
+		$document = $(document),
+		$html = $document.find('html').addClass('OL'),
+		$body = $document.find('body').on({
+			'keydown': function(e) {
+				if ( e.keyCode === 9 ) $html.removeClass('OL');
+			},
+			'keyup': function(e) {
+				if ( e.keyCode === 13 ) $html.removeClass('OL');
+			},
+			'click': function() {
+				$html.addClass('OL');
+			}
+		}),
+		$wrap = $body.find('.wrapper');
+
+	// gnb 마우스 오버시
+	// $(document).on('mouseenter focusin', '.gnb', function(){
+	$(document).on('mouseenter focusin', '#gnb-wrap', function(){
+		if ($('#header').hasClass('is-scroll')) {
+			$('#header').removeClass('is-scroll');
+		}
+		$('#header').addClass('__gnb-open');
+		$('.gnb-dim').addClass('is-active');
+		$('#gnb-wrap').css('height', 424);
+	});
+
+	// $(document).on('mouseleave', '.gnb', function(){
+	$(document).on('mouseleave', '#gnb-wrap', function(){
+		$('#header').removeClass('__gnb-open');
+		$('.gnb-dim').removeClass('is-active');
+		$('#gnb-wrap').css('height', 100);
+		if ($(window).scrollTop() > 0) {
+			$('#header').addClass('is-scroll');
+		}
+	});
+
+	$(document).on('focusin', '.btn-allmenu', function(){
+		$('#header').removeClass('__gnb-open');
+		$('.gnb-dim').removeClass('is-active');
+		$('#gnb-wrap').css('height', 100);
+		if ($(window).scrollTop() > 0) {
+			$('#header').addClass('is-scroll');
+		}
+	});
+
+	// 전체메뉴 열기
+	$(document).on('click', '.btn-allmenu', function(){
+		$('html').addClass('is-clipped');
+		$('#allmenu-wrap').addClass('is-active');
+		// 바인드된 이벤트 제거
+		$('#header').off();
+		$('#gnb-wrap').off();
+		$('#allmenu-gnb > li').off();
+		$('#allmenu-gnb > li > a').off();
+	});
+
+	// 전체메뉴 닫기
+	$(document).on('click', '.btn-allmenu-close', function(){
+		$('#allmenu-wrap').removeClass('is-active');
+		$('html').removeClass('is-clipped');
+		$('#allmenu-gnb a').removeClass('is-active');
+		$('#allmenu-gnb ul').removeClass('is-show');
+	});
+
+	// mobile 해상도에서 GNB 작동 방식 여부 결정
+	loadGnbMenu();
+
+	$(window).on('resize', function(){
+		sizeCheck();
+		// mobile 해상도에서 GNB 작동 방식 여부 결정
+		loadGnbMenu();
+	});
+
+	$(window).on('scroll', function(){
+		if ($(window).scrollTop() > 0) {
+			$('#header').addClass('is-scroll');
+		} else {
+			$('#header').removeClass('is-scroll');
+		}
+	});
+
+	function sizeCheck() {
+		if($(window).width() < 897) {
+			$('html').addClass('is-mobile');
+		} else {
+			$('html').removeClass('is-mobile');
+		}
+	}
+	// select width
+	$('.select-arrow-wrap select').on('change', function(){
+		$('.width_tmp_option').html($(this).children('option:selected').text());
+    	$(this).width($('.width-tmp-select').width());
+	});
+	$(document).on('click focus blur','.input > input', function(){
+		var $this = $(this);
+		if(!$this.is('[readonly]')){
+			$this.parents('.input').toggleClass('focus', $this.is(':focus'));
+		}
+	})
+	function formState(){
+		var $input = $wrap.find('.input input');
+		$input.each(function(){
+			var $this = $(this);
+			if( $this.is(':disabled') ){
+				$this.parents('.input').addClass('disabled');
+			} else if ($this.is('[readonly]')) {
+				$this.parents('.input').addClass('readonly');
+			}
+		})
+	}
+	formState();
+	// password
+	$(document).on('click', '.button-masking', function(){
+		if($(this).hasClass('is-active')){
+			$(this).removeClass('is-active').siblings('input').attr('type','password');
+		} else {
+			$(this).addClass('is-active').siblings('input').attr('type','text');
+		}
+	});
+
+	// 이메일 직접입력 스위칭
+	function inputDirectMail() {
+		var mailSelect = $('.select-email-direct'),
+			inputDirec = $('.email-input-direct'),
+			inputDirecText = $('.email-input-direct input');
+		$(document)
+			.on('change', '.select-email-direct select', function () {
+				var emailID = mailSelect.find('input[title="이메일 아이디"]').val();				// 선택값이 direct이면 직접입력 text 입력 input 노출
+				if ($(this).find('option:selected').val() === 'direct') {
+					mailSelect.hide();
+					// ios 에서 focus 이벤트 발생이 안되 처리함
+					inputDirec.find('input').val(emailID);
+					inputDirec.show().children('input').click();
+					setTimeout(function (e) {
+						inputDirec.children('input').focus();
+					}, 10);
+				}
+			})
+			.on('blur', '.email-input-direct input', function () {
+				// input text에 입력값이 없이 focus를 잃었을때 다시 select 로 변경 && select val값 초기화
+				inputDirecText.val() == '' ? mailSelect.find('input[title="이메일 아이디"]').val('') && mailSelect.find('option:eq(0)').prop('selected', true) && mailSelect.show() && inputDirec.hide() : '';
+			});
+	}
+	inputDirectMail();
+
+	$('select').on('blur', function(){
+		$(this).removeClass('is-active');
+	}).on('focus', function(){
+		$(this).addClass('is-active');
+	});
+
+});
+
+// 탭 버튼 동작
+$(document).on('click', '.tabs .tab', function(){
+	$(this).parent('li').addClass('is-active');
+	$(this).parent('li').siblings('li').removeClass('is-active');
+});
+
+// 체크박스 readonly 속성이 있을 경우 작동안되도록 강제
+$(document).on('click', ':checkbox[readonly], :radio[readonly]', function(){
+	return false;
+});
+
+
+// S : Dropdowns
+// Functions
+function getAll(selector) {
+	return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
+}
+
+var $dropdowns = getAll('.dropdown:not(.is-hoverable)');
+$(document)
+	.on('click', function (e) {
+		if (!$(e.target).closest('.dropdown').length) {
+			$('.dropdown.is-active').removeClass('is-active');
+		}
+	})
+	.on('mouseenter focus', '.dropdown-trigger .button', function (e) {
+		$('.dropdown').removeClass('is-hover');
+		$(this).closest('.dropdown').addClass('is-hover');
+	})
+	.on('mouseleave', '.dropdown-trigger .button', function (e) {
+		$(this).closest('.dropdown').removeClass('is-hover');
+	})
+	.on('click', '.dropdown-trigger .button', function (e) {
+		e.preventDefault();
+		$('.dropdown:not(.is-hover)').removeClass('is-active');
+		if ($(this).closest('.dropdown').hasClass('is-active')) {
+			$(this).closest('.dropdown').removeClass('is-active');
+		} else {
+			$(this).closest('.dropdown').addClass('is-active');
+		}
+	})
+	.on('click', '.dropdown-item', function (e) {
+		// 드롭다운 관련 추가 : 드롭다운 dropdown 아이템 아이콘 관련 이벤트 처리
+		if ($(this).hasClass('is-icon')) {
+			$(this).addClass('is-active').siblings().removeClass('is-active');
+			$(this).closest('.dropdown').find('[aria-controls="dropdown-menu"]').children('span').eq(0).empty().append($(this).children().clone());
+			$(this).closest('.dropdown').find('[aria-controls="dropdown-menu"]').children('span').eq(0).append($(this).text());
+		} else {
+			$(this).addClass('is-active').siblings().removeClass('is-active');
+			$(this).closest('.dropdown').find('[aria-controls="dropdown-menu"]').children('span').eq(0).text($(this).text());
+		}
+
+		var dropdownWidth = $(this).outerWidth();
+		if ($('.header-search__dropdown').length) {
+			$(this).closest('.header-search__dropdown').css('min-width', dropdownWidth).find('.dropdown').css('width', 'auto');
+		}
+		$('.dropdown.is-active').removeClass('is-active');
+	});
+
+function closeDropdowns() {
+	$dropdowns.forEach(function ($el) {
+		$el.classList.remove('is-active');
+	});
+}
+// E : Dropdowns
+
+// S : Modal Popup
+// Modal Open
+$(document).on('click', '.modal-button', function (e) {
+	e.preventDefault();
+	var target = '#' + $(this).data('target');
+	$('html').addClass('is-clipped');
+	$(target).addClass('is-active').attr('tabindex', 0).focus();
+	if ($('.fullpage-wrapper').length) {
+		// 20210429 : 모달 팝업창 오픈시 fullpage 스크롤 중지
+		$.fn.fullpage.setAllowScrolling(false, 'up');
+		$.fn.fullpage.setAllowScrolling(false, 'down');
+	}
+});
+// Modal Close
+$(document).on('click', '.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .delete, .modal .button-modal-close', function (e) {
+	// closeModals();
+	$(this).closest('.modal').removeClass('is-active');
+	if ($('.modal.is-active').length < 1) {
+		$('html').removeClass('is-clipped');
+	}
+	if ($('.fullpage-wrapper').length) {
+		// 20210429 : 모달 팝업창 오픈시 fullpage 스크롤 작동
+		$.fn.fullpage.setAllowScrolling(true, 'up');
+		$.fn.fullpage.setAllowScrolling(true, 'down');
+	}
+});
+function closeModals() {
+	$('html').removeClass('is-clipped');
+	$(document).find('.modal').removeClass('is-active');
+}
+$(document).on('keydown', function (event) {
+	var e = event || window.event;
+	if (e.keyCode === 27) {
+		closeModals();
+		// closeDropdowns();
+		$('.dropdown.is-active').removeClass('is-active');
+	}
+});
+document.addEventListener('keydown', function (event) {
+	var e = event || window.event;
+	if (e.keyCode === 27) {
+		closeModals();
+		closeDropdowns();
+	}
+});
+// E : Modal Popup
+
+// Collapse 처리
+$(document).ready(function(){
+	// 초기화
+	$('.is-collapsible').each(function () {
+		if ($(this).hasClass('is-active')) {
+			$(this).attr({ 'aria-expanded': 'true' });
+		} else {
+			$(this).attr({ 'aria-expanded': 'false' }).css({ display: 'none' });
+		}
+	});
+	$('[data-action="collapse"]').each(function () {
+		if ($(this).hasClass('is-active')) {
+			$(this).addClass('is-active');
+		} else {
+			$(this).removeClass('is-active');
+		}
+	});
+});
+// collpase/accordion 작동 함수
+function fnCollapse(el) {
+	// 아코디언 형태인 경우
+	if (el.closest('.accordion-group').length) {
+		if (el.hasClass('is-active')) {
+			el.closest('.accordion-group')
+				.find('.is-collapsible')
+				.each(function () {
+					if ($(this).hasClass('is-active')) {
+						$(this).attr({ 'aria-expanded': 'false' }).removeClass('is-active').stop().slideUp('fast');
+					}
+				});
+			el.removeClass('is-active');
+			el.closest('.collapse').removeClass('is-active');
+			el.parent().next('.collapse-body').attr({ 'aria-expanded': 'false' }).removeClass('is-active').stop().slideUp('fast');
+		} else {
+			el.closest('.accordion-group')
+				.find('[data-action="collapse"]')
+				.removeClass('is-active');
+			el.closest('.accordion-group')
+				.find('.is-collapsible')
+				.removeClass('is-active')
+				.delay(50)
+				.stop()
+				.slideUp('fast');
+			el.addClass('is-active');
+			el.closest('.collapse').addClass('is-active').siblings('.collapse').removeClass('is-active');
+			el.parent().next('.collapse-body').attr({ 'aria-expanded': 'true' }).addClass('is-active').stop().slideDown('fast');
+		}
+	}
+	// 일반 collapse 인 경우
+	else {
+		if (el.hasClass('is-active')) {
+			el.removeClass('is-active');
+			el.closest('.collapse').removeClass('is-active');
+			el.parent().next('.collapse-body').attr({ 'aria-expanded': 'false' }).removeClass('is-active').stop().slideUp('fast');
+			if (el.find('input[type="checkbox"]').length){
+				el.find('input[type="checkbox"]').prop('checked', false);
+			}
+		} else {
+			el.addClass('is-active');
+			el.closest('.collapse').addClass('is-active');
+			el.parent().next('.collapse-body').attr({ 'aria-expanded': 'true' }).addClass('is-active').stop().slideDown('fast');
+			if (el.find('input[type="checkbox"]').length){
+				el.find('input[type="checkbox"]').prop('checked', true);
+			}
+		}
+	}
+}
+// collapse 작동
+$(document).on('click', '[data-action="collapse"]', function (event) {
+	event = event || window.event;
+	event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+	// var $target = $($(this).attr('href'));
+	fnCollapse($(this));
+});
+
+$(window).on('resize', function(){
+	if ($('.collapse-body').length) {
+		console.log("collapse");
+		$('.collapse-body.is-active').css({'height':'auto'});
+	}
+});
+// datepicker 설정
+// datepicker : 연도 버튼 컨트롤
+function drawChangeYear(datebox) {
+	var prevStr = '<a class="ui-datepicker-prev ui-corner-all ui-datepicker-year" id="btnPrevYear"><span class="sr-only">이전 년</span></a>';
+	var nextStr = '<a class="ui-datepicker-next ui-corner-all ui-datepicker-year" id="btnNextYear"><span class="sr-only">다음 년</span></a>';
+	$('.ui-datepicker-header').prepend(prevStr);
+	$('.ui-datepicker-header').prepend(nextStr);
+	$('#btnPrevYear').on('click', function (e) {
+		e.preventDefault();
+		$.datepicker._adjustDate($(datebox), -1, 'Y');
+	});
+	$('#btnNextYear').on('click', function (e) {
+		e.preventDefault();
+		$.datepicker._adjustDate($(datebox), 1, 'Y');
+	});
+}
+
+$.datepicker.setDefaults({
+	dateFormat: 'yy-mm-dd' //Input Display Format 변경
+	,showOtherMonths: true //빈 공간에 현재월의 앞뒤월의 날짜를 표시
+	,showMonthAfterYear:true //년도 먼저 나오고, 뒤에 월 표시
+	// ,changeYear: true //콤보박스에서 년 선택 가능
+	// ,changeMonth: true //콤보박스에서 월 선택 가능                
+	// ,showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
+	// ,buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif" //버튼 이미지 경로
+	// ,buttonImageOnly: true //기본 버튼의 회색 부분을 없애고, 이미지만 보이게 함
+	,buttonText: "선택" //버튼에 마우스 갖다 댔을 때 표시되는 텍스트                
+	// ,yearSuffix: "년" //달력의 년도 부분 뒤에 붙는 텍스트
+	,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+	,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+	,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+	,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+	// ,minDate: "-1M" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+	// ,maxDate: "+1M" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+});
+
+$(document).ready(function(){
+	//페이지 로드시 선택된 탭 위치
+	if ($('.tabs.ui-tabs-nav').length) {
+		var myScrollPos = $('.tabs.ui-tabs-nav ul .is-active').offset().left + $('.tabs.ui-tabs-nav ul .is-active').outerWidth(true) / 2 + $('.tabs.ui-tabs-nav').scrollLeft() - $('.tabs.ui-tabs-nav').width() / 2;
+		// alert(myScrollPos);
+		$('.tabs.ui-tabs-nav').scrollLeft(myScrollPos);
+	}
+	// 메인페이지 앱안내 팝업 체크
+	if ($('#popup-app-info').length) {
+		if ($('#popup-app-info').hasClass('is-active')) {
+			$('html').addClass('is-clipped');
+		} else {
+			$('html').removeClass('is-clipped');
+		}
+	}
+	// 모바일웹에서 볼게요. 버튼 클릭시
+	$('.btn-mobileweb').on('click', function(){
+		$('#popup-app-info').removeClass('is-active');
+		setTimeout(function(){
+			$('.popup-app-info-dim').removeClass('is-active');
+			$('html').removeClass('is-clipped');
+		});
+	});
+
+	if ($('.datepicker').length) {
+		$.each($('.datepicker'), function () {
+			var $this = $(this);
+			if ($this.hasClass('datepicker-from')) {
+				$this.datepicker({
+					// minDate: 0,
+					onClose: function( selectedDate ) {    
+						//시작일 datepicker가 닫힐때 종료일의 선택할 수 있는 최소날짜 지정
+						$this.closest('.datepicker-range-wrap').find('.datepicker-to').datepicker( "option", "minDate", selectedDate );
+					},
+					beforeShow: function () {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+						// datepicker 클릭시 기간설정 라디오 checked 
+						$this.closest('.datepicker-range-wrap').parent('.row').prev('.datepicker-radio-wrap').find(':radio[value=0]').prop('checked', true);
+					},
+					onChangeMonthYear: function (y, m, ins) {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+					},
+				});
+			} else if ($this.hasClass('datepicker-to')) {
+				$this.datepicker({
+					minDate: 0,
+					onClose: function( selectedDate ) {    
+						//종료일 datepicker가 닫힐때 시작일의 선택할 수 있는 최대날짜 지정
+						// $this.closest('.datepicker-range-wrap').find('.datepicker-from').datepicker( "option", "maxDate", selectedDate );
+					},
+					beforeShow: function () {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+						// datepicker 클릭시 기간설정 라디오 checked 
+						$this.closest('.datepicker-range-wrap').parent('.row').prev('.datepicker-radio-wrap').find(':radio[value=0]').prop('checked', true);
+					},
+					onChangeMonthYear: function (y, m, ins) {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+					},
+				});
+			} else {
+				$this.datepicker({
+					beforeShow: function () {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+					},
+					onChangeMonthYear: function (y, m, ins) {
+						setTimeout(function () {
+							drawChangeYear($this);
+						}, 0);
+					},
+				});
+			}
+		});
+	}
+	/*
+	jquery.ui.js 의 _updateDatepicker: function( inst ) {} 펑션 마지막 7593 line 에 추가
+	// custom calendar : 20201218
+	$('.ui-datepicker').prepend('<div class="modal"><div class="modal-background"></div><div class="modal-card modal-calendar"><button type="button" class="button delete button-modal-close"><i class="ico-cross"></i><span class="sr-only">창닫기</span></button></div></div>');
+	$('.ui-datepicker .modal-card').append($('#ui-datepicker-div > .ui-datepicker-header'));
+	$('.ui-datepicker .modal-card').append($('#ui-datepicker-div > .ui-datepicker-calendar'));
+	var yearText = $('.ui-datepicker .ui-datepicker-year').text();
+	$('.ui-datepicker .ui-datepicker-year').text(yearText + '년');
+	*/
+});
+
+$(document).on('click', '#ui-datepicker-div .modal-background, #ui-datepicker-div .button-modal-close', function (e) {
+	e.preventDefault();
+	$('.datepicker').datepicker('hide');
+});
+
+// 탭 작동
+function tabActivate(thisEl) {
+	thisEl.closest('[role="tablist"]').children().children('[aria-selected="true"]').attr({
+		tabindex: '-1',
+		'aria-selected': 'false',
+	});
+	thisEl.parent().addClass('is-active').siblings().removeClass('is-active');
+	thisEl.attr({
+		tabindex: '0',
+		'aria-selected': 'true',
+	});
+	// 연관된 탭 패널 활성화
+	$('#' + thisEl.attr('aria-controls'))
+		.removeAttr('hidden')
+		.attr('tabindex', '0')
+		.addClass('is-active')
+		// 기존 탭 패널 비활성화
+		.siblings('.tabpanel')
+		.attr({ tabindex: '-1', hidden: '' })
+		.removeClass('is-active');
+}
+$(document).on('click', '[role="tab"]', function (event) {
+	if($(this).attr('type') !== 'radio') {
+		event = event || window.event;
+		event.preventDefault ? event.preventDefault() : (event.returnValue = false);
+	}
+
+	// 선택된 탭 활성화
+	tabActivate($(this));
+	// 탭 하위에 탭이 존재하는 경우 초기화 처리
+	var $thisChildren = $('#' + $(this).attr('aria-controls')).find('[role="tablist"]');
+	if ($thisChildren.length) {
+		tabActivate($thisChildren.children().eq(0).children('[role="tab"]'));
+		$('#' + $(this).attr('aria-controls')).removeAttr('tabindex');
+	}
+});
+
+// 제목 글자수 카운트
+$(document).on('keyup blur', '[maxlength]', function () {
+	var content = $(this).val();
+	// var thisMaxL = Number($(this).attr('maxlength')) - 1;
+	var thisMaxL = Number($(this).attr('maxlength'));
+
+	if (content.length > thisMaxL) {
+		alert('최대 ' + thisMaxL + '자까지 입력 가능합니다.');
+		$(this).val(content.substring(0, thisMaxL));
+		return;
+	}
+});
+
+// 토글 버튼 정의
+$(document).on('click', '.toggle-buttons .button', function(){
+	$(this).addClass('is-active').siblings('.button').removeClass('is-active');
+});
+
+// ie version check
+function get_msie_version(){
+	var version='';
+	var trident=navigator.userAgent.match(/Trident\/(\d.\d)/i);
+	if(trident!=null){
+		switch(trident[1]){
+			case '3.0': version='7'; break;
+			case '4.0': version='8'; break;
+			case '5.0': version='9'; break;
+			case '6.0': version='10'; break;
+			case '6.0': version='11'; break;
+		}
+	}else{
+		version=String(parseInt($.browser.version, 10));
+	}
+	return version;
+}
+
+// browser에 따른 body-tag-class 부여
+function initBody(){
+	var name='';
+	if($.browser.msie){
+		name='msie'+get_msie_version();
+	}else if($.browser.chrome){
+		name='chrome';
+	}else if($.browser.safari){
+		name='safari';
+	}else if($.browser.opera){
+		name='opera';
+	}else if($.browser.mozilla){
+		name='firefox';
+	}
+	$('body').addClass(name);
+}
+
+// S : 체크박스 그룹 전체 선택 : 20210108
+// 체크박스 그룹내의 check item 의 checked 상태 체크
+function checkboxEach($el) {
+	var is_checked = true;
+	$el.closest('.check__group')
+		.find('input[type=checkbox]')
+		.each(function () {
+			if (!$(this).hasClass('check__all') && !$(this).attr('disabled')) {
+				is_checked = is_checked && $(this).is(':checked');
+			}
+		});
+	return is_checked;
+}
+$(document)
+	.on('click', '.check__group .check__all', function () {
+		// 체크박스 전체항목 선택시 그룹내의 모든 체크 선택
+		$(this).closest('.check__group').find('input:not([disabled])').prop('checked', $(this).is(':checked'));
+	})
+	.on('click', '.check__group input[type=checkbox]', function () {
+		// 체크박스 개별 선택시 그룹내의 체크박스 확인
+		if (!$(this).hasClass('check__all')) {
+			var is_checked = checkboxEach($(this).closest('.check__group').find('.check__all'));
+			$(this).closest('.check__group').find('.check__all').prop('checked', is_checked);
+		}
+
+		// 체크 그룹들 간 체크 확인용
+		$('.check__all').each(function(){
+			var is_checked = checkboxEach($(this));
+			$(this).closest('.check__group').find('.check__all').prop('checked', is_checked);
+		});
+	});
+// E : 체크박스 그룹 전체 선택
+
+// modal 동작 제어 & 이미지 확대 모달 팝업 제어
+$(document).on('click', '.modal-background, .button-modal-close', function(){
+	$(this).closest('.modal').removeClass('is-active');
+	$('html').removeClass('is-clipped');
+	if ($(this).closest('.modal-image').length) {
+		$(this).closest('.modal-image').remove();
+	}
+});
+
+// 텍스트 복사
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+}
+
+// 컴마 추가
+function comma(str) {
+	str = String(str);
+	return str.replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,');
+}
+// 컴마 제거
+function removeComma(str) {
+	n = parseInt(str.replace(/,/g, ''));
+	return n;
+}
+
+// li 높은거 낮은 거 유지
+$.fn.hiLow = function( arg ){
+	var height = this.map(function( idx, el ){
+		return $(el).height();
+	}).get();
+	return this.height( Math[(arg !== 'min') ? 'max' : 'min'].apply( null,height ) );
+}

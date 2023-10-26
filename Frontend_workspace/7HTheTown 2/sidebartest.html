@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <style>
+        .outer {
+            width: 1200px;
+            height: 500px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="outer">
+        <h1>테스트</h1>
+    </div>
+</body>
+<script>
+    function firstani() {
+        $("h1").addClass("animate__animated animate__bounce");
+        setTimeout(secondani, 3000);
+    }
+
+    function secondani() {
+        $("h1").addClass("animate__animated animate__backOutDown");
+        setTimeout($("h1").css.style({
+            color: "white"
+        }), 3000);
+    }
+
+    window.onload = function () {
+        firstani();
+    }
+</script>
+
+</html>

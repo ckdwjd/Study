@@ -1,0 +1,227 @@
+/* ===== 네비바 전체 ===== */
+#wrapper *{
+    box-sizing: border-box;
+}
+#wrapper {
+    width: 100%;
+    height: 989px;
+    margin: auto;
+    position: relative;
+}
+
+/* ====== 네비바 컨텐츠 ===== */
+@font-face{
+    font-family:'NotoSansKR-Bold';
+    src :url('fonts/NotoSansKR-Bold.woff2')format('woff');
+}
+
+@font-face{
+    font-family:'NotoSansKR-Regular';
+    src :url('fonts/NotoSansKR-Regular.woff2')format('woff');
+}
+
+@font-face{
+    font-family:'NotoSansKR-Medium';
+    src :url('fonts/NotoSansKR-Medium.woff2')format('woff');
+}
+
+#header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    color: white;
+    padding: 10px 0px 0px 15px;
+    /* border: 1px solid white; */
+    transition-property:all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    overflow: hidden;
+    z-index: 5000;
+    position: fixed;
+    font-family:'NotoSansKR-Regular';
+}
+
+/* ===== 투썸 로고 ===== */
+
+#logo {
+    width: 300px;
+    height: 30px;
+    background-image: url("resources/logo_white.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 22px 0px 0px 20px;
+}
+
+/* ===== 네비 메뉴 ===== */
+
+#menu-wrap {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#menu {
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 28px;
+    padding: 0px 0px 0px 20px;
+}
+
+#menu * {
+    text-decoration: none;
+}
+
+#menu>li{
+    position: relative;
+    line-height: 36px;
+    font-family:'NotoSansKR-Bold';
+}
+
+#menu>li>a {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: white;
+}
+.semi-list {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 13px;
+    display: none;
+    position: absolute;
+    width: 155%;
+    left: 0;
+}
+
+.semi-list li{
+    padding: 0;
+    text-align: left;
+    font-family:'NotoSansKR-Regular';
+}
+
+.semi-list>li>a {
+    font-size: 15px;
+    font-family:'NotoSansKR-Regular';
+    text-decoration: none;
+    color: black;
+}
+
+.semi-list>li ul{
+    padding: 0;
+    color: rgb(167, 167, 167);
+    text-align: left;
+    line-height: 26px;
+    font-family:'NotoSansKR-Regular';
+    /* text-decoration: none; */
+}
+
+.semi-list>li ul>li a {
+    color: rgb(167, 167, 167);
+}
+
+
+/* ===== 메뉴 기능구현 ===== */
+
+#header:hover {
+    height: 380px;
+    background-color: white;
+    color: black;
+    font-family:'NotoSansKR-Regular';
+    font-weight: 700;
+}
+#header:hover #menu>li>a  {
+    color: black;
+}
+#header:hover #logo{
+    background-image: url("resources/logo_black.svg");
+}
+
+#header:hover .btn-lang {
+    color: black;
+    border: 1px solid black;
+    font-weight: 700;
+    font-family:'NotoSansKR-Regular';
+}
+
+#header:hover .btn-allmenu {
+    border: 0px solid transparent;
+    background-image: url("resources/ico_24_allmenu_black.svg");
+}
+
+#header:hover .semi-list {
+    display: inline-block;
+    font-family:'NotoSansKR-Bold';
+    /* color:black; */
+}
+
+/* ===== 네비바 언어 ===== */
+
+.btn-lang{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    height: 30px;
+    margin: 20px 50px 0px 0px;
+    text-align: center;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family:'NotoSansKR-Regular';
+}
+
+.btn-allmenu {
+    width: 30px;
+    height: 30px;
+    margin: 20px 40px 0px 10px;
+    border: 0px solid transparent;
+    background-color: transparent;
+    background-image:url("resources/ico_24_allmenu_white.svg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-quick {
+    border: 1px solid rgba(213, 0, 55, 0.9);
+    background-color: rgba(213, 0, 55, 0.9);
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    position: absolute;
+    top: 88%;
+    left: 87%;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    /* justify-content: space-between; */
+    line-height: 30px;
+    z-index: 15;
+}
+
+.main-quick-img{
+    background-image: url("resources/ico_floating.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    margin-left: 2px;
+}
+
+.main-quick>a {
+    text-decoration: none;
+    color: white;
+}
+
+

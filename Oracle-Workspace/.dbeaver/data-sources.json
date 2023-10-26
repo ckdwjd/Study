@@ -1,0 +1,46 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-18870720517-3810e1a4c4c7b4ce": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "localhost",
+			"save-password": true,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "xe",
+				"url": "jdbc:oracle:thin:@localhost:1521:xe",
+				"configurationType": "MANUAL",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SID"
+				},
+				"auth-model": "oracle_native"
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-18870720517-3810e1a4c4c7b4ce": {
+			"KH": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "\u003cdiagram version\u003d\"1\" name\u003d\"empty\" time\u003d\"202306121755\"\u003e\u003centities\u003e\u003cdata-source id\u003d\"oracle_thin-18870720517-3810e1a4c4c7b4ce\"\u003e\u003centity id\u003d\"1\" name\u003d\"DEPARTMENT\" fq-name\u003d\"KH.DEPARTMENT\" order\u003d\"0\" x\u003d\"573\" y\u003d\"20\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"2\" name\u003d\"DEPT_COPY2\" fq-name\u003d\"KH.DEPT_COPY2\" order\u003d\"1\" x\u003d\"381\" y\u003d\"542\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"3\" name\u003d\"EMPLOYEE\" fq-name\u003d\"KH.EMPLOYEE\" order\u003d\"2\" x\u003d\"32\" y\u003d\"24\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"4\" name\u003d\"EMPLOYEE_COPY\" fq-name\u003d\"KH.EMPLOYEE_COPY\" order\u003d\"3\" x\u003d\"23\" y\u003d\"408\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"5\" name\u003d\"EMPLOYEE_COPY2\" fq-name\u003d\"KH.EMPLOYEE_COPY2\" order\u003d\"4\" x\u003d\"187\" y\u003d\"402\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"6\" name\u003d\"EMPLOYEE_COPY3\" fq-name\u003d\"KH.EMPLOYEE_COPY3\" order\u003d\"5\" x\u003d\"359\" y\u003d\"402\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"7\" name\u003d\"EMPLOYEE_COPY4\" fq-name\u003d\"KH.EMPLOYEE_COPY4\" order\u003d\"6\" x\u003d\"547\" y\u003d\"404\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"8\" name\u003d\"EMP_01\" fq-name\u003d\"KH.EMP_01\" order\u003d\"7\" x\u003d\"530\" y\u003d\"553\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"9\" name\u003d\"EMP_DEPT\" fq-name\u003d\"KH.EMP_DEPT\" order\u003d\"8\" x\u003d\"735\" y\u003d\"414\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"10\" name\u003d\"EMP_JOB\" fq-name\u003d\"KH.EMP_JOB\" order\u003d\"9\" x\u003d\"636\" y\u003d\"543\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"11\" name\u003d\"EMP_OLD\" fq-name\u003d\"KH.EMP_OLD\" order\u003d\"10\" x\u003d\"379\" y\u003d\"610\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"12\" name\u003d\"EMP_SALARY\" fq-name\u003d\"KH.EMP_SALARY\" order\u003d\"11\" x\u003d\"880\" y\u003d\"388\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"13\" name\u003d\"JOB\" fq-name\u003d\"KH.JOB\" order\u003d\"12\" x\u003d\"199\" y\u003d\"29\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"14\" name\u003d\"LOCATION\" fq-name\u003d\"KH.LOCATION\" order\u003d\"13\" x\u003d\"176\" y\u003d\"122\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"15\" name\u003d\"NATIONAL\" fq-name\u003d\"KH.\u0026quot;NATIONAL\u0026quot;\" order\u003d\"14\" x\u003d\"386\" y\u003d\"29\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003centity id\u003d\"16\" name\u003d\"SAL_GRADE\" fq-name\u003d\"KH.SAL_GRADE\" order\u003d\"15\" x\u003d\"358\" y\u003d\"122\"\u003e\u003cpath name\u003d\"KH\"/\u003e\u003c/entity\u003e\u003c/data-source\u003e\u003c/entities\u003e\u003crelations/\u003e\u003c/diagram\u003e"
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": false,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

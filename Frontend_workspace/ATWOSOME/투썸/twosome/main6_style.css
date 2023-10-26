@@ -1,0 +1,78 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 96px;
+}
+h6{
+    font-size: 16px;
+}
+h5{
+    font-size: 18px;
+}
+h4{
+    font-size: 20px;
+}
+h3{
+    font-size: 24px;
+}
+h2{
+    font-size: 16px;
+    color: red;
+}
+div{
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.wrap{
+    width: 100%;
+    height: 722px;
+    margin: auto;
+}
+#header{
+    width: 100%;
+    height: 100px;
+}
+#content{
+    width: 100%;
+    height: 522px;
+}
+#content>div{
+    float: left;
+}
+#content_1{
+    width: 10%;
+}
+#content_2,#content_3{
+    width: 40%;
+    height: 100%;
+}
+#content_2_1{
+    height: 42%;
+    
+}
+#content_2_2{
+    height: 8%;
+}
+#content_2_3{
+    height: 50%;
+    position: relative;
+}
+#content_2_3{
+    padding: 75px 0 ;
+}
+#content_3>div{
+    height: 33%;
+}
+#content_2_1{
+    line-height: 90px;
+}
+#content_3>div{
+    padding: 25px 0 0 30px;
+}
+

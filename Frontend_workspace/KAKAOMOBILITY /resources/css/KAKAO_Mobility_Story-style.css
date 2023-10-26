@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'KakaoBigRegular';
+    src: url("fonts/KakaoBigRegular.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'KakaoBigBold';
+    src: url("fonts/KakaoBigBold.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: 'KakaoBigExtraBold';
+    src: url("fonts/KakaoBigExtraBold.woff2") format('woff2');
+}
+
+* {
+    margin: 0;
+}
+
+section {
+    background-color: white;
+    width: 100%;
+    height: 5500px;
+}
+
+.story-start {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 35, 61);
+    position: fixed;
+}
+
+.space {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.space-end {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+}
+
+.strong {
+    background-color: white;
+    width: 100%;
+    height: 92px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 46px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 122px;
+}
+
+.story-section1 {
+    padding-top: 100px;
+    background-color: white;
+    width: 100%;
+    height: 19%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whitebox-left,
+.whitebox-right {
+    position: absolute;
+    top: 0;
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
+    transition: transform 2s;
+}
+
+.whitebox-left {
+    left: 0;
+    transform: translateX(-120%);
+}
+
+.whitebox-right {
+    right: 0;
+    transform: translateX(120%);
+}
+
+#video {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.text-wrap {
+    position: absolute;
+    z-index: 3;
+    text-align: center;
+    padding-top: 200px;
+    /* padding-bottom: 15%; */
+    display: none;
+    top: 0;
+}
+
+
+
+.sec1-sub-title {
+    /* width: 100%;
+    height: 22px; */
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+}
+
+.sec1-title {
+    /* width: 100%;
+    height: 232px; */
+    padding-top: 12px;
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(255, 205, 0);
+}
+
+.story-section2 {
+    background-color: white;
+    width: 100%;
+    height: 18%;
+}
+
+.story-sec2-wrap {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.sec2-youtube {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.whitebox1 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: left 2s;
+}
+
+#youtube {
+    position: relative;
+}
+
+#youtube-img {
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+#youtube-real {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.nemo {
+    width: 100%;
+    height: 40%;
+}
+
+.nemo-title {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.nemo-sc {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+}
+
+.nemo-link {
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.nemo-link a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.arrow {
+    width: 50px;
+    height: 20px;
+    margin-left: 14px;
+    background-image: url(https://t1.kakaocdn.net/kakaomobility/company_website/icons/ic_16_more.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.sec2-sc {
+    width: 50%;
+    height: 100%;
+}
+
+.long-text-wrap {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+}
+
+.long-text-title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 46px;
+    padding-bottom: 30px;
+}
+
+.long-text-sc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+}
+
+.story-section3 {
+    background-color: white;
+    width: 100%;
+    height: 16%;
+}
+
+.sec3-wrap {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec3-content {
+    width: 33%;
+    height: 100%;
+}
+
+.sec3-videoContainer {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.whitebox2 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: left 2s;
+}
+
+.sec3-videoContainer video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.sec3-sc {
+    width: 100%;
+    padding-top: 50px;
+}
+
+.sec3-title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 34px;
+}
+
+.sec3-sc p {
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(102, 102, 102);
+}
+
+.sec3-links {
+    padding-top: 30px;
+    display: flex;
+}
+
+.sec3-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sec3-arrow {
+    width: 50px;
+    height: 20px;
+    margin-left: 14px;
+    background-image: url(https://t1.kakaocdn.net/kakaomobility/company_website/icons/ic_16_more.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.story-section4 {
+    background-color: white;
+    width: 100%;
+    height: 25%;
+}
+
+.sec4-wrap {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+}
+
+.year {
+    display: flex;
+
+}
+
+.year>dt {
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 40px;
+}
+
+.month {
+    display: flex;
+}
+
+.month>dt {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(102, 102, 102);
+    padding-right: 40px;
+}
+
+.action>dd {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.more-btn {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#more-arrow {
+    width: 16px;
+    height: 16px;
+    margin-left: 14px;
+    background-image: url(https://t1.kakaocdn.net/kakaomobility/company_website/icons/ic_16_fold.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.more-btn:hover {
+    cursor: pointer;
+}
+
+#more-arrow:hover {
+    cursor: pointer;
+}
+
+.easter-egg {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ani-slide {
+    animation: fadeInUp 3s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.ani-left {
+    animation: slideLeft 2s forwards;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}

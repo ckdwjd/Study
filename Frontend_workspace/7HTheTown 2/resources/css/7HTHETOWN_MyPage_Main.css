@@ -1,0 +1,282 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.outer {
+    width: 100vw;
+    height: 1900px;
+    background-color: rgb(240, 240, 240);
+}
+
+/* ============================================ */
+/*                  컨텐츠                        */
+/* ============================================ */
+
+.main-container {
+    width: 1300px;
+    margin: auto;
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid rgb(180, 180, 180);
+    box-shadow: 0 10px 10px 0 rgba(128, 128, 128, 0.523);
+}
+
+/* ============================================ */
+/*                  사이드바                        */
+/* ============================================ */
+
+.sidebar {
+    width: 200px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: fixed; */
+}
+
+.side-navi a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-name {
+    width: 80%;
+    padding: 50px 0 0;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+.user-name>.user-txt1 {
+    font-size: 20px;
+    color: gray;
+}
+
+.user-name>.user-txt2 {
+    font-size: 25px;
+}
+.side-navi {
+    width: 80%;
+    padding-top: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.side-navi dt {
+    padding: 10px 0;
+    border-bottom: 1.5px solid lightgray;
+}
+
+.side-navi dt:first-child {
+    border-top: 1.5px solid lightgray;
+}
+
+.side-navi dt:hover {
+    color: black;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #ffffff 50%, #f4f4f4ef 50%);
+    background-size: 200% 100%;
+    animation: gradient-animation 0.2s ease-out forwards;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+/* ============================================ */
+/*                  사용자 컨텐츠1                       */
+/* ============================================ */
+
+.mypage-content {
+    width: 40VW;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.mypage-title {
+    font-size: 30px;
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+}
+
+.user-info {
+    height: 350px;
+}
+
+.user-info1 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.grade-img {
+    border-right: 1px solid rgb(158, 158, 158);
+    width: 40%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.grade-img>img {
+    margin: auto;
+}
+
+.grade-txt {
+    /* background-color: red; */
+    width: 60%;
+    align-items: center;
+}
+
+.user-info2,
+.user-info3 {
+    margin-top: 60px;
+}
+
+.grade-txt>.txt {
+    padding-left: 50px;
+    font-weight: bold;
+    line-height: 44px;
+}
+
+.grade-txt>.txt1 {
+    font-size: 20px;
+}
+
+.grade-txt>.txt1 * {
+    padding-bottom: 100px;
+}
+
+.grade-txt>.txt2 {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.grade-txt>.txt2>span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ============================================ */
+/*                  시용자 컨텐츠2                        */
+/* ============================================ */
+
+.user-info2 {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.user-count {
+    width: 52%;
+    background-color: rgb(255, 255, 255);
+    padding-top: 12px;
+}
+
+.count-wrap {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
+}
+
+.flex-box {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.top-box {
+    border-top: 1px solid black;
+}
+
+.txt-box {
+    font-size: 14px;
+    padding-left: 10px;
+    line-height: 35px;
+    width:70%;
+}
+
+.txt-box>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-deli {
+    height: 100%;
+    width: 41%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.deli-txt {
+    bottom: 50px;
+    position: absolute;
+    font-size: 17px;
+    font-weight: 800;
+    
+}
+
+/* ============================================ */
+/*                  시용자 컨텐츠3                        */
+/* ============================================ */
+
+.user-info3 {
+    background-color: white;
+    height: 150px;
+}
+
+.info3-wrap {
+    width: 95%;
+    height: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 58px;
+}
+
+.user-email {
+    width: 47%;
+    padding-left: 30px;
+    border-right: 1px solid rgb(158, 158, 158);
+}
+
+.user-address {
+    width: 47%;
+    padding-left: 10px;
+}
+
+.email-txt1,
+.address-txt1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email-txt2,
+.address-txt2 {
+    color: gray;
+    font-size: 12px;
+}
+.email-txt1:hover,
+.address-txt1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
