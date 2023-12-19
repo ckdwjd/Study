@@ -1,0 +1,300 @@
+INFO :[09:50:04.886] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+WARN :[09:50:06.652] Logger.warn(Logger.java:44) - Property 'mapperLocations' was specified but matching resources are not found.
+INFO :[09:50:06.724] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 1832 ms
+INFO :[10:25:56.460] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+ERROR:[10:25:56.736] ContextLoader.initWebApplicationContext(ContextLoader.java:312) - Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 22 in XML document from ServletContext resource [/WEB-INF/spring/security-context.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 49; cvc-complex-type.2.4.a: 'http' 요소로 시작하는 부적합한 콘텐츠가 발견되었습니다. '{"http://www.springframework.org/schema/beans":import, "http://www.springframework.org/schema/beans":alias, "http://www.springframework.org/schema/beans":bean, WC[##other:"http://www.springframework.org/schema/beans"], "http://www.springframework.org/schema/beans":beans}' 중 하나가 필요합니다.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:404)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4494)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4946)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:795)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:249)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:923)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+Caused by: org.xml.sax.SAXParseException; lineNumber: 22; columnNumber: 49; cvc-complex-type.2.4.a: 'http' 요소로 시작하는 부적합한 콘텐츠가 발견되었습니다. '{"http://www.springframework.org/schema/beans":import, "http://www.springframework.org/schema/beans":alias, "http://www.springframework.org/schema/beans":bean, WC[##other:"http://www.springframework.org/schema/beans"], "http://www.springframework.org/schema/beans":beans}' 중 하나가 필요합니다.
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
+	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:396)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:284)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:511)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3599)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1971)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:849)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:351)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2710)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:534)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:888)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:824)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:77)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:434)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:392)
+	... 43 more
+INFO :[10:31:05.032] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+ERROR:[10:31:05.427] ContextLoader.initWebApplicationContext(ContextLoader.java:312) - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: You cannot use a spring-security-2.0.xsd or spring-security-3.0.xsd or spring-security-3.1.xsd schema or spring-security-3.2.xsd schema or spring-security-4.0.xsd schema with Spring Security 4.2. Please update your schema declarations to the 4.2 schema.
+Offending resource: ServletContext resource [/WEB-INF/spring/security-context.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.fatal(FailFastProblemReporter.java:62)
+	at org.springframework.beans.factory.parsing.ReaderContext.fatal(ReaderContext.java:90)
+	at org.springframework.beans.factory.parsing.ReaderContext.fatal(ReaderContext.java:68)
+	at org.springframework.security.config.SecurityNamespaceHandler.parse(SecurityNamespaceHandler.java:88)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1366)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1352)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:179)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:513)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4494)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4946)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:795)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:249)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:923)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+INFO :[10:31:47.621] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+ERROR:[10:31:48.031] ContextLoader.initWebApplicationContext(ContextLoader.java:312) - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: You cannot use a spring-security-2.0.xsd or spring-security-3.0.xsd or spring-security-3.1.xsd schema or spring-security-3.2.xsd schema or spring-security-4.0.xsd schema with Spring Security 4.2. Please update your schema declarations to the 4.2 schema.
+Offending resource: ServletContext resource [/WEB-INF/spring/security-context.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.fatal(FailFastProblemReporter.java:62)
+	at org.springframework.beans.factory.parsing.ReaderContext.fatal(ReaderContext.java:90)
+	at org.springframework.beans.factory.parsing.ReaderContext.fatal(ReaderContext.java:68)
+	at org.springframework.security.config.SecurityNamespaceHandler.parse(SecurityNamespaceHandler.java:88)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1366)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1352)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:179)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:149)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:96)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:513)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:393)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4494)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4946)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:795)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1328)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1318)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:249)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:428)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:923)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:772)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:347)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:478)
+INFO :[12:07:58.943] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[12:08:02.145] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3197 ms
+INFO :[12:08:02.182] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[12:08:03.964] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1781 ms
+INFO :[12:50:03.764] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[12:50:06.813] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3044 ms
+INFO :[12:50:06.848] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[12:50:08.478] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1629 ms
+INFO :[14:13:21.818] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:13:24.919] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3097 ms
+INFO :[14:13:24.969] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:13:26.596] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1626 ms
+INFO :[14:19:15.314] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:19:18.477] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3159 ms
+INFO :[14:19:18.526] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:19:20.375] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1849 ms
+INFO :[14:19:46.978] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:19:50.146] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3164 ms
+INFO :[14:19:50.190] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:19:51.762] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1572 ms
+INFO :[14:21:43.879] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:21:46.991] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3108 ms
+INFO :[14:21:47.035] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:21:48.797] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1761 ms
+INFO :[14:22:22.005] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:22:25.595] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3585 ms
+INFO :[14:22:25.642] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:22:27.380] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1738 ms
+INFO :[14:23:19.814] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:23:23.054] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3229 ms
+INFO :[14:23:23.100] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:23:24.767] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1666 ms
+INFO :[14:28:42.919] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:28:46.233] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3310 ms
+INFO :[14:28:46.290] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:28:47.930] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1639 ms
+INFO :[14:38:21.698] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=false) 
+INFO :[14:39:56.626] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[14:39:59.783] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3152 ms
+INFO :[14:39:59.840] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[14:40:01.467] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1626 ms
+INFO :[14:40:29.329] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=false) 
+INFO :[15:43:50.849] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=false) 
+INFO :[15:43:57.123] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=false) 
+INFO :[15:44:33.665] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[15:44:37.202] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3532 ms
+INFO :[15:44:37.265] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[15:44:38.972] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1707 ms
+INFO :[15:44:52.926] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=false) 
+INFO :[15:45:42.149] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[15:45:58.342] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:10:59.338] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[16:11:02.530] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3188 ms
+INFO :[16:11:02.564] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[16:11:04.162] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1598 ms
+INFO :[16:11:20.839] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:11:22.625] MemberController.myPage(MemberController.java:31) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f6083454: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: C394750D3182337A84C82E884879E133; Granted Authorities: ROLE_USER
+INFO :[16:12:19.559] MemberController.myPage(MemberController.java:31) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f6083454: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffd3270: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: C394750D3182337A84C82E884879E133; Granted Authorities: ROLE_USER
+INFO :[16:15:06.140] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[16:15:09.288] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3140 ms
+INFO :[16:15:09.322] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[16:15:10.933] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1610 ms
+WARN :[16:15:11.108] AbstractHandlerExceptionResolver.logException(AbstractHandlerExceptionResolver.java:197) - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+INFO :[16:15:20.678] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:15:20.789] MemberController.myPage(MemberController.java:33) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9f1327c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 0B10979AA3F6338760C8B74EE7216379; Granted Authorities: ROLE_USER
+INFO :[16:15:36.106] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:15:37.959] MemberController.myPage(MemberController.java:33) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f60ecd8c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: FB34E8807582E45C245E4C5464F91B9A; Granted Authorities: ROLE_USER
+WARN :[16:15:44.624] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/chat/chatRoomList
+INFO :[16:15:45.926] MemberController.myPage(MemberController.java:33) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f60ecd8c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: FB34E8807582E45C245E4C5464F91B9A; Granted Authorities: ROLE_USER
+WARN :[16:17:05.206] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/admin
+WARN :[16:17:37.037] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/admin/
+WARN :[16:18:03.336] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/board/insert/C
+WARN :[16:18:06.228] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/admin/
+WARN :[16:18:23.114] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/admin/chat
+WARN :[16:18:46.665] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/admin/
+INFO :[16:18:58.000] MemberController.myPage(MemberController.java:33) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@f60ecd8c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@fffbcba8: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: FB34E8807582E45C245E4C5464F91B9A; Granted Authorities: ROLE_USER
+INFO :[16:33:18.137] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[16:33:21.035] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 2894 ms
+INFO :[16:33:21.071] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[16:33:22.640] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1568 ms
+INFO :[16:33:23.548] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:33:23.624] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.RememberMeAuthenticationToken@5856f548: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_USER
+INFO :[16:34:26.803] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.RememberMeAuthenticationToken@5856f548: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_USER
+INFO :[16:34:50.586] ContextLoader.initWebApplicationContext(ContextLoader.java:270) - Root WebApplicationContext: initialization started
+INFO :[16:34:53.901] ContextLoader.initWebApplicationContext(ContextLoader.java:306) - Root WebApplicationContext initialized in 3311 ms
+INFO :[16:34:53.966] FrameworkServlet.initServletBean(FrameworkServlet.java:524) - Initializing Servlet 'appServlet'
+INFO :[16:34:55.641] FrameworkServlet.initServletBean(FrameworkServlet.java:546) - Completed initialization in 1674 ms
+INFO :[16:34:57.581] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.RememberMeAuthenticationToken@5856f548: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_USER
+INFO :[16:36:25.784] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.RememberMeAuthenticationToken@5856f548: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_USER
+INFO :[16:36:33.389] MemberController.updateMember(MemberController.java:56) - updateMember =Member(userNo=0, userId=dhckdwjd, userPwd=null, nickName=null, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=null, enabled=false)
+INFO :[16:36:33.398] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@1c1102e9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:36:42.613] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@1c1102e9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:02.886] MemberController.updateMember(MemberController.java:56) - updateMember =Member(userNo=0, userId=dhckdwjd, userPwd=null, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=null, enabled=false)
+INFO :[16:37:02.896] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:20.493] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:22.053] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:23.363] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:31.418] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:34.813] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9e80dda9: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=null, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:42.747] MemberController.updateMember(MemberController.java:56) - updateMember =Member(userNo=0, userId=dhckdwjd, userPwd=null, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=null, enabled=false)
+INFO :[16:37:42.757] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@3186dd38: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:37:48.582] MemberController.updateMember(MemberController.java:56) - updateMember =Member(userNo=0, userId=dhckdwjd, userPwd=null, nickName=오그정, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=null, enabled=false)
+INFO :[16:37:48.591] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@4a39812b: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오그정, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+INFO :[16:39:02.935] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@4a39812b: Principal: Member(userNo=0, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오그정, email=dhckdwjd@nasd.com, phone=01022224444, address=sdfbsadjhbgasj, interest=null, enrollDate=null, modifyDate=null, status=null, gender=M, birthday=990101, changePwd=null, authorities=[], enabled=false); Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+WARN :[16:39:24.745] DispatcherServlet.noHandlerFound(DispatcherServlet.java:1248) - No mapping for GET /spring/myPage.me/admin/board
+INFO :[16:40:18.440] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=1, userId=admin, userPwd=1234, nickName=관리자, email=admin@kh.or.kr, phone=010-1111-2222, address=서울시 강남구 역삼동, interest=null, enrollDate=2023-08-01, modifyDate=2023-08-01, status=Y, gender=null, birthday=null, changePwd=N, authorities=[ROLE_ADMIN, ROLE_USER], enabled=true) 
+WARN :[16:40:18.441] BCryptPasswordEncoder.matches(BCryptPasswordEncoder.java:90) - Encoded password does not look like BCrypt
+INFO :[16:40:29.817] SecurityServiceImpl.loadUserByUsername(SecurityServiceImpl.java:31) - loginUser = Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true) 
+INFO :[16:40:33.048] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9f1327c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 79A24F4CF69E5554E28819ADCBE818B6; Granted Authorities: ROLE_USER
+INFO :[17:04:19.355] MemberController.myPage(MemberController.java:43) - authentication = org.springframework.security.authentication.UsernamePasswordAuthenticationToken@9f1327c: Principal: Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, nickName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-02-10, status=Y, gender=M, birthday=990101, changePwd=Y, authorities=[ROLE_USER], enabled=true); Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@43458: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 79A24F4CF69E5554E28819ADCBE818B6; Granted Authorities: ROLE_USER

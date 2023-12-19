@@ -1,0 +1,50 @@
+INFO :[14:03:23.372] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[14:03:24.591] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1216 ms
+INFO :[14:03:24.660] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[14:03:26.295] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1634 ms
+INFO :[14:36:57.537] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[14:36:58.974] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1429 ms
+INFO :[14:36:59.044] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[14:37:01.094] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2050 ms
+INFO :[14:41:21.188] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[14:41:22.766] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1571 ms
+INFO :[14:41:22.839] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[14:41:24.743] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1904 ms
+INFO :[14:42:24.234] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[14:42:25.799] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1559 ms
+INFO :[14:42:25.876] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[14:42:28.062] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2185 ms
+INFO :[15:32:53.693] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:32:55.093] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1394 ms
+INFO :[15:32:55.161] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:32:56.708] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1547 ms
+INFO :[15:35:29.232] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:35:30.776] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1539 ms
+INFO :[15:35:30.843] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:35:32.678] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1835 ms
+INFO :[15:39:21.785] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:39:24.428] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 2638 ms
+INFO :[15:39:24.483] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:39:25.170] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 687 ms
+INFO :[15:41:17.040] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:41:19.999] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 2952 ms
+INFO :[15:41:20.062] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:41:20.692] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 629 ms
+INFO :[15:45:27.491] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:45:29.009] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1511 ms
+INFO :[15:45:29.077] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:45:30.843] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1766 ms
+INFO :[15:45:34.534] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost : 8081/spring/logout.me
+INFO :[15:45:34.585] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost : 8081/spring/
+INFO :[15:45:39.514] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost : 8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[15:45:40.321] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost : 8081/spring/
+INFO :[15:49:55.759] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[15:49:57.017] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1253 ms
+INFO :[15:49:57.083] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[15:49:58.790] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1707 ms
+INFO :[15:50:02.385] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/logout.me
+INFO :[15:50:02.436] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[15:50:07.846] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[15:50:08.660] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[15:50:17.848] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/selectOne2?userId=dhckdwjd
+INFO :[15:50:17.849] LoggingInterceptor.preHandle(LoggingInterceptor.java:91) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/selectOne3?userId=dhckdwjd

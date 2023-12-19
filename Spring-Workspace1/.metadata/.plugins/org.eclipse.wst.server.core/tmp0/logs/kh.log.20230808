@@ -1,0 +1,1071 @@
+INFO :[23:03:35.189] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:03:36.659] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1466 ms
+INFO :[23:03:36.747] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:03:38.593] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1845 ms
+INFO :[23:12:56.945] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:12:58.339] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1390 ms
+INFO :[23:12:58.391] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:13:00.210] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1819 ms
+INFO :[23:13:20.960] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:21.551] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:21.552] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:23.897] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:23.911] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:23.912] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:32.328] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:32.402] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:32.403] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:33.214] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:33.229] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:33.230] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:33.878] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:33.887] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:33.888] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:34.271] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:34.281] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:34.282] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:40.714] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:13:43.023] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 2302 ms
+INFO :[23:13:43.135] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:13:45.874] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2738 ms
+INFO :[23:13:46.073] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:13:47.374] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:13:47.378] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:13:47.600] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:47.601] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:53.062] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:13:53.241] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:13:53.241] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:13:53.244] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:53.245] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:53.251] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:13:53.251] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:13:53.252] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:13:53.257] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:53.257] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:54.491] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:13:54.594] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:13:54.613] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:13:54.654] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:54.655] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:13:57.377] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:13:57.381] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:13:57.382] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={}]
+INFO :[23:13:57.391] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:13:57.391] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:14:31.270] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=teeste
+<script>
+INFO :[23:14:31.279] BoardController.insertBoard(BoardController.java:97) - board Board(boardNo=0, boardTitle=test1, boardContent=teeste
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:14:31.307] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:14:31.307] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:06.358] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:17:08.043] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1681 ms
+INFO :[23:17:08.115] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:17:10.123] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2008 ms
+INFO :[23:17:10.274] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/board/insert/C
+INFO :[23:17:11.273] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:17:11.277] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={}]
+INFO :[23:17:11.444] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:11.444] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:16.509] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:17:16.652] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:17:16.652] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:17:16.655] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:16.655] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:16.660] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:17:16.661] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:17:16.662] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:17:16.674] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:16.674] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:21.637] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:17:21.702] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:17:21.703] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:17:21.739] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:21.740] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:25.944] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:17:25.946] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:17:25.947] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={}]
+INFO :[23:17:25.953] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:25.953] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:17:36.191] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=teste
+<script>
+
+INFO :[23:17:36.198] BoardController.insertBoard(BoardController.java:97) - board Board(boardNo=0, boardTitle=test1, boardContent=teste
+<script>
+, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:17:36.239] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:17:36.240] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:18.895] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:19:20.480] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1581 ms
+INFO :[23:19:20.547] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:19:22.488] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1940 ms
+INFO :[23:19:24.151] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:19:25.027] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:19:25.030] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:19:25.209] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:25.210] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:29.828] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:19:30.000] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:19:30.001] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:19:30.004] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:30.004] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:30.011] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:19:30.012] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:19:30.013] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:19:30.017] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:30.018] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:31.091] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:19:31.186] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:19:31.186] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:19:31.216] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:31.217] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:32.017] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:19:32.021] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:19:32.022] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={}]
+INFO :[23:19:32.031] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:32.032] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:19:44.882] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=rest
+<script>
+INFO :[23:19:44.892] BoardController.insertBoard(BoardController.java:97) - board Board(boardNo=0, boardTitle=test1, boardContent=rest
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:19:44.959] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:19:44.959] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:21:42.171] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:21:43.907] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1732 ms
+INFO :[23:21:43.976] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:21:46.113] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2137 ms
+INFO :[23:21:46.290] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:21:47.412] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:21:47.415] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:21:47.696] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:21:47.696] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:21:53.318] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:21:53.491] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:21:53.492] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:21:53.494] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:21:53.495] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:21:53.501] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:21:53.501] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:21:53.502] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:21:53.507] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:21:53.508] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:21:55.489] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:21:55.581] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:21:55.582] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:21:55.614] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:21:55.615] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:21:56.447] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:21:56.449] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:21:56.449] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:21:56.457] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:21:56.457] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:22:05.432] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=tests
+<script>
+INFO :[23:22:05.439] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=test1, boardContent=tests
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:22:05.495] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:22:05.495] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:10.200] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:23:11.852] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1647 ms
+INFO :[23:23:11.914] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:23:13.948] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2033 ms
+INFO :[23:23:14.133] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:23:15.025] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:23:15.027] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:23:15.215] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:15.216] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:19.990] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:23:20.166] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:23:20.167] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:23:20.169] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:20.170] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:20.175] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:23:20.176] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:23:20.177] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:23:20.182] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:20.183] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:22.545] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:23:22.638] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:23:22.638] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:23:22.671] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:22.671] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:23.921] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:23:23.925] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:23:23.926] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:23:23.935] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:23.936] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:23:34.035] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=tes
+<script>
+INFO :[23:23:34.043] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=test1, boardContent=tes
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:23:34.091] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:120) - 5. PreparedStatement.execute() INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			17,
+			'test1',
+			'15',
+			'C',
+			'C'
+		)
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ERROR:[23:23:34.094] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:139) - 5. PreparedStatement.execute() FAILED! INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			17,
+			'test1',
+			'15',
+			'C',
+			'C'
+		) {FAILED after 7 msec}
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+INFO :[23:23:34.161] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:23:34.161] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:24:35.523] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:24:35.525] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:24:35.525] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:24:35.530] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:24:35.530] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:24:36.206] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:24:36.207] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:24:36.208] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:24:36.210] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:24:36.210] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:24:46.750] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=test
+<script>
+INFO :[23:24:46.753] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=test1, boardContent=test
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:24:46.771] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:120) - 6. PreparedStatement.execute() INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			18,
+			'test1',
+			'15',
+			'C',
+			'C'
+		)
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ERROR:[23:24:46.774] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:139) - 6. PreparedStatement.execute() FAILED! INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			18,
+			'test1',
+			'15',
+			'C',
+			'C'
+		) {FAILED after 6 msec}
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+INFO :[23:24:46.785] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:24:46.786] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:30:44.916] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:30:46.532] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1611 ms
+INFO :[23:30:46.599] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:30:48.787] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2187 ms
+INFO :[23:30:48.951] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:30:49.895] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:30:49.897] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:30:50.071] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:30:50.072] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:30:55.349] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:30:55.520] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:30:55.520] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:30:55.523] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:30:55.524] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:30:55.529] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:30:55.530] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:30:55.531] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:30:55.536] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:30:55.536] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:30:57.431] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:30:57.525] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:30:57.525] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:30:57.559] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:30:57.559] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:30:58.446] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:30:58.448] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:30:58.449] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:30:58.459] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:30:58.459] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:31:06.667] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=test
+<script>
+INFO :[23:31:06.676] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=test1, boardContent=test
+<script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:31:06.723] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:120) - 5. PreparedStatement.execute() INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			19,
+			'test1',
+			'15',
+			'test<br>&lt;script&gt;',
+			'C'
+		)
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+ERROR:[23:31:06.732] Slf4jSpyLogDelegator.exceptionOccured(Slf4jSpyLogDelegator.java:139) - 5. PreparedStatement.execute() FAILED! INSERT INTO BOARD
+		(
+			BOARD_NO,
+			BOARD_TITLE,
+			BOARD_WRITER,
+			BOARD_CONTENT,
+			BOARD_CD,
+		) VALUES(
+			19,
+			'test1',
+			'15',
+			'test<br>&lt;script&gt;',
+			'C'
+		) {FAILED after 7 msec}
+java.sql.SQLSyntaxErrorException: ORA-01747: invalid user.table.column, table.column, or column specification
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:208)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:1046)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1336)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3613)
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3714)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1378)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.execute(DelegatingPreparedStatement.java:172)
+	at net.sf.log4jdbc.PreparedStatementSpy.execute(PreparedStatementSpy.java:418)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy16.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.kh.spring.board.model.dao.BoardDao.insertBoard(BoardDao.java:43)
+	at com.kh.spring.board.model.service.BoardServiceImpl.insertBoard(BoardServiceImpl.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy36.insertBoard(Unknown Source)
+	at com.kh.spring.board.controller.BoardController.insertBoard(BoardController.java:134)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+INFO :[23:31:06.807] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:31:06.807] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:34:48.216] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:34:49.734] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1513 ms
+INFO :[23:34:49.806] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:34:51.771] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1964 ms
+INFO :[23:34:51.919] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:34:52.791] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:34:52.795] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:34:52.981] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:34:52.982] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:34:57.953] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:34:58.132] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:34:58.133] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:34:58.136] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:34:58.136] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:34:58.142] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:34:58.143] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:34:58.143] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:34:58.149] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:34:58.149] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:34:59.654] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:34:59.745] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:34:59.746] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null), Board(boardNo=10, boardTitle=안녕하십니까, boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-28 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=14, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:34:59.778] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:34:59.779] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:35:00.489] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C
+INFO :[23:35:00.491] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:35:00.492] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:35:00.502] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:35:00.502] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:35:10.479] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/C?boardTitle=test1&boardContent=tests
+<Script>
+INFO :[23:35:10.487] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=test1, boardContent=tests
+<Script>, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:35:10.566] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:35:10.567] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/board/list/C"; model={board=Board(boardNo=20, boardTitle=test1, boardContent=tests<br>&lt;Script&gt;, boardWriter=15, count=0, createDate=null, status=null, boardCd=C), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:35:10.567] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:35:10.568] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:35:10.572] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:35:10.592] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:35:10.592] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=20, boardTitle=test1, boardContent=null, boardWriter=오방정, count=0, createDate=2023-08-08 23:35:10.0, status=null, boardCd=null), Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=15, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:35:10.601] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:35:10.602] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:02.520] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:50:04.027] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1502 ms
+INFO :[23:50:04.109] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:50:06.100] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1990 ms
+INFO :[23:50:09.398] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:50:10.001] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:50:10.262] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:10.262] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:10.266] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:50:10.266] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:50:10.477] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:10.478] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:10.477] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:10.479] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:16.678] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:50:16.834] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:16.834] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:50:16.837] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:16.837] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:16.843] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:50:16.844] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:16.844] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:50:16.850] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:16.851] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:18.469] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/P
+INFO :[23:50:18.566] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:18.566] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[], pi=PageInfo(listCount=0, currentPage=1, pageLimit=10, boardLimit=5, maxPage=0, startPage=1, endPage=0), param={boardCode=P}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:50:18.593] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:18.594] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:22.169] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:50:22.172] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:22.173] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:50:22.186] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:22.187] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:50:37.393] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P?boardTitle=tests1&boardContent=tsets
+INFO :[23:50:37.403] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=tests1, boardContent=tsets, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:50:37.453] BoardController.insertBoard(BoardController.java:138) - error = ㅇㅖ외 발생
+INFO :[23:50:37.454] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:50:37.454] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="common/errorPage"; model={board=Board(boardNo=21, boardTitle=tests1, boardContent=tsets, boardWriter=15, count=0, createDate=null, status=null, boardCd=P), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, errorMsg=게시글 작성 실패}]
+INFO :[23:50:37.461] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:50:37.462] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:51:29.961] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:51:29.963] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:51:29.964] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:51:29.973] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:51:29.974] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:51:32.246] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P?boardTitle=tests1&boardContent=tsets
+INFO :[23:51:32.248] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=tests1, boardContent=tsets, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:51:32.268] BoardController.insertBoard(BoardController.java:138) - error = ㅇㅖ외 발생
+INFO :[23:51:32.269] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:51:32.270] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="common/errorPage"; model={board=Board(boardNo=22, boardTitle=tests1, boardContent=tsets, boardWriter=15, count=0, createDate=null, status=null, boardCd=P), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, errorMsg=게시글 작성 실패}]
+INFO :[23:51:32.274] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:51:32.275] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:51:33.636] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:51:33.637] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:51:33.638] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:51:33.639] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:51:33.640] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:51:34.240] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:51:34.242] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:51:34.243] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:51:34.249] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:51:34.249] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:51:41.778] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P?boardTitle=tsetes&boardContent=testsetest
+INFO :[23:51:41.782] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=tsetes, boardContent=testsetest, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:51:41.795] BoardController.insertBoard(BoardController.java:138) - error = ㅇㅖ외 발생
+INFO :[23:51:41.795] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:51:41.796] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="common/errorPage"; model={board=Board(boardNo=23, boardTitle=tsetes, boardContent=testsetest, boardWriter=15, count=0, createDate=null, status=null, boardCd=P), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, errorMsg=게시글 작성 실패}]
+INFO :[23:51:41.800] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:51:41.801] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:52:59.439] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:53:01.008] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1564 ms
+INFO :[23:53:01.073] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:53:03.066] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 1993 ms
+INFO :[23:53:03.246] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:53:04.252] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:04.255] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:53:04.438] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:04.439] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:53:08.552] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:53:08.741] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:08.742] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:53:08.744] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:08.745] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:53:08.751] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:53:08.752] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:08.752] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:53:08.757] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:08.757] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:53:10.415] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/P
+INFO :[23:53:10.509] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:10.509] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[], pi=PageInfo(listCount=0, currentPage=1, pageLimit=10, boardLimit=5, maxPage=0, startPage=1, endPage=0), param={boardCode=P}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:53:10.535] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:10.535] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:53:11.613] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:53:11.617] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:11.618] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:53:11.627] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:11.627] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:53:16.570] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P?boardTitle=asdasas&boardContent=dasdads
+INFO :[23:53:16.581] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=asdasas, boardContent=dasdads, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+ERROR:[23:53:16.626] BoardController.insertBoard(BoardController.java:138) - error = ㅇㅖ외 발생
+INFO :[23:53:16.627] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:53:16.627] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="common/errorPage"; model={board=Board(boardNo=24, boardTitle=asdasas, boardContent=dasdads, boardWriter=15, count=0, createDate=null, status=null, boardCd=P), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, errorMsg=게시글 작성 실패}]
+INFO :[23:53:16.634] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:53:16.634] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:54:56.192] ContextLoader.initWebApplicationContext(ContextLoader.java:271) - Root WebApplicationContext: initialization started
+INFO :[23:54:57.778] ContextLoader.initWebApplicationContext(ContextLoader.java:307) - Root WebApplicationContext initialized in 1581 ms
+INFO :[23:54:57.861] FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'appServlet'
+INFO :[23:54:59.900] FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 2038 ms
+INFO :[23:55:00.071] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/
+INFO :[23:55:00.871] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:00.875] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:55:01.053] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:01.054] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:55:07.015] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web :  http://localhost:8081/spring/login.me?userId=dhckdwjd&userPwd=1234
+INFO :[23:55:07.192] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:07.192] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="redirect:/"; model={member=Member(userNo=0, userId=dhckdwjd, userPwd=1234, userName=null, email=null, phone=null, address=null, interest=null, enrollDate=null, modifyDate=null, status=null, gender=null, birthday=null, enable=false), org.springframework.validation.BindingResult.member=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:55:07.194] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:07.195] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:55:07.201] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/
+INFO :[23:55:07.202] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:07.202] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="main"; model={}]
+INFO :[23:55:07.207] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:07.208] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:55:09.140] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/P
+INFO :[23:55:09.235] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:09.235] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[], pi=PageInfo(listCount=0, currentPage=1, pageLimit=10, boardLimit=5, maxPage=0, startPage=1, endPage=0), param={boardCode=P}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:55:09.261] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:09.262] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:55:10.125] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:55:10.126] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:10.127] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:55:10.133] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:10.133] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:55:14.204] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P?boardTitle=dasdas&boardContent=dasdada
+INFO :[23:55:14.214] BoardController.insertBoard(BoardController.java:99) - board Board(boardNo=0, boardTitle=dasdas, boardContent=dasdada, boardWriter=null, count=0, createDate=null, status=null, boardCd=null)
+INFO :[23:55:14.257] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:55:14.258] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="common/errorPage"; model={board=Board(boardNo=25, boardTitle=dasdas, boardContent=dasdada, boardWriter=15, count=0, createDate=null, status=null, boardCd=P), org.springframework.validation.BindingResult.board=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, errorMsg=게시글 작성 실패}]
+INFO :[23:55:14.265] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:55:14.265] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:57:27.209] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/insert/P
+INFO :[23:57:27.211] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:57:27.212] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardEnrollForm"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:57:27.220] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:57:27.220] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
+INFO :[23:59:14.992] LoggingInterceptor.preHandle(LoggingInterceptor.java:92) - 0:0:0:0:0:0:0:1 : web : dhckdwjd http://localhost:8081/spring/board/list/C
+INFO :[23:59:15.039] LoggingInterceptor.postHandle(LoggingInterceptor.java:105) - ------------------------------------------------
+INFO :[23:59:15.040] LoggingInterceptor.postHandle(LoggingInterceptor.java:106) - modelAndView = ModelAndView [view="board/boardListView"; model={loginUser=Member(userNo=15, userId=dhckdwjd, userPwd=$2a$10$rL5gUkI76uz7OhNJSjNU8.feuiyrs6dK5zFh3fJumD3I0J5tWCo1i, userName=오방정, email=dhckdwjd@nasd.com, phone=01022223333, address=sdfbsadjhbgasj, interest=null, enrollDate=2023-08-03, modifyDate=2023-08-03, status=Y, gender=M, birthday=990109, enable=false), list=[Board(boardNo=20, boardTitle=test1, boardContent=null, boardWriter=오방정, count=0, createDate=2023-08-08 23:35:10.0, status=null, boardCd=null), Board(boardNo=14, boardTitle=어 예쁘다, boardContent=null, boardWriter=관리자, count=0, createDate=2023-08-04 11:24:56.0, status=null, boardCd=null), Board(boardNo=13, boardTitle=드디어 프레임워크.., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-04-02 00:00:00.0, status=null, boardCd=null), Board(boardNo=12, boardTitle=테스트 게시글 입니다., boardContent=null, boardWriter=홍길동, count=0, createDate=2020-03-30 00:00:00.0, status=null, boardCd=null), Board(boardNo=11, boardTitle=힘냅시다!, boardContent=null, boardWriter=관리자, count=0, createDate=2020-03-29 00:00:00.0, status=null, boardCd=null)], pi=PageInfo(listCount=15, currentPage=1, pageLimit=10, boardLimit=5, maxPage=3, startPage=1, endPage=3), param={boardCode=C}, org.springframework.validation.BindingResult.loginUser=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.pi=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+INFO :[23:59:15.071] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:113) - ------------------------------view----------------------------
+INFO :[23:59:15.072] LoggingInterceptor.afterCompletion(LoggingInterceptor.java:115) - ------------------------------end----------------------------
