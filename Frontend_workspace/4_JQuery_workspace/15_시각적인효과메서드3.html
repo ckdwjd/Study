@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: beige;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 10px;
+            border: 1px solid yellow;
+            cursor: pointer;
+        }
+
+        p {
+            border: 1px solid lightgray;
+            width: 300px;
+            height: 100px;
+            margin-top: 5px;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>* slideDown() / slideUp() : 쇼핑몰 FAQ의 예</h3>
+
+    <div>Q. 반품은 언제까지 가능한가요?</div>
+    <p>A. 불가능합니다.</p>
+
+    <div>Q. 상품위치를 알고싶습니다?</div>
+    <p>A. 배송조회 사이트를 이용하세요.</p>
+
+    <div>Q. 닌텐도 재고있나요?</div>
+    <p>A. 네 있습니다.</p>
+
+    <div>Q. 전화통화 가능한 시간을 알려주세요?</div>
+    <p>A. 플러스 친구를 활용하면 24시간 내에 답변드리겠습니다.</p>
+
+    <div>Q. 판매자와 연락이 안됩니다?</div>
+    <p>A. 신고하세요.</p>
+
+    <script>
+        $(function () {
+            $("div").click(function () {
+                // $(this) : 현재 클릭 이벤트가 발생한 div요소
+                // $(this).next() : 현재 클릭 이벤트가 발생한 div요소 뒤에 있는 요소
+
+                const p = $(this).next();
+
+                // css() 두번째 매개변수 생략 시 스타일 속성에 적용된 속성값을 얻어올 수 있음
+                if (p.css("display") == "none") {
+
+                    // 그외방법
+                    p.slideDown(500).siblings("p").slideUp();
+
+                    // step 2
+                    // 모든 p태그 닫기
+                    // $("p").slideUp();
+
+                    // step 1
+                    // 보여지게 하기
+                    // p.slideDown(500);
+                } else {
+                    // 사라지게
+                    // p.slideUp(500);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

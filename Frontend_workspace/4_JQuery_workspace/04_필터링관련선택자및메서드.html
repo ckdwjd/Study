@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>필터링 관련 선택자 및 메서드</h1>
+
+    <h3>* 필터 관련 선택자</h3>
+    <!-- <table border="1" style="border-collapse : collapse">
+        <tr>
+            <td>이름</td>
+            <td>혈액형</td>
+            <td>거주지</td>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>A형</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>이순신</td>
+            <td>B형</td>
+            <td>경기도</td>
+        </tr>
+        <tr>
+            <td>민경민</td>
+            <td>O형</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td colspan="2">총 인원</td>
+            <td>3명</td>
+        </tr>
+    </table> -->
+
+    <script>
+        $(function () {
+            // $("tr:first").css("backgroundColor", "black").css("color", "white");
+            // first : 첫번쨰 요소만 가져오기
+
+            // $("tr:last").css("backgroundColor", "pink");
+
+            // $("tr:even").css("backgroundColor", "lightgray");
+            // 0부터 시작(홀수)
+
+            // $("tr:odd").css("backgroundColor", "yellow")
+            // 짝수
+
+
+            // 번외
+            // $("td:contains('민경민')").css("color", "red");
+            // $("td:eq(2),td:eq(5)").css("color", "red");
+        })
+    </script>
+
+    <h3>* 필터링과 관련된 메서드</h3>
+    <p>
+        기준이 되는 요소중에서 특정요소만을 걸러서 선택해주는 메서드<br>
+        first(), last(), filter(), eq(), not()
+    </p>
+
+    <h4 class="test">test-1</h4>
+    <h4 class="test">test-2</h4>
+    <h4 class="test">test-3</h4>
+    <h4 class="test">test-4</h4>
+    <h4>test-5</h4>
+    <h4 class="test">test-6</h4>
+
+    <script>
+        $(function () {
+            // $("h4").first().css("fontSize", "20px"); // h4요소들 중 가장 첫번째 요소 선택
+
+            // $("h4").last().css("fontSize", "30px"); // h4요소들 중 가장 마지막 요소 선택
+
+            // $("h4").filter(".test").html("오창정 멋있다."); // h4요소들 중 클래스명이 test인 요소만 남김
+            // filter() : 매개변수 요소만 남김
+
+            // $("h4").not(".test").css("color", "red"); // h4요소들 중 클래스명이 test가 아닌 요소만 남김
+
+            // $("h4").eq(2).text("eq로 선택함"); // h4요소들 중 2번째 인덱스요소 선택
+            // .text() : 선택된 요소의 innerText와 관련된 기능을 수행하는 메서드
+
+        })
+    </script>
+
+    <input type="button" value="[가]색 변경" onclick="click1();">
+    <input type="button" value="[나]색 변경" onclick="click2();">
+    <input type="button" value="[A]색 변경" onclick="click3();">
+    <input type="button" value="[B]색 변경" onclick="click4();">
+
+    <input type="button" value="clear()" id="btn-clear" onclick="window.clear()">
+
+    <br><br>
+
+    <table border="1" id="test" style="border-collapse: collapse;">
+        <tr>
+            <th>구분</th>
+            <th>A</th>
+            <th>B</th>
+        </tr>
+        <tr>
+            <td>가</td>
+            <td>10</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>나</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>계</td>
+            <td>30</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <script>
+        function clear() {
+            $("table *").removeAttr("style");
+        }
+
+        function click1() {
+            clear();
+            // $("td:contains('가')~td").css("backgroundColor", "red");
+            $("td:contains(10)").css("backgroundColor", "red");
+        }
+
+        function click2() {
+            clear();
+            // $("td:contains('나')~td").css("backgroundColor", "blue");
+            $("td:contains(20)").css("backgroundColor", "blue");
+        }
+
+        function click3() {
+            clear();
+            // $("td:eq(1),td:eq(4)").css("backgroundColor", "yellow");
+            $("td:nth-of-type(2):not(tr:last-child td)").css("backgroundColor", "yellow");
+        }
+
+        function click4() {
+            clear();
+            // $("td:eq(2),td:eq(5)").css("backgroundColor", "lightgreen");
+            $("td:nth-of-type(3):not(tr:last-child td)").css("backgroundColor", "lightgreen");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

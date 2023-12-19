@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div style="width: 100px; height: 100px; background-color: red; opacity: 0.5;"></div>
+
+    <h3>
+        * fadeIn() / fadeOut() , fadeToggle()
+    </h3>
+    <pre>
+        선택된 요소가 점점 투명해지면서 사라지고 점점 선명해지면서 보여지게하는 메서드
+    </pre>
+
+    <button id="fadeIn">보여주기</button>
+    <button id="fadeOut">숨기기</button>
+    <button id="fadeToggle">토글</button>
+
+    <br><br>
+
+    <img id="peng" src="../resources/image/peng.jpg">
+
+    <script>
+        $(function () {
+            // show() / hide()의 시간을 서서이 나타난 것 처럼
+            // fadeIn() / fadeOut()도 동일
+            $("#fadeOut").click(function () {
+                $("#peng").fadeOut(2000);
+            });
+
+            $("#fadeIn").click(function () {
+                $("#peng").fadeIn(2000);
+            });
+
+            $("#fadeToggle").click(function () {
+                $("#peng").fadeToggle(200);
+            });
+        });
+    </script>
+</body>
+
+</html>

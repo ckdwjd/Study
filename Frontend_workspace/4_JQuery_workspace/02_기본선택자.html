@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>기본 선택자</h1>
+    <h3>* 아이디 선택자</h3>
+    <p>
+        특정 고유한 아이디값을 가진 요소 하나만을 선택하고자 할 때
+
+    </p>
+
+    <h1 id="id1">ID1</h1>
+    <h1 id="id2">ID2</h1>
+
+    <script>
+        $(function () {
+
+            // 순수 자바스크립트 방식 => document.getElementID("id1");
+            //                  => document.querySelector("#id1");
+            document.getElementById("id1").style.color = "red";
+            document.querySelector("$id2").innerHTML = "h1 변경";
+
+            //jQuery 방식 => $("#아이디명")
+            // 요소객체에 메서드를 이용해서 값을 변경
+            $("#id1").css("color", "pink");
+            $("#id2").html("h2 변경"); // .innerHTML과 관련된 기능을 수행하는 메서드
+
+        });
+    </script>
+
+    <h3>* 태그 선택자</h3>
+    <p>JAVA</p>
+    <p>ORACLE</p>
+    <p>JDBC</p>
+
+    <h5>HTML</h5>
+    <h5>CSS</h5>
+    <h5>JAVASCRIPT</h5>
+
+    <script>
+        $(function () {
+            // 순수 자바스크립트 방식
+            // 1) document.getElementsByTagName("태그명")
+            // 2) document.getQuerySelectAll("태그명")
+
+            const p = document.getElementsByTagName("p")
+            for (let item of p) {
+                item.style.color = "yellow";
+            }
+
+            // jQuery 방식
+            $("h5").css("color", "blue");
+
+            // 여러종류의 태그 동시에 선택하고자 한다
+            $("p, h5, #id1").css("backgroundColor", "pink");
+        });
+    </script>
+
+    <hr>
+
+    <h3>* 클래스 선택자</h3>
+    <pre>
+        특정한 클래스 속성을 가진 요소들을 선택하고자 할 때 사용
+    </pre>
+
+    <h1 class="item">Class1</h1>
+    <h1 class="item select">Class2</h1>
+    <h1 class="item select">Class3</h1>
+
+    <script>
+        $(function () {
+            // 순수 자바스크립트 방식
+            // 1) document.getElementByClassName("클래스명")
+            // 1) document.querySelectAll(".클래스명")
+
+            const items = document.querySelectorAll(".item");
+            items.forEach((item) => {
+                item.style.color = "orange";
+                itme.onclick = () => console.log('클릭됨')
+            })
+
+            // jQuery 방식 => $(".클래스명")
+
+            $(".select").css("bakcgroundColor", "lightgray").click(function () {
+                alert('클릭됨');
+            })
+            $(".select").click(function () {
+                alert('클릭됨');
+            })
+
+            // click() : 클릭이벤트와 관련된 기능 수행
+        });
+    </script>
+</body>
+
+</html>

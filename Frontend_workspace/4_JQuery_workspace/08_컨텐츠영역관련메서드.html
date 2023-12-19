@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Content 영역(innerHTML/innerText)관련 메서드</h1>
+
+    <h3>* html("문구") 메서드 : innerHTML 속성과 관련된 메서드</h3>
+    <p>
+        선택된 요소의 content영역(시작태그와 종료태그 사이)를 리턴해주거나 변경해주는 메서드<br>
+
+        - $("선택자").html() : 선택된 요소의 content영역의 값을 반환해줌 <br>
+        (이때, html태그를 포함 == 요소.innerHTML)
+
+        - $("선택자").html("문구") : 선택된 요소의 content영역 값을 해당 문구로 변경<br>
+        (전달하는 문구에 html태그가 있을 경우 태그로 해석, 요소.innerHTML = "문구")
+    </p>
+
+    <h1 id="test1">
+        <a>네이버로가자</a>
+    </h1>
+
+    <h1 id="test2">
+
+    </h1>
+
+    <script>
+        $(function () {
+            // 자바스크립트 방식 컨텐츠 영역 가져오기
+            // const temp = document.getElementById("test1").innerHTML;
+
+            // jQuery방식
+            const temp = $("#test1").html(); // html태그까지 가져옴
+            // <a>네이버로가자</a>
+            $("#test2").html(temp);
+
+            // test2 요소안에 있는 a태그에 href속성 추가해주기 속성 값 : https://www.naver.com
+            $("#test2>a").attr("href", "https://www.naver.com");
+        });
+    </script>
+
+    <br><br>
+
+    <div class="class1">test1</div>
+    <div class="class1">test1</div>
+    <div class="class1">test1</div>
+
+    <script>
+        $(function () {
+            // 선택한 html요소에 각기 다른 내용을 컨텐츠 영역으로 출력하고자 할 때
+            // 선택된 요소들에 순차적으로 접근할 때마다 실행되는 익명함수를 추가하기
+
+            // 첫번쨰 인자값으로는 순차적으로 접근하는 요소의 인덱스 값을 전달
+            // 두번쨰 인자값으로는 순차적으로 접근하는 요소의 content영역값 전달
+            $(".class1").html(function (index, html) { // html()의 매개변수에 익명함수를 넣으면 콜백
+                return `<h1> 인덱스 : ${index}, content 내용 : ${html}</h1>`;
+            });
+        });
+    </script>
+
+    <br><br>
+
+    <h1>* text("문구") 메서드 : innerText 속성과 관련된 메서드</h1>
+    <p>
+        선택된 요소의 content영역의 텍스트만 리턴해주거나 변경해주는 메서드<br>
+        - $("선택자").text() : 선택된 요소의 content 영역을 반환(단, html태그 무시)<br>
+
+        - $("선택자").text("문구") : 선택된 요소의 content내용을 문구로 변경(단, html태그는 문자열로 해석)<br>
+    </p>
+
+    <h1 id="test3">
+        <a>구글로가자</a>
+    </h1>
+
+    <h1 id="test4">
+
+    </h1>
+
+    <script>
+        $(function () {
+            const temp = $("#test3").text(); // 구글로가자
+            $("#test4").text("<a>" + temp + "</a>"); // <a>구글로가자</a>
+        });
+    </script>
+
+    <br><br>
+
+    <div class="class2">test2</div>
+    <div class="class2">test2</div>
+    <div class="class2">test2</div>
+
+    <script>
+        $(function () {
+            $(".class2").text((index, text) => {
+                return `<h1> 인덱스 : ${index}, 내용 ${text}</h1>`;
+                // text()는 html()과 다르게 html태그가 문자열로써 출력
+            });
+        });
+    </script>
+
+</body>
+
+</html>

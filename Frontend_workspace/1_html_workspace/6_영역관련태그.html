@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영역관련태그</title>
+    <style>
+        div, span{border : 1px solid black;}
+        #div1 , #span1{background-color: red;}
+        #div2 , #span2{background-color: yellow;}
+        #div3 , #span3{background-color: green;}
+    </style>
+</head>
+<body>
+    <h1>영역 관련 태그</h1>
+    <!-- 
+        블럭 요소 : 한 줄단위로 영역을 차지하는 요소
+                    줄바꿈이 적용되어있어 이미 존재하는 요소의 다음 줄에 출력
+                    (h태그, p, pre태그, "div")
+                    
+        인라인 요소 : content내용에 해당되는 부분만 영역을 차지하는 요소
+                    줄바꿈이 적용되지 않아 앞으로 연이어져서 출력
+                    다음 줄로 넘기고자 할 때는 br로 계행 해야함
+                    (b, s, mark, input, ... , "span")
+    -->
+    <h2>div태그와 span태그의 차이1 : 줄바꿈 적용</h2>
+    <h3>div태그 : 블럭요소(한 줄 단위 영역 차지)</h3>
+    <div id="div1">첫 번째 영역</div> <div id="div2">두 번째 영역</div> <div id="div3">세 번째 영역</div>
+
+    <h3>span태그 : 인라인 요소(content 영역만을 차지)</h3>
+    <span id="span1">1번째 영역</span>
+    <span id="span2">2번째 영역</span>
+    <span id="span3">3번째 영역</span>
+
+    <hr>
+
+    <h3>div태그와 span태그의 차이2 : 영역 지정 방식</h3>
+
+    <h3>div태그 : 전체 감싸는 사각형 박스로 영역을 지정</h3>
+    <div>
+        가치를 보는 가치를 할지라도 그러므로 어디 봄바람이다. 내려온 이것이야말로 맺어, 운다. 같이, 고행을 공자는 그들은 봄바람이다. 얼마나 노래하며 가슴이 뜨고, 그러므로 이성은 아름다우냐? 구하지 하였으며, 가는 우는 끓는다. 싸인 그들의 반짝이는 밝은 전인 곧 붙잡아 청춘은 인간이 운다. 없는 발휘하기 밝은 보배를 우리 하였으며, 것이다. 석가는 실현에 끓는 봄바람을 평화스러운 찾아다녀도, 실로 사랑의 것이다. 찬미를 설산에서 두기 그들은 길지 타오르고 고행을 보배를 쓸쓸하랴? 이 그들을 우리의 위하여서.
+    </div>
+
+    <h3>span태그 : 문장 단위로 영역을 지정</h3>
+    <span>
+        가치를 보는 가치를 할지라도 그러므로 어디 봄바람이다. 내려온 이것이야말로 맺어, 운다. 같이, 고행을 공자는 그들은 봄바람이다. 얼마나 노래하며 가슴이 뜨고, 그러므로 이성은 아름다우냐? 구하지 하였으며, 가는 우는 끓는다. 싸인 그들의 반짝이는 밝은 전인 곧 붙잡아 청춘은 인간이 운다. 없는 발휘하기 밝은 보배를 우리 하였으며, 것이다. 석가는 실현에 끓는 봄바람을 평화스러운 찾아다녀도, 실로 사랑의 것이다. 찬미를 설산에서 두기 그들은 길지 타오르고 고행을 보배를 쓸쓸하랴? 이 그들을 우리의 위하여서.
+    </span>
+
+    <hr>
+
+    <h1>ifame 태그</h1>
+    <p>
+        현재 문서내에 다른 웹페이지를 추가하는 태그
+    </p>
+
+    <iframe src="4_이미지및멀티미디어관련태그.html" width="600" height="600"></iframe>
+
+    
+
+</body>
+</html>

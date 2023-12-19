@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .wrap,
+        .wrap * {
+            border: 1px solid lightgray;
+            display: block;
+            margin: 15px;
+            padding: 5px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>탐색 메서드</h1>
+
+    <h3>
+        * Sideways 메서드 : 같은 레벨에 있는 요소들을 선택할 수 있는 메서드
+    </h3>
+
+    <div class="wrap">
+        <p>p</p>
+        <span>span</span>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>p</p>
+    </div>
+
+    <p>
+    <h4>- $("선택자").siblings()</h4>
+    선택된 요소와 같은 레벨에 있는 모든 요소들 선택된
+
+    <h4>- $("선택자").siblings("선택자")</h4>
+    선택된 요소와 같은 레벨에 있는 모든 요소들 중에서 제시한 요소와 일치하는 요소만 선택
+
+    <h4>- $("선택자").next()</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 바로 다음 요소 하나만 선택(+)
+
+    <h4>- $("선택자").nextAll()</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 바로 다음 요소들 전부 선택(~)
+
+    <h4>- $("선택자").nextUntil("선택자")</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 제시한 요소와 일치하는 요소들까지만 선택
+
+    <h4>- $("선택자").prev()</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 바로 이전요소 하나만 선택
+
+    <h4>- $("선택자").prevAll()</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 이전 요소 전부 선택
+
+    <h4>- $("선택자").prevUntil("선택자")</h4>
+    선택된 요소와 같은 레벨에 있는 요소들 중에서 이전 요소에서 제시한 요소와 일치하는 요소들 까지만 선택
+    </p>
+
+    <script>
+        $(function () {
+            // 앞으로 부여할 스타일 객체
+            const style1 = { color: "pink", border: "2px solid pink" };
+            const style2 = { color: "yellowgreen", border: "2px solid yellowgreen" };
+            const style3 = { color: "red", border: "2px solid red" };
+            const style4 = { color: "pink", backgroundColor: "aqua" };
+
+            // .siblings()
+            $("h2").siblings().css(style1);
+            // h2를 기준으로 같은 레벨에 있는 요소 선택(본인 제외)
+
+            // .sibling("선택자")
+            $("h2").siblings("p").css(style2);
+            // h2를 기준으로 같은 레벨에 있는 p태그 선택
+
+
+
+            // .next()
+            $("h2").next().css(style3);
+
+            // .nextAll()
+            $("h2").nextAll().css(style4);
+
+            // .nextUntil()
+            $("h2").nextUntil("p").css("fontSize", "3em")
+
+
+
+            // .prev()
+            $("h2").prev().css("backgroundColor", "yellow");
+
+            // .prevAll()
+            $("h2").prevAll().css(style4);
+
+            // .prevUntil()
+            $("h2").prevUntil("p").css("border", "dotted");
+
+        });
+    </script>
+
+</body>
+
+</html>

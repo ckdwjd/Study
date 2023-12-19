@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>시각적인 효과 메서드(Effect 메서드)</h1>
+    <pre>
+        페이지 내에 애니메이션 효과를 만들기 위해 사용되는 메서드 집합
+    </pre>
+
+    <h3>
+        * show() / hide() / toggle()
+    </h3>
+    <pre>
+        선택된 요소가 점점 커지면서 보여지고, 점점 작아지면서 사라지게 하는 메서드
+    </pre>
+
+    <button id="hide">숨기기</button>
+    <button id="show">보이기</button>
+    <button id="toggle">토글</button>
+
+    <br><br>
+
+    <img id="bono" src="../resources/image/bono.jpg">
+
+    <div id="area" style="width:100px; height:100px; background-color : red"></div>
+
+    <script>
+        $(function () {
+            // show(), hide()의 시간을 정해주면 정해진 시간을 걸쳐 사라짐
+            $("#hide").click(function () {
+                $("#bono").hide(3000); // 3초
+                $("#area").hide(1000); // 1초
+            })
+
+            $("#show").click(function () {
+                $("#bono").show(3000); // 3초
+                $("#area").show(1000); // 1초
+            });
+
+            // toggle() : on/off 기능
+            $("#toggle").click(function () {
+                $("#bono").toggle(2000); // 3초
+                $("#area").toggle(1000); // 1초
+            });
+        })
+    </script>
+
+</body>
+
+</html>
