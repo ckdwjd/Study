@@ -2,10 +2,12 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Transactional // jpa를 사용 시 트랜잭션 처리를 해야한다
 public class MemberService { // cmd + shift + t == 테스트 클래스 생성
 
     private final MemberRepository memberRepository;
