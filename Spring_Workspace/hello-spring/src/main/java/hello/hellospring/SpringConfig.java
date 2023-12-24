@@ -35,6 +35,11 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 
+//    @Bean // 보동 AOP같은 경우는 bean에 등록해서 사용한다
+//    public TimeTraceAop timeTraceAop() {
+//        return timeTraceAop();
+//    }
+
 //    @Bean
 //    public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
@@ -43,4 +48,6 @@ public class SpringConfig {
 //        return new JpaMemberRepository(em);
 //
 //    }
+
+
 }
